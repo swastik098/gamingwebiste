@@ -1,0 +1,10 @@
+@media screen and (max-width: 786px) {
+  nav {
+    .nav-wrapper .navigation > a {
+      display: none;
+    }
+  }
+  .navBtn {
+    display: block;
+  }
+}

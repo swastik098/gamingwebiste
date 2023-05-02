@@ -1,7 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-// import './footer.scss';
-
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillLinkedin,
+} from "react-icons/ai";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -15,13 +18,13 @@ const Footer = () => {
         </div>
         <div className="footer__social">
           <a href="https://www.instagram.com">
-            <i className="material-icons">instagram</i>
+            <AiFillInstagram />
           </a>
           <a href="https://www.facebook.com">
-            <i className="material-icons">facebook</i>
+            <AiFillFacebook />
           </a>
           <a href="https://www.linkedin.com">
-            <i className="material-icons">linkedin</i>
+            <AiFillLinkedin />
           </a>
         </div>
         <div className="footer__text">
