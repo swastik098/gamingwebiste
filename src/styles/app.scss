@@ -9,8 +9,16 @@
   padding: 0%;
   font-family: $text2;
   text-decoration: none;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   scroll-behavior: smooth;
+}
+html {
+  overflow:   scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 a {
