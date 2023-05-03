@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import Slider from "./slider";
 import ImageGallery from "./ImageGallery";
 import InfoBox from "./InfoBox";
+import rigthImage from "../../assets/gameimg1.jpg";
 
 const Home = () => {
   const images = [
@@ -17,6 +19,20 @@ const Home = () => {
     <div className="home">
       <div className="slider">
         <Slider />
+      </div>
+      <div className="about-us">
+        <div className="image-container">
+          <img src={rigthImage} alt="About Us" />
+        </div>
+        <div className="text-container">
+          <h2>What We Are</h2>
+          <p className="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor,
+            arcu at pellentesque consectetur, massa tortor hendrerit augue, a
+            tincidunt justo purus vel turpis. Sed id sagittis nisl. Sed
+            venenatis quis ante vitae mattis.
+          </p>
+        </div>
       </div>
       <div className="main-container">
         <div className="left-side">
