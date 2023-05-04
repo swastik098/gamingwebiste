@@ -7,4 +7,21 @@
   .navBtn {
     display: block;
   }
+
+  .main-container .left-side .image-gallery .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    .col-4 {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+      padding: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }

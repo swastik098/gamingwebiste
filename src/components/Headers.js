@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 const Header = ({ setMenuOpen, menuOpen }) => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <>
+    <header className={isSticky ? "sticky-header" : ""}>
       <nav>
         <NavContent setMenuOpen={setMenuOpen} />
       </nav>
@@ -13,7 +30,7 @@ const Header = ({ setMenuOpen, menuOpen }) => {
       <button className="navBtn" onClick={() => setMenuOpen(!menuOpen)}>
         <AiOutlineMenu />
       </button>
-    </>
+    </header>
   );
 };
 
@@ -28,7 +45,7 @@ export const HeaderPhone = ({ menuOpen, setMenuOpen }) => {
 const NavContent = ({ setMenuOpen }) => (
   <>
     <div className="logo">
-      <NavLink to="/" className="brand">
+      <NavLink to="/" className="brand" onClick={() => setMenuOpen(false)}>
         Vault Games Studio
       </NavLink>
     </div>

@@ -49,10 +49,10 @@ const Slider = () => {
         </div>
       ))}
       <button className="prev-btn" onClick={handlePrev}>
-        Prev
+        ◀
       </button>
       <button className="next-btn" onClick={handleNext}>
-        Next
+        ▶
       </button>
     </div>
   );
