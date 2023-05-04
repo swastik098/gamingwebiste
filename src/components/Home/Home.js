@@ -17,9 +17,8 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="slider">
-        <Slider />
-      </div>
+      <Slider />
+
       <div className="about-us">
         <div className="image-container">
           <img src={rigthImage} alt="About Us" />
@@ -34,6 +33,7 @@ const Home = () => {
           </p>
         </div>
       </div>
+
       <div className="main-container">
         <div className="left-side">
           <ImageGallery images={images} />
