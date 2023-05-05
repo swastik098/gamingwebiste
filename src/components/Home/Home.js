@@ -3,7 +3,8 @@ import React from "react";
 import Slider from "./slider";
 import ImageGallery from "./ImageGallery";
 import InfoBox from "./InfoBox";
-import rigthImage from "../../assets/gameimg1.jpg";
+import Contact from "./Contact";
+import Carousel from "./slider";
 
 const Home = () => {
   const images = [
@@ -16,33 +17,21 @@ const Home = () => {
   ];
 
   return (
-    <div className="home">
+    <div className="flex flex-col items-center justify-center bg-gray-500 text-white min-h-screen">
       <Slider />
-
-      <div className="about-us">
-        <div className="image-container">
-          <img src={rigthImage} alt="About Us" />
-        </div>
-        <div className="text-container">
-          <h2>What We Are</h2>
-          <p className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor,
-            arcu at pellentesque consectetur, massa tortor hendrerit augue, a
-            tincidunt justo purus vel turpis. Sed id sagittis nisl. Sed
-            venenatis quis ante vitae mattis.
-          </p>
-        </div>
-      </div>
-
-      <div className="main-container">
-        <div className="left-side">
+      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
+        <div className="w-full md:w-1/2 md:pr-4 space-x-6">
           <ImageGallery images={images} />
         </div>
-        <div className="right-side">
-          <InfoBox
-            title="Game Developement"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
-          />
+        <div className="w-full md:w-1/2 md:pl-4">
+          <h2 className="text-xl font-bold mb-4">Game Development</h2>
+          <div className="bg-gray-900 p-4 rounded-md">
+            <p className="text-sm md:text-base leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
+              nec, ultricies sed, dolor.
+            </p>
+          </div>
         </div>
       </div>
     </div>

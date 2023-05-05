@@ -1,61 +1,72 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from "react";
-// import "./Slider.scss";
-// import slide_image_1 from "../../assets/gameimg1.jpg";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { RxDotFilled } from "react-icons/rx";
 
-const Slider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+function Slider() {
   const slides = [
     {
-      image:
-        "https://i.pinimg.com/564x/01/02/ea/0102ea2768a9c06ce53710dcb7064a27.jpg",
-      title: "G A M I N G",
-      subtitle: "Slider Subtitle 1",
+      url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
     },
     {
-      image:
-        "https://i.pinimg.com/564x/bb/8e/9f/bb8e9f9b156565f5246fe172495d6a70.jpg",
-      title: "Slider Title 2",
-      subtitle: "Slider Subtitle 2",
+      url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
     },
     {
-      image:
-        "https://i.pinimg.com/564x/27/54/5d/27545d423364ad4f4f992c99fc43754b.jpg",
-      title: "Slider Title 3",
-      subtitle: "Slider Subtitle 3",
+      url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
+    },
+
+    {
+      url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
     },
   ];
 
-  const handlePrev = () => {
-    setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
   };
 
-  const handleNext = () => {
-    setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
   };
 
   return (
-    <div className="slider">
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`slider-item ${index === currentSlide ? "active" : ""}`}
-        >
-          <img src={slide.image} alt={`Image ${index}`} />
-          <div className="slider-text">
-            <h2>{slide.title}</h2>
-            <p>{slide.subtitle}</p>
+    <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group">
+      <div
+        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+      ></div>
+      {/* Left Arrow */}
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <BsChevronCompactLeft onClick={prevSlide} size={30} />
+      </div>
+      {/* Right Arrow */}
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <BsChevronCompactRight onClick={nextSlide} size={30} />
+      </div>
+      <div className="flex top-4 justify-center py-2">
+        {slides.map((slide, slideIndex) => (
+          <div
+            key={slideIndex}
+            onClick={() => goToSlide(slideIndex)}
+            className="text-2xl cursor-pointer"
+          >
+            <RxDotFilled />
           </div>
-        </div>
-      ))}
-      <button className="prev-btn" onClick={handlePrev}>
-        ◀
-      </button>
-      <button className="next-btn" onClick={handleNext}>
-        ▶
-      </button>
+        ))}
+      </div>
     </div>
   );
-};
+}
 
 export default Slider;

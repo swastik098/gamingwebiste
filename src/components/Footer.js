@@ -5,30 +5,115 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
+
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer__text">
-        <div className="footer__links">
-          <a href="#">Most in-demand services</a>
-          <a href="#">Game design courses</a>
-          <a href="#">Office address</a>
-          <a href="#">Careers</a>
-          <a href="#">Contacts</a>
+    <footer className="bg-gray-800 pt-16 pb-8">
+      <div className="max-w-6xl m-auto flex flex-wrap justify-left">
+        <div className="p-4 w-full md:w-1/4">
+          <div className="text-white uppercase mb-6 font-bold">
+            Most in-demand services
+          </div>
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
+          >
+            Game development
+          </a>
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
+          >
+            Game art
+          </a>
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
+          >
+            Animation
+          </a>
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
+          >
+            Publishing
+          </a>
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
+          >
+            Academy
+          </a>
         </div>
-        <div className="footer__social">
-          <a href="https://www.instagram.com">
-            <AiFillInstagram />
+        <div className="p-4 w-full md:w-1/4">
+          <div className="text-white uppercase mb-6 font-bold">
+            Game design courses
+          </div>
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
+          >
+            Unity 3D
           </a>
-          <a href="https://www.facebook.com">
-            <AiFillFacebook />
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
+          >
+            Unreal Engine
           </a>
-          <a href="https://www.linkedin.com">
-            <AiFillLinkedin />
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
+          >
+            Game art
           </a>
         </div>
-        <div className="footer__text">
-          © 2023 Vault Games Studio All rights reserved.
+        <div className="p-4 w-full md:w-1/4">
+          <div className="text-white uppercase mb-6 font-bold">
+            Office address
+          </div>
+          <div className="my-3 block text-gray-300 text-sm font-medium duration-700">
+            Vault Games Studio
+          </div>
+          <div className="my-3 block text-gray-300 text-sm font-medium duration-700">
+            123 Main Street
+          </div>
+          <div className="my-3 block text-gray-300 text-sm font-medium duration-700">
+            Anytown, USA 12345
+          </div>
+        </div>
+        <div className="p-4 w-full md:w-1/4">
+          <div className="text-white uppercase mb-6 font-bold">Contact</div>
+          <div className="flex gap-4 mb-4 lg:mb-0">
+            <a href="https://www.instagram.com">
+              <AiFillInstagram />
+            </a>
+            <a href="https://www.facebook.com">
+              <AiFillFacebook />
+            </a>
+            <a href="https://www.linkedin.com">
+              <AiFillLinkedin />
+            </a>
+          </div>
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
+          >
+            Email: info@vaultgames.com
+          </a>
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
+          >
+            Phone: 1-800-123-4567
+          </a>
+        </div>
+      </div>
+      <div className="pt-8 flex flex-wrap justify-center">
+        <div className="w-full sm:w-auto text-center sm:text-left ">
+          <div className="text-white mb-2">
+            © 2023 Vault Games Studio All rights reserved.
+          </div>
         </div>
       </div>
     </footer>
