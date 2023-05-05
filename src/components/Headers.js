@@ -53,6 +53,13 @@ function Navigation() {
       >
         <div className="text-sm lg:text-right lg:flex-grow">
           <NavLink
+            to="/"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
+            onClick={closeMenu}
+          >
+            Home
+          </NavLink>
+          <NavLink
             to="/gamedevelopment"
             className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
             onClick={closeMenu}
@@ -88,7 +95,7 @@ function Navigation() {
             Academy
           </NavLink>
           <NavLink
-            to="#get-in-touch"
+            href="#contact"
             className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
             onClick={closeMenu}
           >
