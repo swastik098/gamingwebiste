@@ -5,6 +5,7 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,59 +15,59 @@ const Footer = () => {
           <div className="text-white uppercase mb-6 font-bold">
             Most in-demand services
           </div>
-          <a
-            href="#"
+          <NavLink
+            to="/gamedevelopement"
             className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
           >
             Game development
-          </a>
-          <a
-            href="#"
+          </NavLink>
+          <NavLink
+            href="gameart"
             className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
           >
             Game art
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             href="#"
             className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
           >
             Animation
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             href="#"
             className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
           >
             Publishing
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             href="#"
             className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
           >
             Academy
-          </a>
+          </NavLink>
         </div>
         <div className="p-4 w-full md:w-1/4">
           <div className="text-white uppercase mb-6 font-bold">
             Game design courses
           </div>
-          <a
+          <NavLink
             href="#"
             className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
           >
             Unity 3D
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             href="#"
             className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
           >
             Unreal Engine
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             href="#"
             className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"
           >
             Game art
-          </a>
+          </NavLink>
         </div>
         <div className="p-4 w-full md:w-1/4">
           <div className="text-white uppercase mb-6 font-bold">
@@ -84,7 +85,7 @@ const Footer = () => {
         </div>
         <div className="p-4 w-full md:w-1/4">
           <div className="text-white uppercase mb-6 font-bold">Contact</div>
-          <div className="flex gap-4 mb-4 lg:mb-0">
+          <div className="flex gap-4 mb-4 lg:mb-0 text-blue-500 hover:text-white">
             <a href="https://www.instagram.com">
               <AiFillInstagram />
             </a>
