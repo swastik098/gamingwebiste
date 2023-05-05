@@ -14,7 +14,7 @@ const ImageGallery = ({ images }) => {
             <img
               src={image.url}
               alt={image.alt}
-              className="w-full h-40 object-cover transition-all duration-300 transform hover:scale-125"
+              className="w-full h-40 object-cover rounded-lg transition-all duration-300 transform hover:scale-125"
             />
           </div>
         ))}
