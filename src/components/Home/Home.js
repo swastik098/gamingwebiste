@@ -4,6 +4,7 @@ import Slider from "./slider";
 import ImageGallery from "./ImageGallery";
 import InfoBox from "./InfoBox";
 import rigthImage from "../../assets/gameimg1.jpg";
+import Contact from "./Contact";
 
 const Home = () => {
   const images = [
@@ -45,6 +46,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <Contact />
     </div>
   );
 };
