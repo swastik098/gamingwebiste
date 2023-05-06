@@ -8,14 +8,14 @@ import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
 import Box from "./Box";
 import client1 from "../../assets/preview.jpg";
-import YouTubeCard from "./YoutubeVideoCard";
-const videoIds = [
-  "eciP7ixTNec",
-  "NMUr2yNALhU",
-  "r_ErytGpScQ",
-  "UXqq0ZvbOnk",
-  // "EJ2GzZAORQA",
-];
+
+// const videoIds = [
+//   "eciP7ixTNec",
+//   "NMUr2yNALhU",
+//   "r_ErytGpScQ",
+//   "UXqq0ZvbOnk",
+//   // "EJ2GzZAORQA",
+// ];
 
 const Home = () => {
   const images = [
@@ -56,7 +56,7 @@ const Home = () => {
             text="We at Vault Games Studio are an extremely passionate team of game design experts, animations, creatives, developers. We provide bespoke and holistic game developement service right from the ideation stage to project completion. For further understanding of our work, check, out the video gallry below!"
             boldText="Vault Games Studio"
           />
-          <div className="flex flex-wrap -mx-4 bg-pink-200 text-black rounded-lg pt-5">
+          {/* <div className="flex flex-wrap -mx-4 bg-pink-200 text-black rounded-lg pt-5">
             {videoIds.map((videoId) => (
               <div
                 key={videoId}
@@ -65,7 +65,7 @@ const Home = () => {
                 <YouTubeCard videoId={videoId} />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
       <Button text={"Get In Touch"} />
