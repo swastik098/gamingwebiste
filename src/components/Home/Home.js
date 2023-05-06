@@ -7,6 +7,7 @@ import Button from "./Button";
 import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
 import Box from "./Box";
+import client1 from "../../assets/preview.jpg";
 
 const Home = () => {
   const images = [
@@ -90,6 +91,46 @@ const Home = () => {
             text={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonrisus. Suspendisse lectus tortor, dignissim sit amet, adipiscin nec, ultricies sed, dolor."
             }
+          />
+        </div>
+      </div>
+      <div class="bg-stone-500 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-extrabold text-white">Our Clients</h2>
+          <p class="mt-4 mb-10 text-xl  text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center flex-wrap">
+          <img
+            src={client1}
+            alt="Client 1"
+            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+          />
+          <img
+            src={client1}
+            alt="Client 2"
+            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+          />
+          <img
+            src={client1}
+            alt="Client 3"
+            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+          />
+          <img
+            src={client1}
+            alt="Client 4"
+            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+          />
+          <img
+            src={client1}
+            alt="Client 5"
+            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+          />
+          <img
+            src={client1}
+            alt="Client 6"
+            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
         </div>
       </div>
