@@ -47,7 +47,7 @@ const Home = () => {
       <Slider />
       <div className="flex flex-col md:flex-row justify-between w-3/4 py-10">
         <div className={" text-right w-full"}>
-          <HeadingStyle className={"mt-20 text-6xl"} title={"Who Are We"} />
+          <HeadingStyle className={"mt-20 text-7xl"} title={"Who Are We"} />
         </div>
 
         <div className="md:w-full md:pl-0">
