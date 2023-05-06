@@ -114,6 +114,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <Button text={"Book Animation Demo"} className="mb-10" />
       <div class="bg-stone-500 py-12 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-extrabold text-white">Our Clients</h2>
@@ -154,7 +155,6 @@ const Home = () => {
           />
         </div>
       </div>
-      <Button text={"Book Animation Demo"} className="mb-10" />
       <ContactPage />
     </div>
   );
