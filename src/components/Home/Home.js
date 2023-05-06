@@ -3,15 +3,15 @@ import React from "react";
 import Slider from "./slider";
 import ImageGallery from "./ImageGallery";
 import InfoBox from "./InfoBox";
-import Contact from "./Contact";
-import Carousel from "./slider";
 import Button from "./Button";
 import ContactPage from "./ContactPage";
+import HeadingStyle from "./HeadingStyle";
+import Box from "./Box";
 
 const Home = () => {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
+      url: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1957&q=80",
       alt: "Image 1",
     },
     {
@@ -36,6 +36,22 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-stone-500 text-white min-h-screen">
       <Slider />
+      <div className="flex flex-col md:flex-row justify-between w-3/4 py-10">
+        <div className={" text-right w-full"}>
+          <HeadingStyle className={"mt-20 text-4xl"} title={"Who Are We"} />
+        </div>
+
+        <div className="md:w-full md:pl-0">
+          <Box
+            className="border-2 rounded-xl p-10"
+            text="We at Vault Games Studio are an extremely passionate team of game design experts, animations, creatives, developers. We provide bespoke and holistic game developement service right from the ideation stage to project completion. For further understanding of our work, check, out the video gallry below!"
+            boldText="Vault Games Studio"
+          />
+        </div>
+      </div>
+      <Button text={"Get In Touch"} />
+      <HeadingStyle className={"mt-20 text-4xl"} title={"Service We Offer"} />
+
       <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <ImageGallery images={images} />
@@ -59,7 +75,7 @@ const Home = () => {
             }
           />
         </div>
-        <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
+        <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto bg-stone-500 ">
           <ImageGallery images={images} />
         </div>
       </div>
