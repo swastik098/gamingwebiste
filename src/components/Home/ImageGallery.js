@@ -1,7 +1,7 @@
 import React from "react";
 
-const ImageGallery = ({ images }) => {
-  const limitedImages = images.slice(0, 9);
+const ImageGallery = ({ images, className, style }) => {
+  const limitedImages = images.slice(0, 6);
 
   return (
     <div className="image-gallery w-full">
@@ -14,7 +14,8 @@ const ImageGallery = ({ images }) => {
             <img
               src={image.url}
               alt={image.alt}
-              className="w-full h-40 object-cover rounded-lg transition-all duration-300 transform hover:scale-125"
+              style={style}
+              className={`w-full h-40 object-cover rounded-lg transition-all duration-300 transform hover:scale-125 ${className}`}
             />
           </div>
         ))}

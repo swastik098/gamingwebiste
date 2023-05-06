@@ -9,17 +9,17 @@ function Navigation() {
   };
 
   const navStyle = {
-    position: "fixed",
+    position: "sticky",
     top: 0,
     left: 0,
     width: "100%",
-    zIndex: 999,
+    zIndex: 9999,
   };
 
   return (
     <nav
       style={navStyle}
-      className="flex items-center justify-between flex-wrap bg-gray-800 p-6"
+      className="flex items-center justify-between flex-wrap bg-gray-800 p-8"
     >
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-semibold text-xl tracking-tight">
@@ -95,7 +95,7 @@ function Navigation() {
             Academy
           </NavLink>
           <NavLink
-            href="#contact"
+            href="/contact"
             className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
             onClick={closeMenu}
           >
