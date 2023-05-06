@@ -7,6 +7,15 @@ import Button from "./Button";
 import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
 import Box from "./Box";
+import YouTubeCard from "./YoutubeVideoCard";
+
+const videoIds = [
+  "eciP7ixTNec",
+  "NMUr2yNALhU",
+  "r_ErytGpScQ",
+  "UXqq0ZvbOnk",
+  // "EJ2GzZAORQA",
+];
 
 const Home = () => {
   const images = [
@@ -38,7 +47,7 @@ const Home = () => {
       <Slider />
       <div className="flex flex-col md:flex-row justify-between w-3/4 py-10">
         <div className={" text-right w-full"}>
-          <HeadingStyle className={"mt-20 text-4xl"} title={"Who Are We"} />
+          <HeadingStyle className={"mt-20 text-6xl"} title={"Who Are We"} />
         </div>
 
         <div className="md:w-full md:pl-0">
@@ -47,10 +56,21 @@ const Home = () => {
             text="We at Vault Games Studio are an extremely passionate team of game design experts, animations, creatives, developers. We provide bespoke and holistic game developement service right from the ideation stage to project completion. For further understanding of our work, check, out the video gallry below!"
             boldText="Vault Games Studio"
           />
+          <div className="flex flex-wrap -mx-4 bg-pink-200 text-black rounded-lg pt-5">
+            {videoIds.map((videoId) => (
+              <div
+                key={videoId}
+                className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-2"
+              >
+                <YouTubeCard videoId={videoId} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <Button text={"Get In Touch"} />
-      <HeadingStyle className={"mt-20 text-4xl"} title={"Service We Offer"} />
+
+      <HeadingStyle className={"mt-20 text-6xl"} title={"Service We Offer"} />
 
       <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
