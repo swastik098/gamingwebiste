@@ -4,9 +4,9 @@ const Box = ({ text, className, boldText }) => {
   const parts = text.split(boldText);
   return (
     <>
-      <div className="p-8 rounded-xl">
+      <div className="p-5">
         <p
-          className={`text-xl md:text-base leading-relaxed text-center ${className}`}
+          className={`text-20xl md:text-base leading-relaxed text-center ${className}`}
         >
           {parts[0]}
           <span className="font-bold">{boldText}</span>

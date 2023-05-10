@@ -5,20 +5,35 @@ import { RxDotFilled } from "react-icons/rx";
 function Slider() {
   const slides = [
     {
-      url: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1957&q=80",
+      url: require("../../assets/HighresScreenshot00003.png"),
     },
     {
-      url: "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      url: require("../../assets/HighresScreenshot00002.png"),
+    },
+    { url: require("../../assets/HighresScreenshot00014.png") },
+    {
+      url: require("../../assets/HighresScreenshot00001.png"),
     },
     {
-      url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
-    },
-
-    {
-      url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
+      url: require("../../assets/HighresScreenshot00004.jpg"),
     },
     {
-      url: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      url: require("../../assets/tmp_8db7e837-330e-4cbe-913f-09888bf11146.jpg"),
+    },
+    {
+      url: require("../../assets/tmp_311052b8-8f06-43b7-9fd1-d4f29c78867d.jpg"),
+    },
+    {
+      url: require("../../assets/tmp_0abe01fd-bfac-4f80-bb6e-2f2b19754c73.jpg"),
+    },
+    {
+      url: require("../../assets/murali-krishna-highresscreenshot00001.jpg"),
+    },
+    {
+      url: require("../../assets/murali-krishna-highresscreenshot00006.jpg"),
+    },
+    {
+      url: require("../../assets/MergeDragons_Banner-min.png"),
     },
   ];
 
@@ -46,13 +61,14 @@ function Slider() {
     }, 3000);
 
     return () => clearInterval(intervalId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex]);
 
   return (
-    <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group">
+    <div className="w-full h-screen relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+        className="w-full h-full bg-center bg-cover bg-no-repeat duration-500"
       ></div>
       {/* Left Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
@@ -62,12 +78,12 @@ function Slider() {
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
-      <div className="flex top-4 justify-center py-2">
+      <div className="flex top-4 justify-center py-2 bg-midnight text-tahiti">
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer"
+            className="text-2xl cursor-pointer mx-2 "
           >
             <RxDotFilled />
           </div>

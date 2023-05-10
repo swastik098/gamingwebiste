@@ -1,63 +1,91 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import Slider from "./slider";
-import ImageGallery from "./ImageGallery";
-import InfoBox from "./InfoBox";
-import Button from "./Button";
+// import ImageGallery from "./ImageGallery";
+// import InfoBox from "./InfoBox";
+// import Button from "./Button";
 import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
 import Box from "./Box";
 import client1 from "../../assets/preview.jpg";
-import YouTubeCard from "./YoutubeVideoCard";
+// import YouTubeCard from "./YoutubeVideoCard";
+import logo1 from "../../assets/Ag1_09.png";
+import ImageCard from "./ImageCard";
 
-const videoIds = [
-  "eciP7ixTNec",
-  "NMUr2yNALhU",
-  "r_ErytGpScQ",
-  "UXqq0ZvbOnk",
-  // "EJ2GzZAORQA",
-];
+// const videoIds = [
+//   "eciP7ixTNec",
+//   "NMUr2yNALhU",
+//   "r_ErytGpScQ",
+//   "UXqq0ZvbOnk",
+//   // "EJ2GzZAORQA",
+// ];
 
 const Home = () => {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1957&q=80",
+      url: require("../../assets/android.png"),
       alt: "Image 1",
+      tittle: "Mobile Game development",
     },
     {
       url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
       alt: "Image 2",
+      tittle: "Unity Game development",
     },
     {
       url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
       alt: "Image 3",
+      tittle: "HTML5 Game development",
     },
 
     {
       url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
       alt: "Image 4",
+      tittle: "Unreal Game development",
     },
     {
       url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
       alt: "Image 5",
+      tittle: "Art And Design",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
+      alt: "Image 4",
+      tittle: "Metaverse Projects",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
+      alt: "Image 5",
+      tittle: "Gamification",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
+      alt: "Image 6",
+      title: "VR And AR",
     },
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center bg-stone-500 text-white min-h-screen">
+    <div className="flex flex-col items-center justify-center bg-white text-black min-h-screen">
       <Slider />
+      <HeadingStyle
+        className={
+          " font-sans subpixel-antialiased text-zinc-800 mt-12 text-5xl"
+        }
+        title={"Vault Games Studio"}
+      />
+      <div className="flex flex-col md:flex-row justify-between w-3/4 ">
+        <Box
+          className="font-sans"
+          text="We at Vault Games Studio are an extremely passionate team of game design experts, animations, creatives, developers. We provide bespoke and holistic game developement service right from the ideation stage to project completion. For further understanding of our work, check, out the video gallry below!"
+          boldText="Vault Games Studio"
+        />
+      </div>
       <div className="flex flex-col md:flex-row justify-between w-3/4 py-10">
-        <div className={" text-right w-full"}>
-          <HeadingStyle className={"mt-20 text-4xl"} title={"Who Are We"} />
-        </div>
-
+        <div className={" w-full"}></div>
+        <img src={logo1} alt="no image" />
         <div className="md:w-full md:pl-0">
-          <Box
-            className="border-2 rounded-xl p-10"
-            text="We at Vault Games Studio are an extremely passionate team of game design experts, animations, creatives, developers. We provide bespoke and holistic game developement service right from the ideation stage to project completion. For further understanding of our work, check, out the video gallry below!"
-            boldText="Vault Games Studio"
-          />
-          <div className="flex flex-wrap -mx-4 bg-pink-200 text-black rounded-lg pt-5">
+          {/* <div className="flex flex-wrap -mx-4 bg-pink-200 text-black rounded-lg pt-5">
             {videoIds.map((videoId) => (
               <div
                 key={videoId}
@@ -66,14 +94,28 @@ const Home = () => {
                 <YouTubeCard videoId={videoId} />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
-      <Button text={"Get In Touch"} />
-
-      <HeadingStyle className={"mt-20 text-6xl"} title={"Service We Offer"} />
-
-      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
+      {/* <Button text={"Get In Touch"} /> */}
+      <HeadingStyle
+        className={
+          " font-sans subpixel-antialiased text-zinc-800 mt-12 text-5xl"
+        }
+        title={"Service We Offer"}
+      />
+      <div className="flex flex-col justify-center md:flex-row w-3/4 ">
+        <Box
+          className="font-sans"
+          text="We are a game development company specialised in creating high-quality games for various platforms"
+        />
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 ">
+        {images.map((card) => (
+          <ImageCard key={card.alt} src={card.url} title={card.tittle} />
+        ))}
+      </div>
+      {/* <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <ImageGallery images={images} />
         </div>
@@ -86,8 +128,8 @@ const Home = () => {
           />
         </div>
       </div>
-      <Button text={"Book Dev Demo"} />
-      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
+      {/* <Button text={"Book Dev Demo"} /> */}
+      {/* <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
         <div className="w-full md:w-1/2 md:pl-4">
           <InfoBox
             title={"Game Art"}
@@ -100,8 +142,8 @@ const Home = () => {
           <ImageGallery images={images} />
         </div>
       </div>
-      <Button text={"Book Design/Art Demo"} />
-      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
+      {/* <Button text={"Book Design/Art Demo"} /> */}
+      {/* <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <ImageGallery images={images.slice(0, 3)} />
         </div>
@@ -113,12 +155,12 @@ const Home = () => {
             }
           />
         </div>
-      </div>
-      <Button text={"Book Animation Demo"} className="mb-10" />
-      <div class="bg-stone-500 py-12 text-center">
+      </div>  */}
+      {/* <Button text={"Book Animation Demo"} className="mb-10" /> */}
+      <div class="bg-white py-12 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-extrabold text-white">Our Clients</h2>
-          <p class="mt-4 mb-10 text-xl  text-white">
+          <h2 class="text-3xl font-extrabold text-black">Our Clients</h2>
+          <p class="mt-4 mb-10 text-xl  text-black">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>

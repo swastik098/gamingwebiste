@@ -19,7 +19,7 @@ function Navigation() {
   return (
     <nav
       style={navStyle}
-      className="flex items-center justify-between flex-wrap bg-gray-800 p-8"
+      className="flex  font-sans-Roboto items-center justify-between flex-wrap bg-slate-800 p-8"
     >
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-semibold text-xl tracking-tight">
@@ -51,14 +51,7 @@ function Navigation() {
           showMenu ? "block" : "hidden"
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
       >
-        <div className="text-sm lg:text-right lg:flex-grow">
-          <NavLink
-            to="/"
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
-            onClick={closeMenu}
-          >
-            Home
-          </NavLink>
+        <div className="text-xl text-center space-x-20 lg:flex-grow">
           <NavLink
             to="/gamedevelopment"
             className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
@@ -94,14 +87,14 @@ function Navigation() {
           >
             Academy
           </NavLink>
-          <NavLink
-            href="/contact"
-            className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
-            onClick={closeMenu}
-          >
-            Get in Touch
-          </NavLink>
         </div>
+        <NavLink
+          href="/contact"
+          className="inline-block text-xl px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
+          onClick={closeMenu}
+        >
+          Get in Touch
+        </NavLink>
       </div>
     </nav>
   );

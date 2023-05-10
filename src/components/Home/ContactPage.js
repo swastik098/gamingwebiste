@@ -28,8 +28,10 @@ const ContactPage = () => {
 
   return (
     <div className="max-w-4xl mx-auto py-8 px-4 bg-neutral-700 rounded-lg mb-4">
-      <h1 className="text-5xl font-bold mb-4">Let's talk About Your Project</h1>
-      <p className="text-xl mb-4">
+      <h1 className="text-5xl text-white font-bold mb-4">
+        Let's talk About Your Project
+      </h1>
+      <p className="text-xl text-white mb-4">
         We are ready to discuss the details of your project and answer any of
         your questions: just fill out the form below
       </p>
@@ -108,7 +110,7 @@ const ContactPage = () => {
             />
             <span className="ml-2 text-white">
               I agree to the{" "}
-              <a href="#" className="underline">
+              <a href="#" value="" className="underline">
                 Terms &amp; Conditions
               </a>
             </span>
