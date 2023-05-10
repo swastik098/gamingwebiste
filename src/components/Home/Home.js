@@ -70,7 +70,7 @@ const Home = () => {
       <Slider />
       <HeadingStyle
         className={
-          " font-sans subpixel-antialiased text-zinc-800 mt-12 text-5xl"
+          " font-sans subpixel-antialiased text-zinc-800 mt-12 text-5xl text-center"
         }
         title={"Vault Games Studio"}
       />
@@ -100,7 +100,7 @@ const Home = () => {
       {/* <Button text={"Get In Touch"} /> */}
       <HeadingStyle
         className={
-          " font-sans subpixel-antialiased text-zinc-800 mt-12 text-5xl"
+          " font-sans subpixel-antialiased text-zinc-800 mt-12 text-5xl text-center"
         }
         title={"Service We Offer"}
       />
@@ -110,11 +110,12 @@ const Home = () => {
           text="We are a game development company specialised in creating high-quality games for various platforms"
         />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 ">
+      <div class="flex flex-wrap justify-center p-10 space-y-4">
         {images.map((card) => (
           <ImageCard key={card.alt} src={card.url} title={card.tittle} />
         ))}
       </div>
+
       {/* <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <ImageGallery images={images} />
@@ -197,7 +198,9 @@ const Home = () => {
           />
         </div>
       </div>
-      <ContactPage />
+      <div class="flex flex-wrap justify-between m-5">
+        <ContactPage />
+      </div>
     </div>
   );
 };
