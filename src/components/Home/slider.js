@@ -3,6 +3,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
 function Slider() {
+  const [isDesktop, setIsDesktop] = useState(false);
   const slides = [
     {
       url: require("../../assets/HighresScreenshot00003.png"),
@@ -64,10 +65,24 @@ function Slider() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex]);
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    setIsDesktop(mediaQuery.matches);
+
+    const handler = (e) => setIsDesktop(e.matches);
+    mediaQuery.addListener(handler);
+
+    return () => mediaQuery.removeListener(handler);
+  }, []);
+
   return (
     <div className="w-full h-screen relative group">
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        style={{
+          backgroundImage: `url(${
+            isDesktop ? slides[currentIndex].url : slides[currentIndex].url
+          })`,
+        }}
         className="w-full h-full bg-center bg-cover bg-no-repeat duration-500"
       ></div>
       {/* Left Arrow */}
@@ -83,7 +98,7 @@ function Slider() {
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer mx-2 "
+            className="text-2xl cursor-pointer mx-2 md:max-w-fit w-full overflow-x-hidden hidden sm:block my-2 sm:my-0"
           >
             <RxDotFilled />
           </div>
