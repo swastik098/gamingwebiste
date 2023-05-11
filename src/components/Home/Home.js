@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from "react";
+import React, { useState } from "react";
 import Slider from "./slider";
 import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
@@ -7,10 +7,12 @@ import Box from "./Box";
 import client1 from "../../assets/preview.jpg";
 import logo1 from "../../assets/Ag1_09.png";
 import ImageCard from "./ImageCard";
+import Button from "./Button";
 import InfoBox from "./InfoBox";
-// import logo from "../../assets/59888.jpg";
+import Course from "./Course";
+import ReactPlayer from "react-player";
+// import CourseThumbnail from "./CourseThumbnail";
 // import ImageGallery from "./ImageGallery";
-// import Button from "./Button";
 // import YouTubeCard from "./YoutubeVideoCard";
 
 // const videoIds = [
@@ -22,6 +24,52 @@ import InfoBox from "./InfoBox";
 // ];
 
 const Home = () => {
+  const [selectedCourseIndex, setSelectedCourseIndex] = useState(null);
+
+  const courses = [
+    {
+      title: "Course 1",
+      description: "This is the first course",
+      thumbnailUrl: "https://example.com/course1_thumbnail.jpg",
+      videoUrl: "https://example.com/course1_video.mp4",
+    },
+    {
+      title: "Course 2",
+      description: "This is the second course",
+      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+      videoUrl: "https://example.com/course2_video.mp4",
+    },
+    {
+      title: "Course 3",
+      description: "This is the second course",
+      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+      videoUrl: "https://example.com/course2_video.mp4",
+    },
+    {
+      title: "Course 4",
+      description: "This is the second course",
+      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+      videoUrl: "https://example.com/course2_video.mp4",
+    },
+    {
+      title: "Course 5",
+      description: "This is the second course",
+      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+      videoUrl: "https://example.com/course2_video.mp4",
+    },
+    {
+      title: "Course 6",
+      description: "This is the second course",
+      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+      videoUrl: "https://example.com/course2_video.mp4",
+    },
+    // Add more courses here
+  ];
+
+  const handleCourseClick = (index) => {
+    setSelectedCourseIndex(index);
+  };
+
   const images = [
     {
       url: require("../../assets/serviceImage/android.jpeg"),
@@ -64,9 +112,6 @@ const Home = () => {
       tittle: "VR & AR",
     },
   ];
-  // const cardImages = [{
-
-  // }]
 
   return (
     <div className="flex flex-col items-center justify-center bg-white text-black min-h-screen">
@@ -110,6 +155,7 @@ const Home = () => {
       <div className="flex flex-col justify-center md:flex-row w-3/4 ">
         <Box
           className="font-sans"
+          InfoBox
           text="We are a game development company specialised in creating high-quality games for various platforms"
         />
       </div>
@@ -136,35 +182,43 @@ const Home = () => {
           />
         </div>
       </div>
-      {/* <Button text={"Book Dev Demo"} />
-      {/* <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
-        <div className="w-full md:w-1/2 md:pl-4">
+      <Button text={"Book Dev Demo"} />
+      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
+        <div className="w-full md:w-1/2 md:pl-4 mt-10">
           <InfoBox
             title={"Game Art"}
             text={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonrisus. Suspendisse lectus tortor, dignissim sit amet, adipiscin nec, ultricies sed, dolor."
+              "Unlock your imagination with Vault Games Studio's game art design. Our skilled artists create stunning character designs that immerse you in the game's world. From concept to creation, we bring your vision to life with unmatched attention to detail."
             }
           />
         </div>
-        <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto bg-stone-500 ">
-          <ImageGallery images={images} />
+        <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
+          <img
+            src={require("../../assets/fun-3d-illustration-super-santa-claus-with-vr-helmet.jpg")}
+            alt="logo"
+            className="brand-logo"
+          />
         </div>
       </div>
-      {/* <Button text={"Book Design/Art Demo"} /> */}
-      {/* <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
+      <Button text={"Book Art Demo"} />
+      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
-          <ImageGallery images={images.slice(0, 3)} />
+          <img
+            src={require("../../assets/fun-3d-cartoon-teenage-kids.jpg")}
+            alt="logo"
+            className="brand-logo"
+          />
         </div>
-        <div className="w-full md:w-1/2 md:pl-4">
+        <div className="w-full md:w-1/2 md:pl-4 mt-10">
           <InfoBox
             title={"Animation"}
             text={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonrisus. Suspendisse lectus tortor, dignissim sit amet, adipiscin nec, ultricies sed, dolor."
+              "Experience the magic of storytelling like never before with Vault Games Studio's exceptional animation. Our skilled animators bring characters to life, crafting unforgettable moments that capture the imagination. From concept to final product, we take pride in our attention to detail and commitment to quality. Join us on a journey to a world of endless possibilities."
             }
           />
         </div>
-      </div>  */}
-      {/* <Button text={"Book Animation Demo"} className="mb-10" /> */}
+      </div>
+      <Button text={"Book Animation Demo"} className="mb-10" />
       <div class="bg-white py-12 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-extrabold text-black">Our Clients</h2>
@@ -204,6 +258,35 @@ const Home = () => {
             class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
         </div>
+      </div>
+      <div className="flex flex-wrap justify-center">
+        {selectedCourseIndex !== null ? (
+          <Course videoUrl={courses[selectedCourseIndex].videoUrl} />
+        ) : (
+          <>
+            {courses.map((course, index) => (
+              <div
+                key={index}
+                className="m-2 p-2 max-w-xs w-full md:max-w-sm rounded-lg border border-gray-200 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+                onClick={() => handleCourseClick(index)}
+              >
+                <div className="relative h-0 pb-2/3">
+                  <img
+                    className="absolute inset-0 object-cover object-center w-full h-full rounded-t-lg"
+                    src={course.thumbnailUrl}
+                    alt={course.title}
+                    width="300"
+                    height="200"
+                  />
+                </div>
+                <div className="mt-4">
+                  <h3 className="text-xl font-medium">{course.title}</h3>
+                  <p className="mt-2 text-gray-600">{course.description}</p>
+                </div>
+              </div>
+            ))}
+          </>
+        )}
       </div>
       <div class="flex flex-wrap justify-between m-5">
         <ContactPage />
