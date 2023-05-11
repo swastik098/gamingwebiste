@@ -1,0 +1,32 @@
+.animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+    opacity: 0;
+  }
+  .text-animation {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    animation: move-text 2s ease-in-out forwards, fade-in 2s ease-in-out;
+  }
+  
+  @keyframes move-text {
+    0% {
+      transform: translateX(100%) translateY(100%);
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

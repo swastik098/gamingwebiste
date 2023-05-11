@@ -51,7 +51,7 @@ function Navigation() {
           showMenu ? "block" : "hidden"
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
       >
-        <div className="text-xl text-center space-x-20 lg:flex-grow">
+        <div className="text-2xl text-center space-x-20 lg:flex-grow">
           <NavLink
             to="/gamedevelopment"
             className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"

@@ -1,16 +1,16 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import Slider from "./slider";
-// import ImageGallery from "./ImageGallery";
-// import InfoBox from "./InfoBox";
-// import Button from "./Button";
 import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
 import Box from "./Box";
 import client1 from "../../assets/preview.jpg";
-// import YouTubeCard from "./YoutubeVideoCard";
 import logo1 from "../../assets/Ag1_09.png";
 import ImageCard from "./ImageCard";
+// import ImageGallery from "./ImageGallery";
+// import InfoBox from "./InfoBox";
+// import Button from "./Button";
+// import YouTubeCard from "./YoutubeVideoCard";
 
 // const videoIds = [
 //   "eciP7ixTNec",
@@ -23,45 +23,45 @@ import ImageCard from "./ImageCard";
 const Home = () => {
   const images = [
     {
-      url: require("../../assets/android.png"),
+      url: require("../../assets/serviceImage/android.jpeg"),
       alt: "Image 1",
       tittle: "Mobile Game development",
     },
     {
-      url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
+      url: require("../../assets/serviceImage/unity.png"),
       alt: "Image 2",
       tittle: "Unity Game development",
     },
     {
-      url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
+      url: require("../../assets/serviceImage/html5logo.jpeg"),
       alt: "Image 3",
       tittle: "HTML5 Game development",
     },
 
     {
-      url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
+      url: require("../../assets/serviceImage//unreal.png"),
       alt: "Image 4",
       tittle: "Unreal Game development",
     },
     {
-      url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
+      url: require("../../assets/serviceImage/artndesign.jpg"),
       alt: "Image 5",
-      tittle: "Art And Design",
+      tittle: "Art & Design",
     },
     {
-      url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
+      url: require("../../assets/serviceImage/MetaverseLogo.jpeg"),
       alt: "Image 4",
       tittle: "Metaverse Projects",
     },
     {
-      url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
+      url: require("../../assets/serviceImage/gamification.jpg"),
       alt: "Image 5",
       tittle: "Gamification",
     },
     {
-      url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
+      url: require("../../assets/serviceImage/vr&argames.jpeg"),
       alt: "Image 6",
-      title: "VR And AR",
+      tittle: "VR & AR",
     },
   ];
 
@@ -70,7 +70,7 @@ const Home = () => {
       <Slider />
       <HeadingStyle
         className={
-          " font-sans subpixel-antialiased text-zinc-800 mt-12 text-5xl"
+          " font-sans subpixel-antialiased text-zinc-800 mt-20 text-6xl "
         }
         title={"Vault Games Studio"}
       />

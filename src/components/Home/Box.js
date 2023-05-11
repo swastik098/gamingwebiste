@@ -6,7 +6,7 @@ const Box = ({ text, className, boldText }) => {
     <>
       <div className="p-5">
         <p
-          className={`text-20xl md:text-base leading-relaxed text-center ${className}`}
+          className={`text-5xl md:text-base leading-relaxed text-center ${className}`}
         >
           {parts[0]}
           <span className="font-bold">{boldText}</span>
@@ -16,5 +16,4 @@ const Box = ({ text, className, boldText }) => {
     </>
   );
 };
-
 export default Box;
