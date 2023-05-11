@@ -19,7 +19,7 @@ function Navigation() {
   return (
     <nav
       style={navStyle}
-      className="flex  font-sans-Roboto items-center justify-between flex-wrap bg-slate-800 p-8"
+      className="flex  font-sans-Roboto items-center justify-between flex-wrap bg-slate-800 bg-blend-screen p-8"
     >
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-semibold text-xl tracking-tight">

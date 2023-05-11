@@ -7,8 +7,9 @@ import Box from "./Box";
 import client1 from "../../assets/preview.jpg";
 import logo1 from "../../assets/Ag1_09.png";
 import ImageCard from "./ImageCard";
+import InfoBox from "./InfoBox";
+// import logo from "../../assets/59888.jpg";
 // import ImageGallery from "./ImageGallery";
-// import InfoBox from "./InfoBox";
 // import Button from "./Button";
 // import YouTubeCard from "./YoutubeVideoCard";
 
@@ -37,7 +38,6 @@ const Home = () => {
       alt: "Image 3",
       tittle: "HTML5 Game development",
     },
-
     {
       url: require("../../assets/serviceImage//unreal.png"),
       alt: "Image 4",
@@ -64,6 +64,9 @@ const Home = () => {
       tittle: "VR & AR",
     },
   ];
+  // const cardImages = [{
+
+  // }]
 
   return (
     <div className="flex flex-col items-center justify-center bg-white text-black min-h-screen">
@@ -116,20 +119,24 @@ const Home = () => {
         ))}
       </div>
 
-      {/* <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
+      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
-          <ImageGallery images={images} />
+          <img
+            src={require("../../assets/59888.jpg")}
+            alt="logo"
+            className="brand-logo"
+          />
         </div>
-        <div className="w-full md:w-1/2 md:pl-4">
+        <div className="w-full md:w-1/2 md:pl-4 mt-20">
           <InfoBox
             title={"Game Development"}
             text={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonrisus. Suspendisse lectus tortor, dignissim sit amet, adipiscin nec, ultricies sed, dolor."
+              "Unlock the door to exceptional gaming experiences with Vault Games Studio. From captivating storylines to cutting-edge technology, we bring your gaming dreams to life. Immerse yourself in endless possibilities and get ready for the adventure of a lifetime. Join us on the journey to new worlds of fun and excitement."
             }
           />
         </div>
       </div>
-      {/* <Button text={"Book Dev Demo"} /> */}
+      {/* <Button text={"Book Dev Demo"} />
       {/* <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
         <div className="w-full md:w-1/2 md:pl-4">
           <InfoBox

@@ -31,20 +31,46 @@ export const Menu = [
   },
 ];
 
-export const slides = [
+export const Images = [
   {
-    image: "lide_image_1",
-    title: "Slider Title 1",
-    subtitle: "Slider Subtitle 1",
+    url: require("../../assets/serviceImage/android.jpeg"),
+    alt: "Image 1",
+    tittle: "Mobile Game development",
   },
   {
-    image: "lide_image_1",
-    title: "Slider Title 2",
-    subtitle: "Slider Subtitle 2",
+    url: require("../../assets/serviceImage/unity.png"),
+    alt: "Image 2",
+    tittle: "Unity Game development",
   },
   {
-    image: "lide_image_1",
-    title: "Slider Title 3",
-    subtitle: "Slider Subtitle 3",
+    url: require("../../assets/serviceImage/html5logo.jpeg"),
+    alt: "Image 3",
+    tittle: "HTML5 Game development",
+  },
+
+  {
+    url: require("../../assets/serviceImage//unreal.png"),
+    alt: "Image 4",
+    tittle: "Unreal Game development",
+  },
+  {
+    url: require("../../assets/serviceImage/artndesign.jpg"),
+    alt: "Image 5",
+    tittle: "Art & Design",
+  },
+  {
+    url: require("../../assets/serviceImage/MetaverseLogo.jpeg"),
+    alt: "Image 4",
+    tittle: "Metaverse Projects",
+  },
+  {
+    url: require("../../assets/serviceImage/gamification.jpg"),
+    alt: "Image 5",
+    tittle: "Gamification",
+  },
+  {
+    url: require("../../assets/serviceImage/vr&argames.jpeg"),
+    alt: "Image 6",
+    tittle: "VR & AR",
   },
 ];
