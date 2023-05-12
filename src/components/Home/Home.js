@@ -118,13 +118,13 @@ const Home = () => {
       <Slider />
       <HeadingStyle
         className={
-          " font-sans subpixel-antialiased text-zinc-800 mt-12 text-5xl"
+          " font-sans subpixel-antialiased text-zinc-800 mt-12 text-5xl text-center"
         }
         title={"Vault Games Studio"}
       />
       <div className="flex flex-col md:flex-row justify-between w-3/4 ">
         <Box
-          className="font-sans"
+          className="font-sans text-xl md:text-base leading-relaxed text-center"
           text="We at Vault Games Studio are an extremely passionate team of game design experts, animations, creatives, developers. We provide bespoke and holistic game developement service right from the ideation stage to project completion. For further understanding of our work, check, out the video gallry below!"
           boldText="Vault Games Studio"
         />
@@ -154,8 +154,7 @@ const Home = () => {
       />
       <div className="flex flex-col justify-center md:flex-row w-3/4 ">
         <Box
-          className="font-sans"
-          InfoBox
+          className="font-sans text-xl md:text-base leading-relaxed text-center"
           text="We are a game development company specialised in creating high-quality games for various platforms"
         />
       </div>

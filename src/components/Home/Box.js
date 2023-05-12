@@ -5,9 +5,7 @@ const Box = ({ text, className, boldText }) => {
   return (
     <>
       <div className="p-5">
-        <p
-          className={`text-5xl md:text-base leading-relaxed text-center ${className}`}
-        >
+        <p className={`${className}`}>
           {parts[0]}
           <span className="font-bold">{boldText}</span>
           {parts[1]}
