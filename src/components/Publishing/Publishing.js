@@ -1,7 +1,14 @@
 import React from "react";
+import OtherServices from "./OtherServices";
+import SkewedDesign from "./TopSection";
 
-function Publishing() {
-  return <div>Publishing</div>;
-}
+const Publishing = () => {
+  return (
+    <>
+      <SkewedDesign />
+      <OtherServices />
+    </>
+  );
+};
 
 export default Publishing;
