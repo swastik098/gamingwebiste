@@ -10,10 +10,10 @@ import ImageCard from "./ImageCard";
 import Button from "./Button";
 import InfoBox from "./InfoBox";
 import Course from "./Course";
-import ReactPlayer from "react-player";
+// import YouTubeCard from "./YoutubeVideoCard";
+// import ReactPlayer from "react-player";
 // import CourseThumbnail from "./CourseThumbnail";
 // import ImageGallery from "./ImageGallery";
-// import YouTubeCard from "./YoutubeVideoCard";
 
 // const videoIds = [
 //   "eciP7ixTNec",
@@ -125,25 +125,13 @@ const Home = () => {
       <div className="flex flex-col md:flex-row justify-between w-3/4 ">
         <Box
           className="font-sans"
-          text="We at Vault Games Studio are an extremely passionate team of game design experts, animations, creatives, developers. We provide bespoke and holistic game developement service right from the ideation stage to project completion. For further understanding of our work, check, out the video gallry below!"
+          text="We at Vault Games Studio is a team of extremely passionate Artists, game designer and programmer experts. We create immersive, innovative, and entertaining gaming experiences that bring people together and push the boundaries of what is possible in the gaming industry.We provide bespoke and holistic game developement service right from the ideation stage to project completion."
           boldText="Vault Games Studio"
         />
       </div>
-      <div className="flex flex-col md:flex-row justify-between w-3/4 py-10">
-        <div className={" w-full"}></div>
+      <div className="flex flex-col md:flex-row  w-3/4 py-10 justify-center items-center">
+        {/* <div className={" w-full"}></div> */}
         <img src={logo1} alt="no image" />
-        <div className="md:w-full md:pl-0">
-          {/* <div className="flex flex-wrap -mx-4 bg-pink-200 text-black rounded-lg pt-5">
-            {videoIds.map((videoId) => (
-              <div
-                key={videoId}
-                className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-2"
-              >
-                <YouTubeCard videoId={videoId} />
-              </div>
-            ))}
-          </div> */}
-        </div>
       </div>
       {/* <Button text={"Get In Touch"} /> */}
       <HeadingStyle
@@ -156,7 +144,7 @@ const Home = () => {
         <Box
           className="font-sans"
           InfoBox
-          text="We are a game development company specialised in creating high-quality games for various platforms"
+          text="We strive to craft games that engage players on a deep level, inspire creativity, and foster a sense of community. We are committed to delivering high-quality products that are accessible to all, while also prioritizing the needs and desires of our most dedicated fans. Through our dedication to excellence, we aim to be a leader in the gaming industry and to help shape the future of interactive entertainment."
         />
       </div>
       <div class="flex flex-wrap justify-center p-10 space-y-4">
@@ -259,6 +247,14 @@ const Home = () => {
           />
         </div>
       </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-extrabold text-black">
+          Our Game Desgin Courses
+        </h2>
+        <p class="mt-4 mb-10 text-xl  text-black">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
       <div className="flex flex-wrap justify-center">
         {selectedCourseIndex !== null ? (
           <Course videoUrl={courses[selectedCourseIndex].videoUrl} />
@@ -267,7 +263,7 @@ const Home = () => {
             {courses.map((course, index) => (
               <div
                 key={index}
-                className="m-2 p-2 max-w-xs w-full md:max-w-sm rounded-lg border border-gray-200 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+                className="m-2 p-2 max-hw-xs w-full md:max-w-sm rounded-lg border border-gray-200 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer"
                 onClick={() => handleCourseClick(index)}
               >
                 <div className="relative h-0 pb-2/3">
@@ -288,6 +284,18 @@ const Home = () => {
           </>
         )}
       </div>
+      {/* <div className="md:w-full md:pl-0">
+        <div className="flex flex-wrap -mx-4 bg-pink-200 text-black rounded-lg pt-5 justify-center items-center">
+          {videoIds.map((videoId) => (
+            <div
+              key={videoId}
+              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-2"
+            >
+              <YouTubeCard videoId={videoId} />
+            </div>
+          ))}
+        </div>
+      </div> */}
       <div class="flex flex-wrap justify-between m-5">
         <ContactPage />
       </div>
