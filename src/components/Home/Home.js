@@ -77,14 +77,14 @@ const Home = () => {
       tittle: "Mobile Game development",
     },
     {
-      url: require("../../assets/serviceImage/unity.png"),
-      alt: "Image 2",
-      tittle: "Unity Game development",
-    },
-    {
       url: require("../../assets/serviceImage/html5logo.jpeg"),
       alt: "Image 3",
       tittle: "HTML5 Game development",
+    },
+    {
+      url: require("../../assets/serviceImage/unity.png"),
+      alt: "Image 2",
+      tittle: "Unity Game development",
     },
     {
       url: require("../../assets/serviceImage//unreal.png"),
@@ -160,7 +160,7 @@ const Home = () => {
             className="brand-logo"
           />
         </div>
-        <div className="w-full md:w-1/2 md:pl-4 mt-20">
+        <div className=" justify-center w-full md:w-1/2 md:pl-4 mt-20">
           <InfoBox
             title={"Game Development"}
             text={
@@ -171,7 +171,7 @@ const Home = () => {
       </div>
       <Button text={"Book Dev Demo"} />
       <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
-        <div className="w-full md:w-1/2 md:pl-4 mt-10">
+        <div className="w-full md:w-1/2 md:pl-4 mt-10 justify-center">
           <InfoBox
             title={"Game Art"}
             text={
@@ -179,7 +179,7 @@ const Home = () => {
             }
           />
         </div>
-        <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
+        <div className="w-full md:w-1/2 md:pr-4 space-x-6 ">
           <img
             src={require("../../assets/fun-3d-illustration-super-santa-claus-with-vr-helmet.jpg")}
             alt="logo"

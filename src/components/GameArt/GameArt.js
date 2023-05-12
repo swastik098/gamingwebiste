@@ -52,11 +52,6 @@ const GameArt = () => {
       heading: "Image 10",
       description: "This is the description for Image 10",
     },
-    {
-      url: require("../../assets/MergeDragons_Banner-min.png"),
-      heading: "Image 11",
-      description: "This is the description for Image 11",
-    },
   ];
   return (
     <div className="flex flex-wrap justify-center items-center">

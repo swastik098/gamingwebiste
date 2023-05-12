@@ -117,26 +117,14 @@ const ContactPage = () => {
             </span>
           </label>
         </div>
-        <div className="mb-4">
-          <label className="inline-flex items-center">
-            <input
-              type="checkbox"
-              name="receiveUpdates"
-              className="form-checkbox h-5 w-5 text-gray-600"
-              checked={formData.receiveUpdates}
-              onChange={handleChange}
-            />
-            <span className="ml-2 text-white">
-              I want to receive news and our portfolio updates once in a while
-            </span>
-          </label>
+        <div className=" flex justify-center items-center">
+          <button
+            type="submit"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Contact Us
+          </button>
         </div>
-        <button
-          type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-        >
-          Contact Us
-        </button>
       </form>
     </div>
   );
