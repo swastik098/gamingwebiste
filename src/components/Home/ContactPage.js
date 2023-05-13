@@ -28,7 +28,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4 bg-neutral-700 rounded-lg mb-4">
+    <div className="max-w-4xl mx-auto py-8 px-4 bg-neutral-700 rounded-lg m-6">
       <h1 className="text-5xl text-white font-bold mb-4">
         Let's talk About Your Project
       </h1>
