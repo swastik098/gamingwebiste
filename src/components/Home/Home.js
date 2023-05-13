@@ -4,8 +4,6 @@ import Slider from "./slider";
 import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
 import Box from "./Box";
-import client1 from "../../assets/preview.jpg";
-import logo1 from "../../assets/Ag1_09.png";
 import ImageCard from "./ImageCard";
 import Button from "./Button";
 import InfoBox from "./InfoBox";
@@ -72,42 +70,42 @@ const Home = () => {
 
   const images = [
     {
-      url: require("../../assets/serviceImage/android.jpeg"),
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/android_fkfyry.jpg",
       alt: "Image 1",
       tittle: "Mobile Game development",
     },
     {
-      url: require("../../assets/serviceImage/html5logo.jpeg"),
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/html5logo_zrgvvq.jpg",
       alt: "Image 3",
       tittle: "HTML5 Game development",
     },
     {
-      url: require("../../assets/serviceImage/unity.png"),
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/unity_m3nhgn.png",
       alt: "Image 2",
       tittle: "Unity Game development",
     },
     {
-      url: require("../../assets/serviceImage//unreal.png"),
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/unreal_hp3guy.png",
       alt: "Image 4",
       tittle: "Unreal Game development",
     },
     {
-      url: require("../../assets/serviceImage/artndesign.jpg"),
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/artndesign_r5gu56.jpg",
       alt: "Image 5",
       tittle: "Art & Design",
     },
     {
-      url: require("../../assets/serviceImage/MetaverseLogo.jpeg"),
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/MetaverseLogo_dlwzz3.jpg",
       alt: "Image 4",
       tittle: "Metaverse Projects",
     },
     {
-      url: require("../../assets/serviceImage/gamification.jpg"),
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/gamification_hk84i5.jpg",
       alt: "Image 5",
       tittle: "Gamification",
     },
     {
-      url: require("../../assets/serviceImage/vr&argames.jpeg"),
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957506/Vault%20Games/serviceImages/vr_argames_tjvgcx.jpg",
       alt: "Image 6",
       tittle: "VR & AR",
     },
@@ -131,7 +129,12 @@ const Home = () => {
       </div>
       <div className="flex flex-col md:flex-row  w-3/4 py-10 justify-center items-center">
         {/* <div className={" w-full"}></div> */}
-        <img src={logo1} alt="no image" />
+        <img
+          src={
+            "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958193/Vault%20Games/homePage/Ag1_09_dyqrvc.png"
+          }
+          alt="no image"
+        />
       </div>
       {/* <Button text={"Get In Touch"} /> */}
       <HeadingStyle
@@ -155,7 +158,7 @@ const Home = () => {
       <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
-            src={require("../../assets/59888.jpg")}
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958186/Vault%20Games/homePage/59888_bjyjn7.jpg"
             alt="logo"
             className="brand-logo"
           />
@@ -181,7 +184,7 @@ const Home = () => {
         </div>
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 ">
           <img
-            src={require("../../assets/fun-3d-illustration-super-santa-claus-with-vr-helmet.jpg")}
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958218/Vault%20Games/homePage/fun-3d-illustration-super-santa-claus-with-vr-helmet_cx5rk7.jpg"
             alt="logo"
             className="brand-logo"
           />
@@ -191,7 +194,7 @@ const Home = () => {
       <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
-            src={require("../../assets/fun-3d-cartoon-teenage-kids.jpg")}
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958204/Vault%20Games/homePage/fun-3d-cartoon-teenage-kids_yknuga.jpg"
             alt="logo"
             className="brand-logo"
           />
@@ -209,38 +212,38 @@ const Home = () => {
       <div class="bg-white py-12 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-extrabold text-black">Our Clients</h2>
-          <p class="mt-4 mb-10 text-xl  text-black">
+          {/* <p class="mt-4 mb-10 text-xl  text-black">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+          </p> */}
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center flex-wrap">
           <img
-            src={client1}
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
             alt="Client 1"
             class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
           <img
-            src={client1}
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
             alt="Client 2"
             class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
           <img
-            src={client1}
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
             alt="Client 3"
             class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
           <img
-            src={client1}
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
             alt="Client 4"
             class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
           <img
-            src={client1}
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
             alt="Client 5"
             class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
           <img
-            src={client1}
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
             alt="Client 6"
             class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
@@ -250,9 +253,9 @@ const Home = () => {
         <h2 class="text-3xl font-extrabold text-black">
           Our Game Desgin Courses
         </h2>
-        <p class="mt-4 mb-10 text-xl  text-black">
+        {/* <p class="mt-4 mb-10 text-xl  text-black">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+        </p> */}
       </div>
       <div className="flex flex-wrap justify-center">
         {selectedCourseIndex !== null ? (

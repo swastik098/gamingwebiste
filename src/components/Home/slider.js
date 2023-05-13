@@ -6,55 +6,22 @@ function Slider() {
   const [isDesktop, setIsDesktop] = useState(false);
   const slides = [
     {
-      url: "https://images.unsplash.com/photo-1490810194309-344b3661ba39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1448&q=80",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956860/Vault%20Games/concept_games_enemies_2_1_wfr657.png",
     },
     {
-      url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956882/Vault%20Games/game_conceprt2_fcuruo.png",
     },
     {
-      url: "https://images.unsplash.com/photo-1639931897192-caa5fe8a628c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956919/Vault%20Games/bg_fight2_2_hgwirv.png",
     },
 
     {
-      url: "https://images.unsplash.com/photo-1529154691717-3306083d869e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956900/Vault%20Games/platformer_concept_2_afnbip.png",
     },
     {
-      url: "https://images.unsplash.com/photo-1527690789675-4ea7d8da4fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=792&q=80",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956884/Vault%20Games/game_conceprt_szxz5s.png",
     },
   ];
-  // const slides = [
-  //   {
-  //     url: require("../../assets/HighresScreenshot00003.png"),
-  //   },
-  //   {
-  //     url: require("../../assets/HighresScreenshot00002.png"),
-  //   },
-  //   { url: require("../../assets/HighresScreenshot00014.png") },
-  //   {
-  //     url: require("../../assets/HighresScreenshot00001.png"),
-  //   },
-  //   {
-  //     url: require("../../assets/HighresScreenshot00004.jpg"),
-  //   },
-  //   {
-  //     url: require("../../assets/tmp_8db7e837-330e-4cbe-913f-09888bf11146.jpg"),
-  //   },
-  //   {
-  //     url: require("../../assets/tmp_311052b8-8f06-43b7-9fd1-d4f29c78867d.jpg"),
-  //   },
-  //   {
-  //     url: require("../../assets/tmp_0abe01fd-bfac-4f80-bb6e-2f2b19754c73.jpg"),
-  //   },
-  //   {
-  //     url: require("../../assets/murali-krishna-highresscreenshot00001.jpg"),
-  //   },
-  //   {
-  //     url: require("../../assets/murali-krishna-highresscreenshot00006.jpg"),
-  //   },
-  //   {
-  //     url: require("../../assets/MergeDragons_Banner-min.png"),
-  //   },
-  // ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 

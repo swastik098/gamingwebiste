@@ -4,10 +4,12 @@ import SkewedDesign from "./TopSection";
 
 const Publishing = () => {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <SkewedDesign />
-      <OtherServices />
-    </>
+      <div className="flex-grow overflow-y-auto">
+        <OtherServices />
+      </div>
+    </div>
   );
 };
 
