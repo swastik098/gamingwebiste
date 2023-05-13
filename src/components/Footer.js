@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="pt-16 pb-8 bg-gradient-to-r to-yellow-400 from-red-500">
+    <footer className="pt-16 pb-8 bg-gradient-to-r to-yellow-400 from-red-500 mt-16">
       <div className="max-w-6xl m-auto flex flex-wrap justify-left">
         <div className="p-4 w-full md:w-1/4">
           <div className="text-white uppercase mb-6 font-bold">
