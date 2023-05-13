@@ -8,6 +8,7 @@ import Tab from "@mui/material/Tab";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import Paper from "@mui/material/Paper";
 import { Button, CardActionArea } from "@mui/material";
 import blue_fish from "../../assets/New folder/blue_fish.png";
 
@@ -20,11 +21,11 @@ const GameDevelopment = () => {
   const myref3 = useRef(null);
 
   const handleitemOne = () => {
-    console.log("log");
     myref?.current.scrollIntoView();
   };
 
   const handleitemTwo = () => {
+    console.log("log");
     myref2?.current.scrollIntoView();
   };
 
@@ -101,6 +102,7 @@ const GameDevelopment = () => {
               cursor: "pointer",
               borderRadius: "30px",
             }}
+            onClick={handleitemTwo}
           >
             Pc Game Development
           </Typography>
@@ -116,31 +118,45 @@ const GameDevelopment = () => {
               cursor: "pointer",
               borderRadius: "30px",
             }}
+            onClick={handleitemThree}
           >
             Technologies/Game Engines
           </Typography>
         </Grid>
       </Grid>
-      <Grid container>
+      {/* <Grid container>
         <Grid item sm={12}>
           <div>
             {images && images?.length > 0 ? (
               <ImageGallery
                 items={images}
-                showFullscreenButton={true}
+                showFullscreenButton={false}
                 showPlayButton={false}
                 // showThumbnails={true}
               />
             ) : null}
           </div>
         </Grid>
-      </Grid>
+      </Grid> */}
+      {images && images?.length > 0 ? (
+        <Paper elevation={3} className="developmentDetails_Carousel_Outer">
+          <Box className="developmentDetails_Carousel">
+            <ImageGallery
+              items={images}
+              showFullscreenButton={false}
+              showPlayButton={false}
+              showThumbnails={true}
+            />
+          </Box>
+        </Paper>
+      ) : null}
 
-      <Grid container spacing={2}>
+      <Grid container spacing={2} ref={myref}>
         <Grid item sm={4}></Grid>
         <Grid item sm={4}>
           <Typography
             sx={{ textAlign: "center", fontSize: "30px", fontWeight: "bold" }}
+            // onClick={handleitemTwo}
           >
             Mobile Game Development{" "}
           </Typography>
@@ -155,24 +171,32 @@ const GameDevelopment = () => {
       </Tabs>
 
       <TabPanel value={value} index={0}>
-        <Grid container spacing={2}>
-          <Grid item sm={6}>
-            <Card sx={{ maxWidth: 345, height: "500px", textAlign: "center" }}>
+        <Grid
+          container
+          spacing={0}
+          direction="row"
+          alignItems="center"
+          justifyContent="center"
+          style={{ minHeight: "100vh" }}
+        >
+          <Grid item sm={5}>
+            <div></div>
+            <Card sx={{ maxWidth: 500, height: "500px" }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   // height=""
-                  image={blue_fish}
+                  image="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956884/Vault%20Games/image_2022_12_21T12_28_39_585Z_uo49ep.png"
                   alt="green iguana"
                   sx={{ height: "500px" }}
                 />
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item sm={6}>
+          <Grid item sm={5}>
             <Card
               sx={{
-                maxWidth: 345,
+                maxWidth: 500,
                 height: "500px",
                 backgroundColor: "#ef4444",
               }}
@@ -202,24 +226,31 @@ const GameDevelopment = () => {
       </TabPanel>
 
       <TabPanel value={value} index={1}>
-        <Grid container spacing={2}>
-          <Grid item sm={6}>
-            <Card sx={{ maxWidth: 345, height: "500px", textAlign: "center" }}>
+        <Grid
+          container
+          spacing={0}
+          direction="row"
+          alignItems="center"
+          justifyContent="center"
+          style={{ minHeight: "100vh" }}
+        >
+          <Grid item sm={5}>
+            <Card sx={{ maxWidth: 500, height: "500px", textAlign: "center" }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   // height=""
-                  image={blue_fish}
+                  image="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956886/Vault%20Games/piranha_wuxiz6.png"
                   alt="green iguana"
                   sx={{ height: "500px" }}
                 />
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item sm={6}>
+          <Grid item sm={5}>
             <Card
               sx={{
-                maxWidth: 345,
+                maxWidth: 500,
                 height: "500px",
                 backgroundColor: "#ef4444",
               }}
@@ -280,7 +311,7 @@ const GameDevelopment = () => {
         <Grid item sm={2}></Grid>
         <Grid item sm={2}></Grid>
       </Grid>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} ref={myref2}>
         <Grid item sm={4}></Grid>
         <Grid item sm={4}>
           <Typography
@@ -294,7 +325,7 @@ const GameDevelopment = () => {
         <Grid item sm={4}></Grid>
       </Grid>
 
-      <Grid container spacing={2}>
+      <Grid container spacing={2} ref={myref3}>
         <Grid item sm={4}></Grid>
         <Grid item sm={4}>
           <Typography
@@ -364,7 +395,7 @@ const GameDevelopment = () => {
         </Grid>
         {/* <Grid item sm={1}></Grid> */}
       </Grid>
-      <Grid  container spacing={2} sx={{ height: "300px", marginTop: "-2px" }}>
+      <Grid container spacing={2} sx={{ height: "300px", marginTop: "-2px" }}>
         <Grid item sm={6}>
           <Typography
             sx={{

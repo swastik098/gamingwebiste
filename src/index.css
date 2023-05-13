@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.image-gallery-slide .image-gallery-image {
+    width: 100%;
+    object-fit: cover;
+}
 body {
     font-family: "hauss", "Tahoma", "Sans-Serif";
     font-size: 16px;
