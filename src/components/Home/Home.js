@@ -112,17 +112,17 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center bg-white text-black min-h-screen">
+    <div className="flex flex-col items-center justify-center bg-white text-black min-h-screen font-sans">
       <Slider />
       <HeadingStyle
         className={
-          " font-sans subpixel-antialiased text-zinc-800 mt-12 text-5xl text-center"
+          " subpixel-antialiased text-zinc-800 mt-12 text-5xl text-center"
         }
         title={"Vault Games Studio"}
       />
       <div className="flex flex-col md:flex-row justify-between w-3/4 ">
         <Box
-          className="font-sans text-xl md:text-base leading-relaxed text-center"
+          className=" text-xl md:text-base leading-relaxed text-center"
           text="We at Vault Games Studio are an extremely passionate team of game design experts, animations, creatives, developers. We provide bespoke and holistic game developement service right from the ideation stage to project completion. For further understanding of our work, check, out the video gallry below!"
           boldText="Vault Games Studio"
         />
@@ -139,7 +139,7 @@ const Home = () => {
       {/* <Button text={"Get In Touch"} /> */}
       <HeadingStyle
         className={
-          " font-sans subpixel-antialiased text-zinc-800 mt-12 text-5xl text-center"
+          " subpixel-antialiased text-zinc-800 mt-12 text-5xl text-center"
         }
         title={"Service We Offer"}
       />
@@ -163,7 +163,7 @@ const Home = () => {
             className="brand-logo"
           />
         </div>
-        <div className=" justify-center w-full md:w-1/2 md:pl-4 mt-20">
+        <div className="w-full md:w-1/2 md:pl-4 mt-20">
           <InfoBox
             title={"Game Development"}
             text={
@@ -173,7 +173,7 @@ const Home = () => {
         </div>
       </div>
       <Button text={"Book Dev Demo"} />
-      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
+      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center">
         <div className="w-full md:w-1/2 md:pl-4 mt-10 justify-center">
           <InfoBox
             title={"Game Art"}
@@ -182,7 +182,7 @@ const Home = () => {
             }
           />
         </div>
-        <div className="w-full md:w-1/2 md:pr-4 space-x-6 ">
+        <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
             src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958218/Vault%20Games/homePage/fun-3d-illustration-super-santa-claus-with-vr-helmet_cx5rk7.jpg"
             alt="logo"
@@ -190,8 +190,9 @@ const Home = () => {
           />
         </div>
       </div>
-      <Button text={"Book Art Demo"} />
-      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
+
+      <Button on text={"Book Art Demo"} />
+      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 items-center">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
             src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958204/Vault%20Games/homePage/fun-3d-cartoon-teenage-kids_yknuga.jpg"
@@ -298,7 +299,7 @@ const Home = () => {
           ))}
         </div>
       </div> */}
-      <div class="flex flex-wrap justify-between m-5">
+      <div class="flex flex-wrap justify-between m-5" id="contact-section">
         <ContactPage />
       </div>
     </div>
