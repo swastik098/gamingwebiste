@@ -16,31 +16,31 @@ const Footer = () => {
             Most in-Demand Services
           </div>
           <NavLink
-            to="/gamedevelopement"
+            to="/gamedevelopment"
             className="my-3 block text-white hover:text-white text-sm font-medium duration-700"
           >
             Game Development
           </NavLink>
           <NavLink
-            href="gameart"
+            to="/gameart"
             className="my-3 block text-white hover:text-white text-sm font-medium duration-700"
           >
             Game Art
           </NavLink>
           <NavLink
-            href="#"
+            to="/animation"
             className="my-3 block text-white hover:text-white text-sm font-medium duration-700"
           >
             Animation
           </NavLink>
           <NavLink
-            href="#"
+            to="/publishing"
             className="my-3 block text-white hover:text-white text-sm font-medium duration-700"
           >
             Publishing
           </NavLink>
           <NavLink
-            href="#"
+            to="/academy"
             className="my-3 block text-white hover:text-white text-sm font-medium duration-700"
           >
             Academy
@@ -112,13 +112,13 @@ const Footer = () => {
             </a>
           </div>
           <a
-            href="#"
+            href="mailto:website@vaultgamesstudio.com"
             className="my-3 block text-white hover:text-white text-sm font-medium duration-700"
           >
             Email: website@vaultgamesstudio.com
           </a>
           <a
-            href="#"
+            href="tel:18001234567"
             className="my-3 block text-white hover:text-white text-sm font-medium duration-700"
           >
             Phone: 1-800-123-4567

@@ -4,6 +4,13 @@ import { NavLink } from "react-router-dom";
 function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
 
+  const handleGetInTouchClick = () => {
+    const contactSection = document.getElementById("contact-section");
+    if (contactSection && contactSection.scrollIntoView) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const closeMenu = () => {
     setShowMenu(false);
   };
@@ -89,9 +96,14 @@ function Navigation() {
           </NavLink>
         </div>
         <NavLink
-          href="/contact"
+          to={"/contact"}
+          onClick={() => {
+            handleGetInTouchClick();
+            closeMenu();
+          }}
+          // onClick={handleGetInTouchClick}
           className="inline-block text-xl px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
-          onClick={closeMenu}
+          // onClick={closeMenu}
         >
           Get In Touch
         </NavLink>
