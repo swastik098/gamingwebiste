@@ -1,17 +1,11 @@
-import React, { useEffect } from "react";
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
 import GameDevelopment from "./components/GameDevelopement/GameDevelopment";
 import GameArt from "./components/GameArt/GameArt";
 import Publishing from "./components/Publishing/Publishing";
-import Animation from "./components/Animation/Animation";
-import Academy from "./components/Academy/Academy";
 import Footer from "./components/Footer";
 import Navigation from "./components/Headers";
-import Contact from "./components/Home/Contact";
 import ContactPage from "./components/Home/ContactPage";
-import { useLocation } from "react-router-dom";
 
 function App() {
   return (

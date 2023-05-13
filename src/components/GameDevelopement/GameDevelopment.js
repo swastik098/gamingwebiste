@@ -9,8 +9,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Paper from "@mui/material/Paper";
-import { Button, CardActionArea } from "@mui/material";
-import blue_fish from "../../assets/New folder/blue_fish.png";
+import { CardActionArea } from "@mui/material";
 
 import Box from "@mui/material/Box";
 import { images } from "../../utils/helper";
@@ -279,6 +278,18 @@ const GameDevelopment = () => {
         </Grid>
       </TabPanel>
 
+      <Grid container spacing={2} ref={myref2}>
+        <Grid item sm={4}></Grid>
+        <Grid item sm={4}>
+          <Typography
+            sx={{ textAlign: "center", fontSize: "30px", fontWeight: "bold" }}
+          >
+            PC Game Development
+          </Typography>
+        </Grid>
+        <Grid item sm={4}></Grid>
+      </Grid>
+
       <Grid container spacing={2}>
         <Grid item sm={2}></Grid>
         <Grid item sm={8}>
@@ -305,40 +316,15 @@ const GameDevelopment = () => {
               borderRadius: "40px",
             }}
           >
-            Talk To us
+            Talk To Us
           </Typography>{" "}
         </Grid>
         <Grid item sm={2}></Grid>
         <Grid item sm={2}></Grid>
       </Grid>
-      <Grid container spacing={2} ref={myref2}>
-        <Grid item sm={4}></Grid>
-        <Grid item sm={4}>
-          <Typography
-            sx={{ textAlign: "center", fontSize: "30px", fontWeight: "bold" }}
-          >
-            Pc Game Development
-          </Typography>
-        </Grid>
 
-        {/* pc development section */}
-        <Grid item sm={4}></Grid>
-      </Grid>
-
-      <Grid container spacing={2} ref={myref3}>
-        <Grid item sm={4}></Grid>
-        <Grid item sm={4}>
-          <Typography
-            sx={{ textAlign: "center", fontSize: "30px", fontWeight: "bold" }}
-          >
-            Technologies/Game Engines
-          </Typography>
-        </Grid>
-        <Grid item sm={4}></Grid>
-      </Grid>
-
-      <Grid container spacing={2} sx={{ height: "300px", marginTop: "100px" }}>
-        {/* <Grid item sm={1}></Grid> */}
+      {/* <Grid container spacing={2} sx={{ height: "300px", marginTop: "100px" }}>
+        <Grid item sm={1}></Grid>
         <Grid
           item
           sm={6}
@@ -393,9 +379,9 @@ const GameDevelopment = () => {
             To Be Populated With Client Assets
           </Typography>
         </Grid>
-        {/* <Grid item sm={1}></Grid> */}
-      </Grid>
-      <Grid container spacing={2} sx={{ height: "300px", marginTop: "-2px" }}>
+        <Grid item sm={1}></Grid>
+      </Grid> */}
+      {/* <Grid container spacing={2} sx={{ height: "300px", marginTop: "-2px" }}>
         <Grid item sm={6}>
           <Typography
             sx={{
@@ -452,7 +438,7 @@ const GameDevelopment = () => {
         </Grid>
       </Grid>
       <Grid container spacing={2} sx={{ height: "300px", marginTop: "-2px" }}>
-        {/* <Grid item sm={1}></Grid> */}
+        <Grid item sm={1}></Grid>
         <Grid
           item
           sm={6}
@@ -507,8 +493,8 @@ const GameDevelopment = () => {
             To Be Populated With Client Assets
           </Typography>
         </Grid>
-        {/* <Grid item sm={1}></Grid> */}
-      </Grid>
+        <Grid item sm={1}></Grid>
+      </Grid> */}
 
       {/* <Typography ref={myref} sx={{ marginTop: "500px" }}>
         my game

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import Button from "../Home/Button";
 
@@ -21,7 +22,7 @@ const RegisterForm = () => {
   };
 
   const validateLink = (value) => {
-    const re = /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/;
+    const re = /^https?:\/\/[\w-]+(\.[\w-]+)+[/#?]?.*$/;
     return re.test(value);
   };
 
