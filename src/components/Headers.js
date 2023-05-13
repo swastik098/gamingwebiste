@@ -4,6 +4,13 @@ import { NavLink } from "react-router-dom";
 function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
 
+  const handleGetInTouchClick = () => {
+    const contactSection = document.getElementById("contact-section");
+    if (contactSection && contactSection.scrollIntoView) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const closeMenu = () => {
     setShowMenu(false);
   };
@@ -19,7 +26,7 @@ function Navigation() {
   return (
     <nav
       style={navStyle}
-      className="flex font-sans-Roboto items-center justify-between flex-wrap bg-gradient-to-r from-yellow-400 to-red-500 p-8 py-6"
+      className="flex font-sans items-center justify-between flex-wrap bg-gradient-to-r from-yellow-400 to-red-500 p-8 py-6"
     >
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-semibold text-xl tracking-tight">
@@ -30,11 +37,11 @@ function Navigation() {
       </div>
       <div className="block lg:hidden">
         <button
-          className="flex items-center px-3 py-2 border rounded text-white border-gray-400 hover:text-white hover:border-white"
+          className="flex items-center px-3 py-2 border-2 rounded text-white border-white  hover:text-white hover:border-white"
           onClick={() => setShowMenu(!showMenu)}
         >
           <svg
-            className="fill-current h-3 w-3"
+            className="fill-current h-5 w-5"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -89,9 +96,14 @@ function Navigation() {
           </NavLink>
         </div>
         <NavLink
-          href="/contact"
+          to={"/contact"}
+          onClick={() => {
+            handleGetInTouchClick();
+            closeMenu();
+          }}
+          // onClick={handleGetInTouchClick}
           className="inline-block text-xl px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
-          onClick={closeMenu}
+          // onClick={closeMenu}
         >
           Get In Touch
         </NavLink>
