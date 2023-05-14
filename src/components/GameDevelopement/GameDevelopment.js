@@ -10,9 +10,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Paper from "@mui/material/Paper";
 import { CardActionArea } from "@mui/material";
-
 import Box from "@mui/material/Box";
-import { images } from "../../utils/helper";
+import { images, mobImages,iosGames } from "../../utils/helper";
 const GameDevelopment = () => {
   const [value, setValue] = useState(0);
   const myref = useRef(null);
@@ -22,6 +21,8 @@ const GameDevelopment = () => {
   const handleitemOne = () => {
     myref?.current.scrollIntoView();
   };
+
+  console.log(mobImages, "mobImages");
 
   const handleitemTwo = () => {
     console.log("log");
@@ -68,45 +69,45 @@ const GameDevelopment = () => {
     <React.Fragment>
       <Grid
         container
-        spacing={2}
+        // spacing={2}
         direction="row"
         justify="flex-start"
         alignItems="flex-start"
-        sx={{ padding: "20px" }}
+        // sx={{ padding: "20px" }}
       >
-        <Grid item sm={4}>
+        <Grid item sm={6} xs={12} md={6}>
           <Typography
             sx={{
               fontWeight: "bold",
               fontSize: "30px",
-              backgroundColor: "#ef4444",
-              color: "white",
+              backgroundColor: "#83EAF1",
+              color: "black",
               textAlign: "center",
               cursor: "pointer",
-              borderRadius: "30px",
+              // borderRadius: "30px",
             }}
             onClick={handleitemOne}
           >
             Mobile Development
           </Typography>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item sm={6} xs={12} md={6}>
           <Typography
             sx={{
               fontWeight: "bold",
               fontSize: "30px",
-              backgroundColor: "#ef4444",
-              color: "white",
+              backgroundColor: "#83EAF1",
+              color: "black",
               textAlign: "center",
               cursor: "pointer",
-              borderRadius: "30px",
+              // borderRadius: "30px",
             }}
             onClick={handleitemTwo}
           >
             Pc Game Development
           </Typography>
         </Grid>
-        <Grid item sm={4}>
+        {/* <Grid item sm={4}>
           <Typography
             sx={{
               fontWeight: "bold",
@@ -121,7 +122,7 @@ const GameDevelopment = () => {
           >
             Technologies/Game Engines
           </Typography>
-        </Grid>
+        </Grid> */}
       </Grid>
       {/* <Grid container>
         <Grid item sm={12}>
@@ -138,16 +139,19 @@ const GameDevelopment = () => {
         </Grid>
       </Grid> */}
       {images && images?.length > 0 ? (
-        <Paper elevation={3} className="developmentDetails_Carousel_Outer">
-          <Box className="developmentDetails_Carousel">
-            <ImageGallery
-              items={images}
-              showFullscreenButton={false}
-              showPlayButton={false}
-              showThumbnails={true}
-            />
-          </Box>
-        </Paper>
+        <>
+          <div elevation={3} className="developmentDetails_Carousel_Outer">
+            <Box className="developmentDetails_Carousel">
+              <ImageGallery
+                items={images}
+                showFullscreenButton={false}
+                showPlayButton={false}
+                showThumbnails={true}
+              />
+            </Box>
+          </div>
+          {/* <div className="caption">Pc Game Development</div> */}
+        </>
       ) : null}
 
       <Grid container spacing={2} ref={myref}>
@@ -172,32 +176,39 @@ const GameDevelopment = () => {
       <TabPanel value={value} index={0}>
         <Grid
           container
-          spacing={0}
+          spacing={2}
           direction="row"
           alignItems="center"
           justifyContent="center"
-          style={{ minHeight: "100vh" }}
+          // style={{ minHeight: "100vh" }}
         >
-          <Grid item sm={5}>
-            <div></div>
-            <Card sx={{ maxWidth: 500, height: "500px" }}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  // height=""
-                  image="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956884/Vault%20Games/image_2022_12_21T12_28_39_585Z_uo49ep.png"
-                  alt="green iguana"
-                  sx={{ height: "500px" }}
-                />
-              </CardActionArea>
-            </Card>
+          <Grid item lg={8} className="gamedev">
+            {mobImages?.map((ele,index) => (
+              <div className="card-container" key={index}>
+                <Grid item lg={12} xs={12} direction="row" className="innerClass">
+                  <Card className="card">
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        // height=""
+                        image={ele?.images}
+                        alt="green iguana"
+                        sx={{ height: "500px" }}
+                      />
+                    </CardActionArea>
+                  </Card>
+                </Grid>
+              </div>
+            ))}
+            {/* <div></div> */}
           </Grid>
-          <Grid item sm={5}>
+          <Grid item lg={4} >
+            {/* <div className="right"> */}
             <Card
               sx={{
-                maxWidth: 500,
-                height: "500px",
-                backgroundColor: "#ef4444",
+                // maxWidth: 500,
+                height: "670px",
+                backgroundColor: "#83EAF1",
               }}
             >
               <CardActionArea>
@@ -209,7 +220,7 @@ const GameDevelopment = () => {
                     variant="body2"
                     color="text.secondary"
                     sx={{
-                      color: "white",
+                      color: "black",
                       marginTop: "20px",
                       fontWeight: "bold",
                       fontSize: "30px",
@@ -220,6 +231,8 @@ const GameDevelopment = () => {
                 </CardContent>
               </CardActionArea>
             </Card>
+            {/* </div> */}
+            
           </Grid>
         </Grid>
       </TabPanel>
@@ -233,25 +246,42 @@ const GameDevelopment = () => {
           justifyContent="center"
           style={{ minHeight: "100vh" }}
         >
-          <Grid item sm={5}>
-            <Card sx={{ maxWidth: 500, height: "500px", textAlign: "center" }}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  // height=""
-                  image="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956886/Vault%20Games/piranha_wuxiz6.png"
-                  alt="green iguana"
-                  sx={{ height: "500px" }}
-                />
-              </CardActionArea>
-            </Card>
+          <Grid item lg={8} className="gamedev">
+          {iosGames?.map((ele,index) => (
+            // <Card sx={{ maxWidth: 500, height: "500px", textAlign: "center" }}>
+            //   <CardActionArea>
+            //     <CardMedia
+            //       component="img"
+            //       // height=""
+            //       image="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956886/Vault%20Games/piranha_wuxiz6.png"
+            //       alt="green iguana"
+            //       sx={{ height: "500px" }}
+            //     />
+            //   </CardActionArea>
+            // </Card>
+            <div className="card-container" key={index}>
+            <Grid item lg={12} xs={12} direction="row" className="innerClass">
+              <Card className="card">
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    // height=""
+                    image={ele?.images}
+                    alt="green iguana"
+                    sx={{ height: "500px" }}
+                  />
+                </CardActionArea>
+              </Card>
+            </Grid>
+          </div>
+             ))}
           </Grid>
-          <Grid item sm={5}>
+          <Grid item lg={4}>
             <Card
               sx={{
-                maxWidth: 500,
-                height: "500px",
-                backgroundColor: "#ef4444",
+                // maxWidth: 500,
+                height: "670px",
+                backgroundColor: "#83EAF1",
               }}
             >
               <CardActionArea>
@@ -263,7 +293,7 @@ const GameDevelopment = () => {
                     variant="body2"
                     color="text.secondary"
                     sx={{
-                      color: "white",
+                      color: "black",
                       marginTop: "20px",
                       fontWeight: "bold",
                       fontSize: "30px",
@@ -278,7 +308,7 @@ const GameDevelopment = () => {
         </Grid>
       </TabPanel>
 
-      <Grid container spacing={2} ref={myref2}>
+      {/* <Grid container spacing={2} ref={myref2}>
         <Grid item sm={4}></Grid>
         <Grid item sm={4}>
           <Typography
@@ -288,7 +318,7 @@ const GameDevelopment = () => {
           </Typography>
         </Grid>
         <Grid item sm={4}></Grid>
-      </Grid>
+      </Grid> */}
 
       <Grid container spacing={2}>
         <Grid item sm={2}></Grid>
@@ -310,8 +340,8 @@ const GameDevelopment = () => {
               textAlign: "center",
               fontSize: "25px",
               fontWeight: "bold",
-              backgroundColor: "#ef4444",
-              color: "white",
+              backgroundColor: "#83EAF1",
+              color: "black",
               padding: "25px",
               borderRadius: "40px",
             }}
