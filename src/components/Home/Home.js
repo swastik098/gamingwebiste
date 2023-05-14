@@ -167,7 +167,7 @@ const Home = () => {
           <InfoBox
             title={"Game Development"}
             text={
-              "Unlock the door to exceptional gaming experiences with Vault Games Studio. From captivating storylines to cutting-edge technology, we bring your gaming dreams to life. Immerse yourself in endless possibilities and get ready for the adventure of a lifetime. Join us on the journey to new worlds of fun and excitement."
+              "We work together to create and refine game mechanics, graphics, sound effects, and other elements that make up a game. We use a variety of game engines and development tools, such as Unity or Unreal Engine, to create games. Our company offer post-release support, such as patches and updates, to ensure their games continue to function properly and meet the needs of players."
             }
           />
         </div>
@@ -178,7 +178,7 @@ const Home = () => {
           <InfoBox
             title={"Game Art"}
             text={
-              "Unlock your imagination with Vault Games Studio's game art design. Our skilled artists create stunning character designs that immerse you in the game's world. From concept to creation, we bring your vision to life with unmatched attention to detail."
+              "We create art and visual assets for games. We offer a wide range of services, from concept art and character design to 3D modeling and animation for a variety of platforms, including consoles, PC, and mobile devices."
             }
           />
         </div>
