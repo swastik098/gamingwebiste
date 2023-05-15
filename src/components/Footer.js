@@ -46,6 +46,7 @@ const Footer = () => {
             Academy
           </NavLink>
         </div>
+
         <div className="p-4 w-full md:w-1/4">
           <div className="text-black uppercase mb-6 font-bold">
             Game Design Courses
@@ -76,7 +77,7 @@ const Footer = () => {
           </NavLink>
         </div>
         <div className="p-4 w-full md:w-1/4">
-          <div className="text-black uppercase mb-6 font-bold">
+          {/* <div className="text-black uppercase mb-6 font-bold">
             Office address
           </div>
           <div className="my-3 block text-black text-sm font-medium duration-700">
@@ -87,7 +88,7 @@ const Footer = () => {
           </div>
           <div className="my-3 block text-black text-sm font-medium duration-700">
             Anytown, USA 12345
-          </div>
+          </div> */}
         </div>
         <div className="p-4 w-full md:w-1/4">
           <div className="text-black uppercase mb-6 font-bold">Contact</div>

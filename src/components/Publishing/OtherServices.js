@@ -59,7 +59,7 @@ const pics = [
 ];
 const OtherServices = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between w-full text-center mx-auto px-4 py-8 bg-gradient-to-r from-stone-600 to-stone-100 ">
+    <div className="flex flex-col md:flex-row justify-between w-full text-center mx-auto px-4 py-8  ">
       <div className="flex flex-wrap justify-center md:w-1/2 border-spacing-4">
         {pics.map((pics, index) => (
           <div key={index} className="w-full sm:w-1/3 p-4 ">

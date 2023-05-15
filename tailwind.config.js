@@ -7,6 +7,13 @@ module.exports = {
       serif: ["Georgia", "Cambria", "Times New Roman", "serif"],
       mono: ["Courier New", "monospace"],
     },
+    extend: {
+      colors: {
+        peach: "#3C2A21", // Replace with your preferred peach color
+        lavendre: "#D4ADFC",
+        // blue: "#03C988",
+      },
+    },
   },
   plugins: [],
 };

@@ -61,35 +61,36 @@ function Navigation() {
         <div className="text-xl text-center space-x-20 lg:flex-grow">
           <NavLink
             to="/gamedevelopment"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-semibold text-xl tracking-tight"
+            className="block mt-4 lg:inline-block lg:mt-0 text-black
+             hover:text-black mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
             GAME DEVELOPMENT
           </NavLink>
           <NavLink
             to="/gameart"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-semibold text-xl tracking-tight"
+            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
             GAME ART
           </NavLink>
           <NavLink
             to="/animation"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-semibold text-xl tracking-tight"
+            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
-            ANIMATION
+            VIRTUAL PRODUCTION
           </NavLink>
           <NavLink
             to="/publishing"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-semibold text-xl tracking-tight"
+            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
             PUBLISHING
           </NavLink>
           <NavLink
             to="/academy"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-semibold text-xl tracking-tight"
+            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
             ACADEMY
@@ -102,7 +103,7 @@ function Navigation() {
             closeMenu();
           }}
           // onClick={handleGetInTouchClick}
-          className="inline-block text-xl px-4 py-2 font-semibold tracking-tight leading-none border rounded text-black border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
+          className="inline-block text-xl px-4 py-2 font-normal tracking-tight leading-none border rounded text-black border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
           // onClick={closeMenu}
         >
           Get In Touch

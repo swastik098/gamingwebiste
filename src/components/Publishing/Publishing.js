@@ -7,7 +7,7 @@ const Publishing = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SkewedDesign />
-      <div className="bg-gradient-to-r from-stone-600 to-stone-100">
+      <div className="">
         <RegisterForm />
       </div>
       <div className="flex-grow overflow-y-auto">

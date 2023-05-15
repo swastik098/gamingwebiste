@@ -190,7 +190,6 @@ const Home = () => {
           />
         </div>
       </div>
-
       <Button on text={"Book Art Demo"} />
       <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 items-center">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
@@ -210,6 +209,25 @@ const Home = () => {
         </div>
       </div>
       <Button text={"Book Animation Demo"} className="mb-10" />
+      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center">
+        <div className="w-full md:w-1/2 md:pl-4 mt-10 justify-center">
+          <InfoBox
+            title={"Game Art"}
+            text={
+              "We create art and visual assets for games. We offer a wide range of services, from concept art and character design to 3D modeling and animation for a variety of platforms, including consoles, PC, and mobile devices."
+            }
+          />
+        </div>
+        <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
+          <img
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958218/Vault%20Games/homePage/fun-3d-illustration-super-santa-claus-with-vr-helmet_cx5rk7.jpg"
+            alt="logo"
+            className="brand-logo"
+          />
+        </div>
+      </div>
+
+      <Button on text={"Book Art Demo"} />
       <div class="bg-white py-12 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-extrabold text-black">Our Clients</h2>
