@@ -70,24 +70,24 @@ const Home = () => {
 
   const images = [
     {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/android_fkfyry.jpg",
-      alt: "Image 1",
-      tittle: "Mobile Game development",
-    },
-    {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/html5logo_zrgvvq.jpg",
-      alt: "Image 3",
-      tittle: "HTML5 Game development",
-    },
-    {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/unity_m3nhgn.png",
-      alt: "Image 2",
+      alt: "Image 1",
       tittle: "Unity Game development",
     },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/unreal_hp3guy.png",
-      alt: "Image 4",
+      alt: "Image 2",
       tittle: "Unreal Game development",
+    },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/android_fkfyry.jpg",
+      alt: "Image 3",
+      tittle: "Mobile Game development",
+    },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/html5logo_zrgvvq.jpg",
+      alt: "Image 4",
+      tittle: "HTML5 Game development",
     },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/artndesign_r5gu56.jpg",
@@ -100,7 +100,7 @@ const Home = () => {
       tittle: "Metaverse Projects",
     },
     {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/gamification_hk84i5.jpg",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684218180/Vault%20Games/serviceImages/Play_to_Win_The_Gamification_Benefits_In_Workplace_Training_olkefs.jpg",
       alt: "Image 5",
       tittle: "Gamification",
     },
@@ -155,7 +155,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
+      <div className="flex md:flex-row  justify-between w-4/5 px-4 py-8 flex-col-reverse ">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
             src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958186/Vault%20Games/homePage/59888_bjyjn7.jpg"
@@ -191,7 +191,7 @@ const Home = () => {
         </div>
       </div>
       <Button on text={"Book Art Demo"} />
-      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 items-center">
+      <div className="flex md:flex-row justify-between w-4/5 px-4 py-8 items-center flex-col-reverse">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
             src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958204/Vault%20Games/homePage/fun-3d-cartoon-teenage-kids_yknuga.jpg"
@@ -212,7 +212,7 @@ const Home = () => {
       <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center">
         <div className="w-full md:w-1/2 md:pl-4 mt-10 justify-center">
           <InfoBox
-            title={"Game Art"}
+            title={"Virtual Production"}
             text={
               "We create art and visual assets for games. We offer a wide range of services, from concept art and character design to 3D modeling and animation for a variety of platforms, including consoles, PC, and mobile devices."
             }
@@ -220,7 +220,7 @@ const Home = () => {
         </div>
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958218/Vault%20Games/homePage/fun-3d-illustration-super-santa-claus-with-vr-helmet_cx5rk7.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684153703/Vault%20Games/homePage/vymk7cdbkcenlyj5zv94.jpg"
             alt="logo"
             className="brand-logo"
           />
@@ -230,41 +230,41 @@ const Home = () => {
       <Button on text={"Book Art Demo"} />
       <div class="bg-white py-12 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-extrabold text-black">Our Clients</h2>
+          <h2 class="text-3xl font-extrabold text-black">Our Partners</h2>
           {/* <p class="mt-4 mb-10 text-xl  text-black">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p> */}
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center flex-wrap">
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684214575/Vault%20Games/partners/Unity_Real-Time_Development_Platform___3D_2D_VR_AR_Engine_exnbef.jpg"
             alt="Client 1"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36  object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 "
           />
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684217551/Vault%20Games/partners/Hardware_Recommendations_for_Unreal_Engine_jfkdhl.jpg"
             alt="Client 2"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36 object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 "
           />
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684216168/Vault%20Games/partners/Figma_Logo_PNG_Transparent_SVG_Vector_-_Freebie_Supply_cnrw4v.png"
             alt="Client 3"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36 object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 "
           />
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684216411/Vault%20Games/partners/Search_results_for__twitch___Page__1_bk0spc.png"
             alt="Client 4"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36 object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684217304/Vault%20Games/partners/Follow_Us_on_Pinterest_-_Threads_qo0fkb.jpg"
             alt="Client 5"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36 object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684217554/Vault%20Games/partners/Teamwork_unity_hands_identity_card_vector_icon_zlzcev.jpg"
             alt="Client 6"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36 object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
         </div>
       </div>

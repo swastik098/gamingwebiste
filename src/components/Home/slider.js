@@ -6,20 +6,25 @@ function Slider() {
   const [isDesktop, setIsDesktop] = useState(false);
   const slides = [
     {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956860/Vault%20Games/concept_games_enemies_2_1_wfr657.png",
+      url: " https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956949/Vault%20Games/fotobash_tanki1_tqa4ep.png",
     },
     {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956882/Vault%20Games/game_conceprt2_fcuruo.png",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956927/Vault%20Games/bg_tank_6_4_eg97ti.png",
     },
     {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956919/Vault%20Games/bg_fight2_2_hgwirv.png",
-    },
-
-    {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956900/Vault%20Games/platformer_concept_2_afnbip.png",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956947/Vault%20Games/loading3_1_1_hcshy2.png",
     },
     {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956884/Vault%20Games/game_conceprt_szxz5s.png",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712829/Vault%20Games/z4pyfkxeoolmwzl96m3i.png",
+    },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956914/Vault%20Games/bg_fight2_1_jvezdd.png",
+    },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956932/Vault%20Games/bg_tank_6_5_qniqu9.png",
+    },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956950/Vault%20Games/Shoot_main_menu_xhd7o9.png",
     },
   ];
 
