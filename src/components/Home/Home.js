@@ -72,22 +72,22 @@ const Home = () => {
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/unity_m3nhgn.png",
       alt: "Image 1",
-      tittle: "Unity Game development",
+      tittle: "Unity Game Development",
     },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/unreal_hp3guy.png",
       alt: "Image 2",
-      tittle: "Unreal Game development",
+      tittle: "Unreal Game Development",
     },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/android_fkfyry.jpg",
       alt: "Image 3",
-      tittle: "Mobile Game development",
+      tittle: "Mobile Game Development",
     },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/html5logo_zrgvvq.jpg",
       alt: "Image 4",
-      tittle: "HTML5 Game development",
+      tittle: "HTML5 Game Development",
     },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/artndesign_r5gu56.jpg",
@@ -226,8 +226,7 @@ const Home = () => {
           />
         </div>
       </div>
-
-      <Button on text={"Book Art Demo"} />
+      <Button on text={"Book Virtual Demo"} />
       <div class="bg-white py-12 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-extrabold text-black">Our Partners</h2>
@@ -237,7 +236,7 @@ const Home = () => {
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center flex-wrap">
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684214575/Vault%20Games/partners/Unity_Real-Time_Development_Platform___3D_2D_VR_AR_Engine_exnbef.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684231139/Vault%20Games/partners/unity-logo_jwgdeu.png"
             alt="Client 1"
             class="w-36 h-36  object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 "
           />

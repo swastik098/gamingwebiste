@@ -21,7 +21,7 @@ function Slider() {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956914/Vault%20Games/bg_fight2_1_jvezdd.png",
     },
     {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956932/Vault%20Games/bg_tank_6_5_qniqu9.png",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956864/Vault%20Games/concept_games_pw_1_2_pebs2a.png",
     },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956950/Vault%20Games/Shoot_main_menu_xhd7o9.png",

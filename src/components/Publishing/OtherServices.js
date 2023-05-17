@@ -46,16 +46,16 @@ const pics = [
     heading: "Image 9",
     description: "This is the description for Image 9",
   },
-  {
-    url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683959432/Vault%20Games/gameart/murali-krishna-highresscreenshot00006_ppzhut.jpg",
-    heading: "Image 10",
-    description: "This is the description for Image 10",
-  },
-  {
-    url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683959430/Vault%20Games/gameart/murali-krishna-highresscreenshot00001_vujsij.jpg",
-    heading: "Image 11",
-    description: "This is the description for Image 11",
-  },
+  // {
+  //   url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683959432/Vault%20Games/gameart/murali-krishna-highresscreenshot00006_ppzhut.jpg",
+  //   heading: "Image 10",
+  //   description: "This is the description for Image 10",
+  // },
+  // {
+  //   url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683959430/Vault%20Games/gameart/murali-krishna-highresscreenshot00001_vujsij.jpg",
+  //   heading: "Image 11",
+  //   description: "This is the description for Image 11",
+  // },
 ];
 const OtherServices = () => {
   return (

@@ -65,35 +65,35 @@ function Navigation() {
              hover:text-black mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
-            GAME DEVELOPMENT
+            Game Development
           </NavLink>
           <NavLink
             to="/gameart"
             className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
-            GAME ART
+            Game Art
           </NavLink>
           <NavLink
             to="/animation"
             className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
-            VIRTUAL PRODUCTION
+            Virtual Production
           </NavLink>
           <NavLink
             to="/publishing"
             className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
-            PUBLISHING
+            Publishing
           </NavLink>
           <NavLink
             to="/academy"
             className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
-            ACADEMY
+            Academy
           </NavLink>
         </div>
         <NavLink
@@ -103,7 +103,7 @@ function Navigation() {
             closeMenu();
           }}
           // onClick={handleGetInTouchClick}
-          className="inline-block text-xl px-4 py-2 font-normal tracking-tight leading-none border rounded text-black border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
+          className="inline-block text-xl px-4 py-2 font-normal tracking-tight leading-none border rounded text-black border-black hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
           // onClick={closeMenu}
         >
           Get In Touch
