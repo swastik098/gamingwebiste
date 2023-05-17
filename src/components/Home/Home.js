@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState } from "react";
+import React from "react";
 import Slider from "./slider";
 import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
@@ -7,87 +7,92 @@ import Box from "./Box";
 import ImageCard from "./ImageCard";
 import Button from "./Button";
 import InfoBox from "./InfoBox";
-import Course from "./Course";
-// import YouTubeCard from "./YoutubeVideoCard";
+// import Course from "./Course";
+// import Carousel from "./YouTubePlayer";
+import YouTubePlayer from "./YouTubePlayer";
 // import ReactPlayer from "react-player";
 // import CourseThumbnail from "./CourseThumbnail";
 // import ImageGallery from "./ImageGallery";
 
-// const videoIds = [
-//   "eciP7ixTNec",
-//   "NMUr2yNALhU",
-//   "r_ErytGpScQ",
-//   "UXqq0ZvbOnk",
-//   // "EJ2GzZAORQA",
-// ];
-
 const Home = () => {
-  const [selectedCourseIndex, setSelectedCourseIndex] = useState(null);
+  // const [selectedCourseIndex, setSelectedCourseIndex] = useState(null);
 
-  const courses = [
-    {
-      title: "Course 1",
-      description: "This is the first course",
-      thumbnailUrl: "https://example.com/course1_thumbnail.jpg",
-      videoUrl: "https://example.com/course1_video.mp4",
-    },
-    {
-      title: "Course 2",
-      description: "This is the second course",
-      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-      videoUrl: "https://example.com/course2_video.mp4",
-    },
-    {
-      title: "Course 3",
-      description: "This is the second course",
-      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-      videoUrl: "https://example.com/course2_video.mp4",
-    },
-    {
-      title: "Course 4",
-      description: "This is the second course",
-      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-      videoUrl: "https://example.com/course2_video.mp4",
-    },
-    {
-      title: "Course 5",
-      description: "This is the second course",
-      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-      videoUrl: "https://example.com/course2_video.mp4",
-    },
-    {
-      title: "Course 6",
-      description: "This is the second course",
-      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-      videoUrl: "https://example.com/course2_video.mp4",
-    },
-    // Add more courses here
-  ];
+  // const videoIds = [
+  //   "eciP7ixTNec",
+  //   "NMUr2yNALhU",
+  //   "r_ErytGpScQ",
+  //   "UXqq0ZvbOnk",
+  //   "eciP7ixTNec",
+  //   "NMUr2yNALhU",
+  //   "r_ErytGpScQ",
+  //   "UXqq0ZvbOnk",
+  //   // "EJ2GzZAORQA",
+  // ];
 
-  const handleCourseClick = (index) => {
-    setSelectedCourseIndex(index);
-  };
+  // const courses = [
+  //   {
+  //     title: "Course 1",
+  //     description: "This is the first course",
+  //     thumbnailUrl: "https://example.com/course1_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course1_video.mp4",
+  //   },
+  //   {
+  //     title: "Course 2",
+  //     description: "This is the second course",
+  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course2_video.mp4",
+  //   },
+  //   {
+  //     title: "Course 3",
+  //     description: "This is the second course",
+  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course2_video.mp4",
+  //   },
+  //   {
+  //     title: "Course 4",
+  //     description: "This is the second course",
+  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course2_video.mp4",
+  //   },
+  //   {
+  //     title: "Course 5",
+  //     description: "This is the second course",
+  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course2_video.mp4",
+  //   },
+  //   {
+  //     title: "Course 6",
+  //     description: "This is the second course",
+  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course2_video.mp4",
+  //   },
+  //   // Add more courses here
+  // ];
+
+  // const handleCourseClick = (index) => {
+  //   setSelectedCourseIndex(index);
+  // };
 
   const images = [
     {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/android_fkfyry.jpg",
-      alt: "Image 1",
-      tittle: "Mobile Game development",
-    },
-    {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/html5logo_zrgvvq.jpg",
-      alt: "Image 3",
-      tittle: "HTML5 Game development",
-    },
-    {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/unity_m3nhgn.png",
-      alt: "Image 2",
-      tittle: "Unity Game development",
+      alt: "Image 1",
+      tittle: "Unity Game Development",
     },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/unreal_hp3guy.png",
+      alt: "Image 2",
+      tittle: "Unreal Game Development",
+    },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/android_fkfyry.jpg",
+      alt: "Image 3",
+      tittle: "Mobile Game Development",
+    },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/html5logo_zrgvvq.jpg",
       alt: "Image 4",
-      tittle: "Unreal Game development",
+      tittle: "HTML5 Game Development",
     },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/artndesign_r5gu56.jpg",
@@ -100,7 +105,7 @@ const Home = () => {
       tittle: "Metaverse Projects",
     },
     {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683957505/Vault%20Games/serviceImages/gamification_hk84i5.jpg",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684218180/Vault%20Games/serviceImages/Play_to_Win_The_Gamification_Benefits_In_Workplace_Training_olkefs.jpg",
       alt: "Image 5",
       tittle: "Gamification",
     },
@@ -155,7 +160,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8">
+      <div className="flex md:flex-row  justify-between w-4/5 px-4 py-8 flex-col-reverse ">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
             src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958186/Vault%20Games/homePage/59888_bjyjn7.jpg"
@@ -167,7 +172,7 @@ const Home = () => {
           <InfoBox
             title={"Game Development"}
             text={
-              "Unlock the door to exceptional gaming experiences with Vault Games Studio. From captivating storylines to cutting-edge technology, we bring your gaming dreams to life. Immerse yourself in endless possibilities and get ready for the adventure of a lifetime. Join us on the journey to new worlds of fun and excitement."
+              "We work together to create and refine game mechanics, graphics, sound effects, and other elements that make up a game. We use a variety of game engines and development tools, such as Unity or Unreal Engine, to create games. Our company offer post-release support, such as patches and updates, to ensure their games continue to function properly and meet the needs of players."
             }
           />
         </div>
@@ -178,7 +183,7 @@ const Home = () => {
           <InfoBox
             title={"Game Art"}
             text={
-              "Unlock your imagination with Vault Games Studio's game art design. Our skilled artists create stunning character designs that immerse you in the game's world. From concept to creation, we bring your vision to life with unmatched attention to detail."
+              "We create art and visual assets for games. We offer a wide range of services, from concept art and character design to 3D modeling and animation for a variety of platforms, including consoles, PC, and mobile devices."
             }
           />
         </div>
@@ -190,9 +195,8 @@ const Home = () => {
           />
         </div>
       </div>
-
       <Button on text={"Book Art Demo"} />
-      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 items-center">
+      <div className="flex md:flex-row justify-between w-4/5 px-4 py-8 items-center flex-col-reverse">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
             src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958204/Vault%20Games/homePage/fun-3d-cartoon-teenage-kids_yknuga.jpg"
@@ -210,43 +214,61 @@ const Home = () => {
         </div>
       </div>
       <Button text={"Book Animation Demo"} className="mb-10" />
+      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center">
+        <div className="w-full md:w-1/2 md:pl-4 mt-10 justify-center">
+          <InfoBox
+            title={"Virtual Production"}
+            text={
+              "We create art and visual assets for games. We offer a wide range of services, from concept art and character design to 3D modeling and animation for a variety of platforms, including consoles, PC, and mobile devices."
+            }
+          />
+        </div>
+        <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
+          <img
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684153703/Vault%20Games/homePage/vymk7cdbkcenlyj5zv94.jpg"
+            alt="logo"
+            className="brand-logo"
+          />
+        </div>
+      </div>
+      <Button on text={"Book Virtual Demo"} />
       <div class="bg-white py-12 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-extrabold text-black">Our Clients</h2>
+          <h2 class="text-3xl font-extrabold text-black">Our Partners</h2>
           {/* <p class="mt-4 mb-10 text-xl  text-black">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p> */}
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center flex-wrap">
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684231139/Vault%20Games/partners/unity-logo_jwgdeu.png"
             alt="Client 1"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36  object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 "
           />
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684217551/Vault%20Games/partners/Hardware_Recommendations_for_Unreal_Engine_jfkdhl.jpg"
             alt="Client 2"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36 object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 "
           />
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684216168/Vault%20Games/partners/Figma_Logo_PNG_Transparent_SVG_Vector_-_Freebie_Supply_cnrw4v.png"
             alt="Client 3"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36 object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 "
           />
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684216411/Vault%20Games/partners/Search_results_for__twitch___Page__1_bk0spc.png"
             alt="Client 4"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36 object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684217304/Vault%20Games/partners/Follow_Us_on_Pinterest_-_Threads_qo0fkb.jpg"
             alt="Client 5"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36 object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712812/Vault%20Games/zwuf5fa1wfv7f0nvqae0.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684217554/Vault%20Games/partners/Teamwork_unity_hands_identity_card_vector_icon_zlzcev.jpg"
             alt="Client 6"
-            class="w-36 h-36 object-cover object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
+            class="w-36 h-36 object-contain object-center grayscale transition duration-300 hover:grayscale-0 mx-3 my-4 rounded-full"
           />
         </div>
       </div>
@@ -258,47 +280,12 @@ const Home = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p> */}
       </div>
-      <div className="flex flex-wrap justify-center">
-        {selectedCourseIndex !== null ? (
-          <Course videoUrl={courses[selectedCourseIndex].videoUrl} />
-        ) : (
-          <>
-            {courses.map((course, index) => (
-              <div
-                key={index}
-                className="m-2 p-2 max-hw-xs w-full md:max-w-sm rounded-lg border border-gray-200 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer"
-                onClick={() => handleCourseClick(index)}
-              >
-                <div className="relative h-0 pb-2/3">
-                  <img
-                    className="absolute inset-0 object-cover object-center w-full h-full rounded-t-lg"
-                    src={course.thumbnailUrl}
-                    alt={course.title}
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div className="mt-4">
-                  <h3 className="text-xl font-medium">{course.title}</h3>
-                  <p className="mt-2 text-gray-600">{course.description}</p>
-                </div>
-              </div>
-            ))}
-          </>
-        )}
-      </div>
-      {/* <div className="md:w-full md:pl-0">
-        <div className="flex flex-wrap -mx-4 bg-pink-200 text-black rounded-lg pt-5 justify-center items-center">
-          {videoIds.map((videoId) => (
-            <div
-              key={videoId}
-              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-2"
-            >
-              <YouTubeCard videoId={videoId} />
-            </div>
-          ))}
+
+      <div className="flex mt-5 max-w-full md:max-w-7xl  flex-wrap justify-center">
+        <div className="m-2 p-2  w-full  rounded-lg border border-gray-200 shadow-lg cursor-pointer">
+          <YouTubePlayer />
         </div>
-      </div> */}
+      </div>
       <div class="flex flex-wrap justify-between m-5" id="contact-section">
         <ContactPage />
       </div>

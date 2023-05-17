@@ -3,7 +3,7 @@ import React from "react";
 function ImageCard({ src, title }) {
   return (
     <div
-      className={`w-72 md:w-96 rounded-lg shadow-lg overflow-hidden m-5 bg-white transition-all duration-300 transform-Y hover:scale-110`}
+      className={`w-64 md:w-96 rounded-lg shadow-lg overflow-hidden m-5 bg-white transition-all duration-300 transform-Y hover:scale-110`}
     >
       <img
         src={src}

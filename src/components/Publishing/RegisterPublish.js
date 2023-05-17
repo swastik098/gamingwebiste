@@ -53,7 +53,7 @@ const RegisterForm = () => {
           name="studioName"
           value={studioName}
           onChange={(event) => setStudioName(event.target.value)}
-          className="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+          className="w-full border-gray-900 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           required
         />
       </div>

@@ -70,10 +70,10 @@ const GameArt = () => {
             alt={item.heading}
             className="w-full h-48 object-cover"
           />
-          <div className="p-4">
+          {/* <div className="p-4">
             <h3 className="text-lg font-semibold">{item.heading}</h3>
             <p className="text-gray-500">{item.description}</p>
-          </div>
+          </div> */}
         </div>
       ))}
     </div>
