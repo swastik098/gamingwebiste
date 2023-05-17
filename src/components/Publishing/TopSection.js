@@ -14,10 +14,10 @@ const SkewedDesign = () => {
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center">
         <h2 className="text-4xl md:text-8xl md:text-center font-bold mb-2 text-white">
           GAME
-          <span className="text-sky-500 "> PUBLISHING</span>
+          <span className="text-blue "> PUBLISHING</span>
         </h2>
         <p className="text-lg md:text-3xl  text-white text-center pt-5">
-          <span className="text-sky-500">Vault Games Studio</span> turn mobile
+          <span className="text-blue">Vault Games Studio</span> turn mobile
           games into chart-topping hits
         </p>
       </div>

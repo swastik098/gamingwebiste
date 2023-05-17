@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useRef, useState } from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
@@ -8,10 +9,10 @@ import Tab from "@mui/material/Tab";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Paper from "@mui/material/Paper";
+// import Paper from "@mui/material/Paper";
 import { CardActionArea } from "@mui/material";
 import Box from "@mui/material/Box";
-import { images, mobImages,iosGames } from "../../utils/helper";
+import { images, mobImages, iosGames } from "../../utils/helper";
 const GameDevelopment = () => {
   const [value, setValue] = useState(0);
   const myref = useRef(null);
@@ -29,9 +30,9 @@ const GameDevelopment = () => {
     myref2?.current.scrollIntoView();
   };
 
-  const handleitemThree = () => {
-    myref3?.current.scrollIntoView();
-  };
+  // const handleitemThree = () => {
+  //   myref3?.current.scrollIntoView();
+  // };
 
   const handleChange = (event, newValue) => {
     console.log(event, "save");
@@ -80,7 +81,7 @@ const GameDevelopment = () => {
             sx={{
               fontWeight: "bold",
               fontSize: "30px",
-              backgroundColor: "#83EAF1",
+              backgroundColor: "#00FFFF",
               color: "black",
               textAlign: "center",
               cursor: "pointer",
@@ -96,7 +97,7 @@ const GameDevelopment = () => {
             sx={{
               fontWeight: "bold",
               fontSize: "30px",
-              backgroundColor: "#83EAF1",
+              backgroundColor: "#00FFFF",
               color: "black",
               textAlign: "center",
               cursor: "pointer",
@@ -183,9 +184,15 @@ const GameDevelopment = () => {
           // style={{ minHeight: "100vh" }}
         >
           <Grid item lg={8} className="gamedev">
-            {mobImages?.map((ele,index) => (
+            {mobImages?.map((ele, index) => (
               <div className="card-container" key={index}>
-                <Grid item lg={12} xs={12} direction="row" className="innerClass">
+                <Grid
+                  item
+                  lg={12}
+                  xs={12}
+                  direction="row"
+                  className="innerClass"
+                >
                   <Card className="card">
                     <CardActionArea>
                       <CardMedia
@@ -202,13 +209,13 @@ const GameDevelopment = () => {
             ))}
             {/* <div></div> */}
           </Grid>
-          <Grid item lg={4} >
+          <Grid item lg={4}>
             {/* <div className="right"> */}
             <Card
               sx={{
                 // maxWidth: 500,
                 height: "670px",
-                backgroundColor: "#83EAF1",
+                backgroundColor: "#00FFFF",
               }}
             >
               <CardActionArea>
@@ -232,7 +239,6 @@ const GameDevelopment = () => {
               </CardActionArea>
             </Card>
             {/* </div> */}
-            
           </Grid>
         </Grid>
       </TabPanel>
@@ -247,41 +253,47 @@ const GameDevelopment = () => {
           style={{ minHeight: "100vh" }}
         >
           <Grid item lg={8} className="gamedev">
-          {iosGames?.map((ele,index) => (
-            // <Card sx={{ maxWidth: 500, height: "500px", textAlign: "center" }}>
-            //   <CardActionArea>
-            //     <CardMedia
-            //       component="img"
-            //       // height=""
-            //       image="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956886/Vault%20Games/piranha_wuxiz6.png"
-            //       alt="green iguana"
-            //       sx={{ height: "500px" }}
-            //     />
-            //   </CardActionArea>
-            // </Card>
-            <div className="card-container" key={index}>
-            <Grid item lg={12} xs={12} direction="row" className="innerClass">
-              <Card className="card">
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    // height=""
-                    image={ele?.images}
-                    alt="green iguana"
-                    sx={{ height: "500px" }}
-                  />
-                </CardActionArea>
-              </Card>
-            </Grid>
-          </div>
-             ))}
+            {iosGames?.map((ele, index) => (
+              // <Card sx={{ maxWidth: 500, height: "500px", textAlign: "center" }}>
+              //   <CardActionArea>
+              //     <CardMedia
+              //       component="img"
+              //       // height=""
+              //       image="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956886/Vault%20Games/piranha_wuxiz6.png"
+              //       alt="green iguana"
+              //       sx={{ height: "500px" }}
+              //     />
+              //   </CardActionArea>
+              // </Card>
+              <div className="card-container" key={index}>
+                <Grid
+                  item
+                  lg={12}
+                  xs={12}
+                  direction="row"
+                  className="innerClass"
+                >
+                  <Card className="card">
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        // height=""
+                        image={ele?.images}
+                        alt="green iguana"
+                        sx={{ height: "500px" }}
+                      />
+                    </CardActionArea>
+                  </Card>
+                </Grid>
+              </div>
+            ))}
           </Grid>
           <Grid item lg={4}>
             <Card
               sx={{
                 // maxWidth: 500,
                 height: "670px",
-                backgroundColor: "#83EAF1",
+                backgroundColor: "#00FFFF",
               }}
             >
               <CardActionArea>
@@ -340,7 +352,7 @@ const GameDevelopment = () => {
               textAlign: "center",
               fontSize: "25px",
               fontWeight: "bold",
-              backgroundColor: "#83EAF1",
+              backgroundColor: "#00FFFF",
               color: "black",
               padding: "25px",
               borderRadius: "40px",

@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         peach: "#3C2A21", // Replace with your preferred peach color
         lavendre: "#D4ADFC",
-        // blue: "#03C988",
+        blue: "#00FFFF",
       },
     },
   },

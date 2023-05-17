@@ -26,7 +26,7 @@ function Navigation() {
   return (
     <nav
       style={navStyle}
-      className="flex font-sans items-center justify-between flex-wrap bg-gradient-to-b from-sky-500 to-white p-8 py-6"
+      className="flex font-sans items-center justify-between flex-wrap bg-gradient-to-b from-blue to-white p-8 py-6"
     >
       <div className="flex items-center flex-shrink-0 text-black mr-6">
         <span className="font-semibold text-xl tracking-tight">
@@ -37,7 +37,7 @@ function Navigation() {
       </div>
       <div className="block lg:hidden">
         <button
-          className="flex items-center px-3 py-2 border-2 rounded text-black border-white  hover:text-black hover:border-white"
+          className="flex items-center px-3 py-2 border-2 rounded text-white border-black  hover:text-black hover:border-black"
           onClick={() => setShowMenu(!showMenu)}
         >
           <svg
@@ -46,10 +46,7 @@ function Navigation() {
             xmlns="http://www.w3.org/2000/svg"
           >
             <title>Menu</title>
-            <path
-              d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
-              fill="#ffffff"
-            />
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="#000" />
           </svg>
         </button>
       </div>
@@ -79,7 +76,7 @@ function Navigation() {
             className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
-            Virtual Production
+            Virtual Technology
           </NavLink>
           <NavLink
             to="/publishing"
@@ -103,7 +100,7 @@ function Navigation() {
             closeMenu();
           }}
           // onClick={handleGetInTouchClick}
-          className="inline-block text-xl px-4 py-2 font-normal tracking-tight leading-none border rounded text-black border-black hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0"
+          className="inline-block text-xl px-4 py-2 font-normal tracking-tight leading-none border rounded text-black border-black hover:border-black hover:text-white hover:bg-gray-800 mt-4 lg:mt-0"
           // onClick={closeMenu}
         >
           Get In Touch

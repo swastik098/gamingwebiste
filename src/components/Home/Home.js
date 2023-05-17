@@ -217,7 +217,7 @@ const Home = () => {
       <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center">
         <div className="w-full md:w-1/2 md:pl-4 mt-10 justify-center">
           <InfoBox
-            title={"Virtual Production"}
+            title={"Virtual Technology"}
             text={
               "We create art and visual assets for games. We offer a wide range of services, from concept art and character design to 3D modeling and animation for a variety of platforms, including consoles, PC, and mobile devices."
             }

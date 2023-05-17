@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="pt-16 pb-8 bg-gradient-to-t from-sky-500 to-white mt-16">
+    <footer className="pt-16 pb-8 bg-gradient-to-t from-blue to-white mt-16">
       <div className="max-w-6xl m-auto flex flex-wrap justify-left">
         <div className="p-4 w-full md:w-1/4">
           <div className="text-black uppercase mb-6 font-bold">
@@ -73,7 +73,7 @@ const Footer = () => {
             href="#"
             className="my-3 block text-black hover:text-black text-sm font-medium duration-700"
           >
-            Virtual Production
+            Virtual Technology
           </NavLink>
         </div>
         <div className="p-4 w-full md:w-1/4">
@@ -116,7 +116,7 @@ const Footer = () => {
             href="mailto:website@vaultgamesstudio.com"
             className="my-3 block text-black hover:text-black text-sm font-medium duration-700"
           >
-            Email: website@vaultgamesstudio.com
+            Email: info@vaultgamesstudio.com
           </a>
           <a
             href="tel:18001234567"
