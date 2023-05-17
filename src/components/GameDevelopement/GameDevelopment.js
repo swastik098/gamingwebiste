@@ -308,7 +308,7 @@ const GameDevelopment = () => {
         </Grid>
       </TabPanel>
 
-      {/* <Grid container spacing={2} ref={myref2}>
+      <Grid container spacing={2} ref={myref2}>
         <Grid item sm={4}></Grid>
         <Grid item sm={4}>
           <Typography
@@ -318,7 +318,7 @@ const GameDevelopment = () => {
           </Typography>
         </Grid>
         <Grid item sm={4}></Grid>
-      </Grid> */}
+      </Grid>
 
       <Grid container spacing={2}>
         <Grid item sm={2}></Grid>
