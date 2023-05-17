@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState } from "react";
+import React from "react";
 import Slider from "./slider";
 import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
@@ -7,66 +7,71 @@ import Box from "./Box";
 import ImageCard from "./ImageCard";
 import Button from "./Button";
 import InfoBox from "./InfoBox";
-import Course from "./Course";
-// import YouTubeCard from "./YoutubeVideoCard";
+// import Course from "./Course";
+// import Carousel from "./YouTubePlayer";
+import YouTubePlayer from "./YouTubePlayer";
 // import ReactPlayer from "react-player";
 // import CourseThumbnail from "./CourseThumbnail";
 // import ImageGallery from "./ImageGallery";
 
-// const videoIds = [
-//   "eciP7ixTNec",
-//   "NMUr2yNALhU",
-//   "r_ErytGpScQ",
-//   "UXqq0ZvbOnk",
-//   // "EJ2GzZAORQA",
-// ];
-
 const Home = () => {
-  const [selectedCourseIndex, setSelectedCourseIndex] = useState(null);
+  // const [selectedCourseIndex, setSelectedCourseIndex] = useState(null);
 
-  const courses = [
-    {
-      title: "Course 1",
-      description: "This is the first course",
-      thumbnailUrl: "https://example.com/course1_thumbnail.jpg",
-      videoUrl: "https://example.com/course1_video.mp4",
-    },
-    {
-      title: "Course 2",
-      description: "This is the second course",
-      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-      videoUrl: "https://example.com/course2_video.mp4",
-    },
-    {
-      title: "Course 3",
-      description: "This is the second course",
-      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-      videoUrl: "https://example.com/course2_video.mp4",
-    },
-    {
-      title: "Course 4",
-      description: "This is the second course",
-      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-      videoUrl: "https://example.com/course2_video.mp4",
-    },
-    {
-      title: "Course 5",
-      description: "This is the second course",
-      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-      videoUrl: "https://example.com/course2_video.mp4",
-    },
-    {
-      title: "Course 6",
-      description: "This is the second course",
-      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-      videoUrl: "https://example.com/course2_video.mp4",
-    },
-    // Add more courses here
-  ];
+  // const videoIds = [
+  //   "eciP7ixTNec",
+  //   "NMUr2yNALhU",
+  //   "r_ErytGpScQ",
+  //   "UXqq0ZvbOnk",
+  //   "eciP7ixTNec",
+  //   "NMUr2yNALhU",
+  //   "r_ErytGpScQ",
+  //   "UXqq0ZvbOnk",
+  //   // "EJ2GzZAORQA",
+  // ];
 
-  const handleCourseClick = (index) => {
-    setSelectedCourseIndex(index);
-  };
+  // const courses = [
+  //   {
+  //     title: "Course 1",
+  //     description: "This is the first course",
+  //     thumbnailUrl: "https://example.com/course1_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course1_video.mp4",
+  //   },
+  //   {
+  //     title: "Course 2",
+  //     description: "This is the second course",
+  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course2_video.mp4",
+  //   },
+  //   {
+  //     title: "Course 3",
+  //     description: "This is the second course",
+  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course2_video.mp4",
+  //   },
+  //   {
+  //     title: "Course 4",
+  //     description: "This is the second course",
+  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course2_video.mp4",
+  //   },
+  //   {
+  //     title: "Course 5",
+  //     description: "This is the second course",
+  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course2_video.mp4",
+  //   },
+  //   {
+  //     title: "Course 6",
+  //     description: "This is the second course",
+  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+  //     videoUrl: "https://example.com/course2_video.mp4",
+  //   },
+  //   // Add more courses here
+  // ];
+
+  // const handleCourseClick = (index) => {
+  //   setSelectedCourseIndex(index);
+  // };
 
   const images = [
     {
@@ -275,47 +280,12 @@ const Home = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p> */}
       </div>
-      <div className="flex flex-wrap justify-center">
-        {selectedCourseIndex !== null ? (
-          <Course videoUrl={courses[selectedCourseIndex].videoUrl} />
-        ) : (
-          <>
-            {courses.map((course, index) => (
-              <div
-                key={index}
-                className="m-2 p-2 max-hw-xs w-full md:max-w-sm rounded-lg border border-gray-200 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer"
-                onClick={() => handleCourseClick(index)}
-              >
-                <div className="relative h-0 pb-2/3">
-                  <img
-                    className="absolute inset-0 object-cover object-center w-full h-full rounded-t-lg"
-                    src={course.thumbnailUrl}
-                    alt={course.title}
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div className="mt-4">
-                  <h3 className="text-xl font-medium">{course.title}</h3>
-                  <p className="mt-2 text-gray-600">{course.description}</p>
-                </div>
-              </div>
-            ))}
-          </>
-        )}
-      </div>
-      {/* <div className="md:w-full md:pl-0">
-        <div className="flex flex-wrap -mx-4 bg-pink-200 text-black rounded-lg pt-5 justify-center items-center">
-          {videoIds.map((videoId) => (
-            <div
-              key={videoId}
-              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-2"
-            >
-              <YouTubeCard videoId={videoId} />
-            </div>
-          ))}
+
+      <div className="flex mt-5 max-w-full md:max-w-7xl  flex-wrap justify-center">
+        <div className="m-2 p-2  w-full  rounded-lg border border-gray-200 shadow-lg cursor-pointer">
+          <YouTubePlayer />
         </div>
-      </div> */}
+      </div>
       <div class="flex flex-wrap justify-between m-5" id="contact-section">
         <ContactPage />
       </div>
