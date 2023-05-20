@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
 import GameDevelopment from "./components/GameDevelopement/GameDevelopment";
@@ -9,11 +10,12 @@ import ContactPage from "./components/Home/ContactPage";
 // import VirtualProduction from "./components/VirtualProduction/VirtualProduction";
 
 function App() {
+  const resultRef = useRef(null);
   return (
     <Router>
-      <Navigation />
+      <Navigation  resultRef={resultRef}/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home ref={resultRef} />} />
         <Route path="/gamedevelopment" element={<GameDevelopment />} />
         <Route path="/gameart" element={<GameArt />} />
         <Route path="/VirtualProduction" element={<Home />} />
