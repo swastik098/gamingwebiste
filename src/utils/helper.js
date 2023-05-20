@@ -142,3 +142,5 @@ export const iosGames = [
   {images:"https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956876/Vault%20Games/Dragon2_egf6ig.png"},
   {images:"https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956887/Vault%20Games/pelican_rqqsuy.png"}
 ];
+
+export const numberRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/
