@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { NavLink } from "react-router-dom";
 
-function Navigation() {
+function Navigation({resultRef}) {
   const [showMenu, setShowMenu] = useState(false);
 
+  //  const myref = useRef(null);
   const handleGetInTouchClick = () => {
     const contactSection = document.getElementById("contact-section");
     if (contactSection && contactSection.scrollIntoView) {
@@ -14,6 +15,11 @@ function Navigation() {
   const closeMenu = () => {
     setShowMenu(false);
   };
+
+  const scrollTo = (e)=>{
+    e.preventDefault();
+    resultRef.current.scrollIntoView({ behavior: "smooth" });
+  }
 
   const navStyle = {
     position: "sticky",
@@ -72,9 +78,9 @@ function Navigation() {
             Game Art
           </NavLink>
           <NavLink
-            to="/animation"
+            // to="/animation"
             className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
-            onClick={closeMenu}
+            onClick={scrollTo}
           >
             Virtual Technology
           </NavLink>

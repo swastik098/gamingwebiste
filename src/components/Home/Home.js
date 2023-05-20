@@ -13,8 +13,10 @@ import YouTubePlayer from "./YouTubePlayer";
 // import ReactPlayer from "react-player";
 // import CourseThumbnail from "./CourseThumbnail";
 // import ImageGallery from "./ImageGallery";
+import { forwardRef } from "react";
 
-const Home = () => {
+const Home = forwardRef((props,ref) => {
+
   // const [selectedCourseIndex, setSelectedCourseIndex] = useState(null);
 
   // const videoIds = [
@@ -116,6 +118,8 @@ const Home = () => {
     },
   ];
 
+  
+
   return (
     <div className="flex flex-col items-center justify-center bg-white text-black min-h-screen font-sans">
       <Slider />
@@ -214,7 +218,7 @@ const Home = () => {
         </div>
       </div>
       <Button text={"Book Animation Demo"} className="mb-10" />
-      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center">
+      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center" ref={ref}>
         <div className="w-full md:w-1/2 md:pl-4 mt-10 justify-center">
           <InfoBox
             title={"Virtual Technology"}
@@ -291,6 +295,6 @@ const Home = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Home;
