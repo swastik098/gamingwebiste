@@ -26,7 +26,6 @@ const GameDevelopment = () => {
   console.log(mobImages, "mobImages");
 
   const handleitemTwo = () => {
-    console.log("log");
     myref2?.current.scrollIntoView();
   };
 
@@ -35,8 +34,6 @@ const GameDevelopment = () => {
   // };
 
   const handleChange = (event, newValue) => {
-    console.log(event, "save");
-    console.log(newValue, "newValue");
     setValue(newValue);
   };
 
@@ -201,7 +198,7 @@ const GameDevelopment = () => {
                         // height=""
                         image={ele?.images}
                         alt="green iguana"
-                        sx={{ height: "500px" }}
+                        sx={{ height: "300px" }}
                       />
                     </CardActionArea>
                   </Card>
@@ -250,7 +247,7 @@ const GameDevelopment = () => {
                         // height=""
                         image={ele?.images}
                         alt="green iguana"
-                        sx={{ height: "500px" }}
+                        sx={{ height: "300px" }}
                       />
                     </CardActionArea>
                   </Card>
