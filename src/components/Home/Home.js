@@ -128,7 +128,7 @@ const Home = () => {
       <div className="flex flex-col md:flex-row justify-between w-3/4 ">
         <Box
           className=" text-xl md:text-base leading-relaxed text-center"
-          text="We at Vault Games Studio are an extremely passionate team of game design experts, animations, creatives, developers. We provide bespoke and holistic game developement service right from the ideation stage to project completion. For further understanding of our work, check, out the video gallry below!"
+          text="Vault Games Studio is a team of extremely passionate Artists, game designer and programmer experts. We create immersive, innovative, and entertaining gaming experiences that bring people together and push the boundaries of what is possible in the gaming industry.We provide bespoke and holistic game developement service right from the ideation stage to project completion."
           boldText="Vault Games Studio"
         />
       </div>
@@ -151,7 +151,7 @@ const Home = () => {
       <div className="flex flex-col justify-center md:flex-row w-3/4 ">
         <Box
           className="font-sans text-xl md:text-base leading-relaxed text-center"
-          text="We are a game development company specialised in creating high-quality games for various platforms"
+          text="We strive to craft games that engage players on a deep level, inspire creativity, and foster a sense of community. We are committed to delivering high-quality products that are accessible to all, while also prioritizing the needs and desires of our most dedicated fans. Through our dedication to excellence, we aim to be a leader in the gaming industry and to help shape the future of interactive entertainment."
         />
       </div>
       <div class="flex flex-wrap justify-center p-10 space-y-4">

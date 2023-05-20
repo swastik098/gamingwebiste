@@ -76,7 +76,7 @@ const GameDevelopment = () => {
         alignItems="flex-start"
         // sx={{ padding: "20px" }}
       >
-        <Grid item sm={6} xs={12} md={6}>
+        {/* <Grid item sm={6} xs={12} md={6}>
           <Typography
             sx={{
               fontWeight: "bold",
@@ -91,8 +91,8 @@ const GameDevelopment = () => {
           >
             Mobile Development
           </Typography>
-        </Grid>
-        <Grid item sm={6} xs={12} md={6}>
+        </Grid> */}
+        {/* <Grid item sm={6} xs={12} md={6}>
           <Typography
             sx={{
               fontWeight: "bold",
@@ -107,7 +107,7 @@ const GameDevelopment = () => {
           >
             Pc Game Development
           </Typography>
-        </Grid>
+        </Grid> */}
         {/* <Grid item sm={4}>
           <Typography
             sx={{
@@ -209,37 +209,6 @@ const GameDevelopment = () => {
             ))}
             {/* <div></div> */}
           </Grid>
-          <Grid item lg={4}>
-            {/* <div className="right"> */}
-            <Card
-              sx={{
-                // maxWidth: 500,
-                height: "670px",
-                backgroundColor: "#00FFFF",
-              }}
-            >
-              <CardActionArea>
-                <CardContent>
-                  {/* <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </Typography> */}
-                  <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    sx={{
-                      color: "black",
-                      marginTop: "20px",
-                      fontWeight: "bold",
-                      fontSize: "30px",
-                    }}
-                  >
-                    Tech Stack Used Project Completion Client Review
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-            {/* </div> */}
-          </Grid>
         </Grid>
       </TabPanel>
 
@@ -287,35 +256,6 @@ const GameDevelopment = () => {
                 </Grid>
               </div>
             ))}
-          </Grid>
-          <Grid item lg={4}>
-            <Card
-              sx={{
-                // maxWidth: 500,
-                height: "670px",
-                backgroundColor: "#00FFFF",
-              }}
-            >
-              <CardActionArea>
-                <CardContent>
-                  {/* <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </Typography> */}
-                  <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    sx={{
-                      color: "black",
-                      marginTop: "20px",
-                      fontWeight: "bold",
-                      fontSize: "30px",
-                    }}
-                  >
-                    Tech Stack Used Project Completion Client Review
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
           </Grid>
         </Grid>
       </TabPanel>
