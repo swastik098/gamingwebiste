@@ -139,7 +139,7 @@ const GameDevelopment = () => {
           </div>
         </Grid>
       </Grid> */}
-      
+
       {images && images?.length > 0 ? (
         <>
           <div elevation={3} className="developmentDetails_Carousel_Outer">

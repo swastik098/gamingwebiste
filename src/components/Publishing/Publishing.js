@@ -1,18 +1,12 @@
 import React from "react";
-import OtherServices from "./OtherServices";
 import SkewedDesign from "./TopSection";
+// import OtherServices from "./OtherServices";
 // import RegisterForm from "./RegisterPublish";
 
 const Publishing = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="w-full">
       <SkewedDesign />
-      {/* <div className="">
-        <RegisterForm />
-      </div> */}
-      <div className="flex-grow overflow-y-auto">
-        <OtherServices />
-      </div>
     </div>
   );
 };

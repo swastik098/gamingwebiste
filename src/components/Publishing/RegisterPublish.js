@@ -3,7 +3,7 @@ import { useState } from "react";
 import Button from "../Home/Button";
 import * as Yup from "yup";
 import { useFormik } from "formik";
-import{numberRegex} from "../../utils/helper"
+import { numberRegex } from "../../utils/helper";
 const RegisterForm = () => {
   // const [studioName, setStudioName] = useState("");
   // const [number, setNumber] = useState("");
@@ -50,7 +50,11 @@ const RegisterForm = () => {
   // };
   const signUpSchema = Yup.object({
     studioName: Yup.string().min(2).max(25).required("Please enter your name"),
-    number: Yup.string().nullable().max(10).matches(numberRegex,{message:"Please add a valid number"}).required("Please enter your number"),
+    number: Yup.string()
+      .nullable()
+      .max(10)
+      .matches(numberRegex, { message: "Please add a valid number" })
+      .required("Please enter your number"),
     email: Yup.string().email().required("Please enter your email"),
     location: Yup.string().min(6).required("Please enter your location"),
     website: Yup.string().min(6).required("Please enter your website url"),
@@ -77,7 +81,10 @@ const RegisterForm = () => {
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center text-white">
           Register Now
         </h1>
-        <label htmlFor="studioName" className="block font-medium mb-1 text-white">
+        <label
+          htmlFor="studioName"
+          className="block font-medium mb-1 text-white"
+        >
           Studio Name
         </label>
         <input
@@ -88,7 +95,7 @@ const RegisterForm = () => {
           // onChange={(event) => setStudioName(event.target.value)}
           onChange={handleChange}
           onBlur={handleBlur}
-          className="w-full border-gray-900 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+          className="w-full h-full border-gray-900 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           // required
         />
         {touched?.studioName && errors?.studioName ? (
@@ -111,7 +118,10 @@ const RegisterForm = () => {
           // required
         />
         {touched?.number && errors?.number ? (
-          <p className="form-error">{errors.number}{console.log(errors,"error")}</p>
+          <p className="form-error">
+            {errors.number}
+            {console.log(errors, "error")}
+          </p>
         ) : null}
       </div>
       <div className="mb-4">
@@ -167,7 +177,7 @@ const RegisterForm = () => {
           className="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           // required
         />
-         {touched?.location && errors?.location ? (
+        {touched?.location && errors?.location ? (
           <p className="form-error">{errors.website}</p>
         ) : null}
       </div>
@@ -186,12 +196,15 @@ const RegisterForm = () => {
           className="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           // required
         />
-         {touched?.location && errors?.location ? (
+        {touched?.location && errors?.location ? (
           <p className="form-error">{errors.gameName}</p>
         ) : null}
       </div>
       <div className="mb-4">
-        <label htmlFor="portfolioLink" className="block font-medium mb-1 text-white">
+        <label
+          htmlFor="portfolioLink"
+          className="block font-medium mb-1 text-white"
+        >
           Portfolio Link
         </label>
         <input
@@ -207,10 +220,14 @@ const RegisterForm = () => {
         />
       </div>
       <div className="text-center">
-       <button type="submit"  className={`text-2xl  bg-gradient-to-b from-blue to-white-500 hover:bg-blue-950 text-black font-bold py-3 px-4 rounded-lg`} >RegisterNow</button>
+        <button
+          type="submit"
+          className={`text-2xl  bg-blue hover:bg-blue-950 text-black font-bold py-3 px-4 rounded-lg`}
+        >
+          RegisterNow
+        </button>
         {/* <Button text={"RegisterNow!"}  type={"submit"} /> */}
       </div>
-     
     </form>
   );
 };
