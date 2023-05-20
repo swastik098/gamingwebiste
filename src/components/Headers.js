@@ -32,9 +32,9 @@ function Navigation({resultRef}) {
   return (
     <nav
       style={navStyle}
-      className="flex font-sans items-center justify-between flex-wrap bg-gradient-to-b from-blue to-white p-8 py-6"
+      className="flex font-sans items-center justify-between flex-wrap bg-gray-800 p-8 py-6"
     >
-      <div className="flex items-center flex-shrink-0 text-black mr-6">
+      <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-semibold text-xl tracking-tight">
           <NavLink to="/" onClick={closeMenu}>
             LOGO
@@ -61,42 +61,43 @@ function Navigation({resultRef}) {
           showMenu ? "block" : "hidden"
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
       >
-        <div className="text-xl text-center space-x-20 lg:flex-grow">
+        <div className="text-m text-center space-x-20 lg:flex-grow">
           <NavLink
             to="/gamedevelopment"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black
-             hover:text-black mr-4 font-normal text-xl tracking-tight"
+            className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
+            // className="block mt-4 lg:inline-block lg:mt-0 text-white
+            //  hover:text-blue mr-4 font-normal text-xl tracking-tight"
             onClick={closeMenu}
           >
-            Game Development
+            GAME DEVELOPMENT
           </NavLink>
           <NavLink
             to="/gameart"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
+            className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue "
             onClick={closeMenu}
           >
-            Game Art
+            GAME ART
           </NavLink>
           <NavLink
             // to="/animation"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
+            className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue "
             onClick={scrollTo}
           >
-            Virtual Technology
+            VIRTUAL TECHNOLOGY
           </NavLink>
           <NavLink
             to="/publishing"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
+            className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue "
             onClick={closeMenu}
           >
-            Publishing
+            PUBLISHING
           </NavLink>
           <NavLink
             to="/academy"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4 font-normal text-xl tracking-tight"
+            className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue "
             onClick={closeMenu}
           >
-            Academy
+            ACADEMY
           </NavLink>
         </div>
         <NavLink
@@ -106,7 +107,7 @@ function Navigation({resultRef}) {
             closeMenu();
           }}
           // onClick={handleGetInTouchClick}
-          className="inline-block text-xl px-4 py-2 font-normal tracking-tight leading-none border rounded text-black border-black hover:border-black hover:text-white hover:bg-gray-800 mt-4 lg:mt-0"
+          className="inline-block text-m px-4 py-2 font-semibold tracking-tight leading-none border rounded text-white border-black hover:border-white hover:text-blue hover:bg-gray-800 mt-4 lg:mt-0"
           // onClick={closeMenu}
         >
           Get In Touch

@@ -1,6 +1,12 @@
 export const images = [
   {
     original:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712586/Vault%20Games/tmp_311052b8-8f06-43b7-9fd1-d4f29c78867d_sujckv.png",
+    thumbnail:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712586/Vault%20Games/tmp_311052b8-8f06-43b7-9fd1-d4f29c78867d_sujckv.png",
+  },
+  {
+    original:
       "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712560/Vault%20Games/murali-krishna-highresscreenshot00006_hchedb.jpg",
     thumbnail:
       "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712560/Vault%20Games/murali-krishna-highresscreenshot00006_hchedb.jpg",
@@ -17,12 +23,7 @@ export const images = [
     thumbnail:
       "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712565/Vault%20Games/murali-krishna-highresscreenshot00019_bnlpa3.jpg",
   },
-  {
-    original:
-      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712586/Vault%20Games/tmp_311052b8-8f06-43b7-9fd1-d4f29c78867d_sujckv.png",
-    thumbnail:
-      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712586/Vault%20Games/tmp_311052b8-8f06-43b7-9fd1-d4f29c78867d_sujckv.png",
-  },
+
   {
     original:
       "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712810/Vault%20Games/wxdtqolxnlfcwvpksbzq.jpg",
@@ -76,7 +77,7 @@ export const mobImages = [
   },
   {
     images:
-      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956890/Vault%20Games/mouse_1_sd9wor.png"
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956890/Vault%20Games/mouse_1_sd9wor.png",
   },
   {
     images:
@@ -138,9 +139,18 @@ export const iosGames = [
     images:
       "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956846/Vault%20Games/back2_lpmafx.png",
   },
-  {images:"https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956871/Vault%20Games/Dragon_h75kxn.png"},
-  {images:"https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956876/Vault%20Games/Dragon2_egf6ig.png"},
-  {images:"https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956887/Vault%20Games/pelican_rqqsuy.png"}
+  {
+    images:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956871/Vault%20Games/Dragon_h75kxn.png",
+  },
+  {
+    images:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956876/Vault%20Games/Dragon2_egf6ig.png",
+  },
+  {
+    images:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956887/Vault%20Games/pelican_rqqsuy.png",
+  },
 ];
 
 export const numberRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/

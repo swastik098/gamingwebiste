@@ -7,6 +7,7 @@ import Publishing from "./components/Publishing/Publishing";
 import Footer from "./components/Footer";
 import Navigation from "./components/Headers";
 import ContactPage from "./components/Home/ContactPage";
+// import VirtualProduction from "./components/VirtualProduction/VirtualProduction";
 
 function App() {
   const resultRef = useRef(null);
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Home ref={resultRef} />} />
         <Route path="/gamedevelopment" element={<GameDevelopment />} />
         <Route path="/gameart" element={<GameArt />} />
-        <Route path="/Virtual Production" element={<Home />} />
+        <Route path="/VirtualProduction" element={<Home />} />
         <Route path="/publishing" element={<Publishing />} />
         <Route path="/academy" element={<Home />} />
         <Route path="/contact" element={<ContactPage />} />

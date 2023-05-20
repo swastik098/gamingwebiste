@@ -6,7 +6,7 @@ function Slider() {
   const [isDesktop, setIsDesktop] = useState(false);
   const slides = [
     {
-      url: " https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956949/Vault%20Games/fotobash_tanki1_tqa4ep.png",
+      // url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956949/Vault%20Games/fotobash_tanki1_tqa4ep.png",
     },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956927/Vault%20Games/bg_tank_6_4_eg97ti.png",
@@ -66,7 +66,16 @@ function Slider() {
   }, []);
 
   return (
-    <div className="w-full h-screen relative group">
+    <div className="w-full h-screen relative group ">
+      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center">
+        <h2 className="text-4xl md:text-8xl md:text-center font-semibold mb-2 text-white">
+          VAULT
+          <span className="text-blue"> Games Studio</span>
+        </h2>
+        <p className="text-lg md:text-5xl font-semibold text-white text-center pt-5">
+          <span className="text-blue">World</span> Class Gaming company
+        </p>
+      </div>
       <div
         style={{
           backgroundImage: `url(${

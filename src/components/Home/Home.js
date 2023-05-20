@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from "react";
+import React, { useState } from "react";
 import Slider from "./slider";
 import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
@@ -8,14 +8,15 @@ import ImageCard from "./ImageCard";
 import Button from "./Button";
 import InfoBox from "./InfoBox";
 // import Course from "./Course";
+// import YouTubePlayer from "./YouTubePlayer";
 // import Carousel from "./YouTubePlayer";
-import YouTubePlayer from "./YouTubePlayer";
 // import ReactPlayer from "react-player";
 // import CourseThumbnail from "./CourseThumbnail";
 // import ImageGallery from "./ImageGallery";
 import { forwardRef } from "react";
 
 const Home = forwardRef((props,ref) => {
+  const [setSelectedCourseIndex] = useState(null);
 
   // const [selectedCourseIndex, setSelectedCourseIndex] = useState(null);
 
@@ -31,49 +32,50 @@ const Home = forwardRef((props,ref) => {
   //   // "EJ2GzZAORQA",
   // ];
 
-  // const courses = [
-  //   {
-  //     title: "Course 1",
-  //     description: "This is the first course",
-  //     thumbnailUrl: "https://example.com/course1_thumbnail.jpg",
-  //     videoUrl: "https://example.com/course1_video.mp4",
-  //   },
-  //   {
-  //     title: "Course 2",
-  //     description: "This is the second course",
-  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-  //     videoUrl: "https://example.com/course2_video.mp4",
-  //   },
-  //   {
-  //     title: "Course 3",
-  //     description: "This is the second course",
-  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-  //     videoUrl: "https://example.com/course2_video.mp4",
-  //   },
-  //   {
-  //     title: "Course 4",
-  //     description: "This is the second course",
-  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-  //     videoUrl: "https://example.com/course2_video.mp4",
-  //   },
-  //   {
-  //     title: "Course 5",
-  //     description: "This is the second course",
-  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-  //     videoUrl: "https://example.com/course2_video.mp4",
-  //   },
-  //   {
-  //     title: "Course 6",
-  //     description: "This is the second course",
-  //     thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
-  //     videoUrl: "https://example.com/course2_video.mp4",
-  //   },
-  //   // Add more courses here
-  // ];
+  const courses = [
+    {
+      title: "Unity Course",
+      // description: "This is the first course",
+      thumbnailUrl:
+        "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684578073/Vault%20Games/gameart/03_fcmic7.jpg",
+      // videoUrl: "https://example.com/course1_video.mp4",
+    },
+    {
+      title: "Unreal Course",
+      // description: "This is the second course",
+      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+      // videoUrl: "https://example.com/course2_video.mp4",
+    },
+    {
+      title: "Game Art Course",
+      // description: "This is the second course",
+      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+      // videoUrl: "https://example.com/course2_video.mp4",
+    },
+    {
+      title: "Game Desgin Course",
+      // description: "This is the second course",
+      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+      // videoUrl: "https://example.com/course2_video.mp4",
+    },
+    {
+      title: "Virtual Production Course",
+      // description: "This is the second course",
+      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+      // videoUrl: "https://example.com/course2_video.mp4",
+    },
+    {
+      title: "3D Course",
+      // description: "This is the second course",
+      thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
+      // videoUrl: "https://example.com/course2_video.mp4",
+    },
+    // Add more courses here
+  ];
 
-  // const handleCourseClick = (index) => {
-  //   setSelectedCourseIndex(index);
-  // };
+  const handleCourseClick = (index) => {
+    setSelectedCourseIndex(index);
+  };
 
   const images = [
     {
@@ -132,7 +134,7 @@ const Home = forwardRef((props,ref) => {
       <div className="flex flex-col md:flex-row justify-between w-3/4 ">
         <Box
           className=" text-xl md:text-base leading-relaxed text-center"
-          text="We at Vault Games Studio are an extremely passionate team of game design experts, animations, creatives, developers. We provide bespoke and holistic game developement service right from the ideation stage to project completion. For further understanding of our work, check, out the video gallry below!"
+          text="Vault Games Studio is a team of extremely passionate Artists, game designer and programmer experts. We create immersive, innovative, and entertaining gaming experiences that bring people together and push the boundaries of what is possible in the gaming industry.We provide bespoke and holistic game developement service right from the ideation stage to project completion."
           boldText="Vault Games Studio"
         />
       </div>
@@ -140,7 +142,7 @@ const Home = forwardRef((props,ref) => {
         {/* <div className={" w-full"}></div> */}
         <img
           src={
-            "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958193/Vault%20Games/homePage/Ag1_09_dyqrvc.png"
+            "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684578074/Vault%20Games/gameart/06_r4peq6.jpg"
           }
           alt="no image"
         />
@@ -152,10 +154,10 @@ const Home = forwardRef((props,ref) => {
         }
         title={"Service We Offer"}
       />
-      <div className="flex flex-col justify-center md:flex-row w-3/4 ">
+      <div className="flex flex-col justify-:5center md:flex-row w-3/4 ">
         <Box
           className="font-sans text-xl md:text-base leading-relaxed text-center"
-          text="We are a game development company specialised in creating high-quality games for various platforms"
+          text="We strive to craft games that engage players on a deep level, inspire creativity, and foster a sense of community. We are committed to delivering high-quality products that are accessible to all, while also prioritizing the needs and desires of our most dedicated fans. Through our dedication to excellence, we aim to be a leader in the gaming industry and to help shape the future of interactive entertainment."
         />
       </div>
       <div class="flex flex-wrap justify-center p-10 space-y-4">
@@ -193,7 +195,7 @@ const Home = forwardRef((props,ref) => {
         </div>
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958218/Vault%20Games/homePage/fun-3d-illustration-super-santa-claus-with-vr-helmet_cx5rk7.jpg"
+            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684579730/Vault%20Games/gameart/Untitled_008R_iuy9fd.png"
             alt="logo"
             className="brand-logo"
           />
@@ -236,9 +238,46 @@ const Home = forwardRef((props,ref) => {
         </div>
       </div>
       <Button on text={"Book Virtual Demo"} />
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-5xl font-bold text-black mt-8">Game Desgin Courses</h2>
+        {/* <p class="mt-4 mb-10 text-xl  text-black">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p> */}
+      </div>
+      <div className="flex flex-wrap justify-center mt-10">
+        {/* {selectedCourseIndex !== null ? (
+          <Course videoUrl={courses[selectedCourseIndex].videoUrl} />
+        ) : ( */}
+        <>
+          {courses.map((course, index) => (
+            <div
+              key={index}
+              className="m-2 p-2 max-hw-xs w-full md:max-w-sm rounded-lg border bg-gray-800 text-white border-gray-800 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+              onClick={() => handleCourseClick(index)}
+            >
+              <div className="relative h-0 pb-2/3">
+                <img
+                  className="absolute inset-0 object-cover object-center w-full h-full rounded-t-lg"
+                  src={course.thumbnailUrl}
+                  alt={course.title}
+                  width="300"
+                  height="200"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="text-xl font-semibold text-center">
+                  {course.title}
+                </h3>
+                <p className="mt-2 text-gray-600">{course.description}</p>
+              </div>
+            </div>
+          ))}
+        </>
+        {/* )} */}
+      </div>
       <div class="bg-white py-12 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-extrabold text-black">Our Partners</h2>
+          <h2 class="text-5xl font-extrabold text-black mb-5">Our Partners</h2>
           {/* <p class="mt-4 mb-10 text-xl  text-black">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p> */}
@@ -276,20 +315,11 @@ const Home = forwardRef((props,ref) => {
           />
         </div>
       </div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-extrabold text-black">
-          Our Game Desgin Courses
-        </h2>
-        {/* <p class="mt-4 mb-10 text-xl  text-black">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p> */}
-      </div>
-
-      <div className="flex mt-5 max-w-full md:max-w-7xl  flex-wrap justify-center">
+      {/* <div className="flex mt-5 max-w-full md:max-w-7xl  flex-wrap justify-center">
         <div className="m-2 p-2  w-full  rounded-lg border border-gray-200 shadow-lg cursor-pointer">
           <YouTubePlayer />
         </div>
-      </div>
+      </div> */}
       <div class="flex flex-wrap justify-between m-5" id="contact-section">
         <ContactPage />
       </div>
