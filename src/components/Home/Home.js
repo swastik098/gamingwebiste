@@ -7,7 +7,7 @@ import Box from "./Box";
 import ImageCard from "./ImageCard";
 import Button from "./Button";
 import InfoBox from "./InfoBox";
-// import Course from "./Course";
+import Course from "./Course";
 // import YouTubePlayer from "./YouTubePlayer";
 // import Carousel from "./YouTubePlayer";
 // import ReactPlayer from "react-player";
@@ -15,7 +15,7 @@ import InfoBox from "./InfoBox";
 // import ImageGallery from "./ImageGallery";
 
 const Home = () => {
-  const [setSelectedCourseIndex] = useState(null);
+  // const [selectedCourseIndex, setSelectedCourseIndex] = useState(null);
 
   // const videoIds = [
   //   "eciP7ixTNec",
@@ -70,9 +70,9 @@ const Home = () => {
     // Add more courses here
   ];
 
-  const handleCourseClick = (index) => {
-    setSelectedCourseIndex(index);
-  };
+  // const handleCourseClick = (index) => {
+  //   setSelectedCourseIndex(index);
+  // };
 
   const images = [
     {
@@ -118,7 +118,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center bg-white text-black min-h-screen font-sans">
+    <div className="flex flex-col items-center justify-center bg-white text-black min-h-screen body-font font-poppins">
       <Slider />
       <HeadingStyle
         className={
@@ -248,7 +248,7 @@ const Home = () => {
             <div
               key={index}
               className="m-2 p-2 max-hw-xs w-full md:max-w-sm rounded-lg border bg-gray-800 text-white border-gray-800 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer"
-              onClick={() => handleCourseClick(index)}
+              // onClick={() => handleCourseClick(index)}
             >
               <div className="relative h-0 pb-2/3">
                 <img

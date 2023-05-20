@@ -73,7 +73,7 @@ function Slider() {
           <span className="text-blue"> Games Studio</span>
         </h2>
         <p className="text-lg md:text-5xl font-semibold text-white text-center pt-5">
-          <span className="text-blue">World</span> Class Gaming company
+          <span className="text-blue">World</span> Class Gaming Company
         </p>
       </div>
       <div
