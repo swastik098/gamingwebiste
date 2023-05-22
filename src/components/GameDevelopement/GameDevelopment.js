@@ -290,8 +290,8 @@ const GameDevelopment = () => {
               textAlign: "center",
               fontSize: "25px",
               fontWeight: "bold",
-              backgroundColor: "#00FFFF",
-              color: "black",
+              backgroundColor: "#29333d",
+              color: "white",
               padding: "25px",
               borderRadius: "40px",
             }}

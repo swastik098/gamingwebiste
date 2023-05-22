@@ -6,25 +6,25 @@ function Slider() {
   const [isDesktop, setIsDesktop] = useState(false);
   const slides = [
     {
-      // url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956949/Vault%20Games/fotobash_tanki1_tqa4ep.png",
-    },
-    {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956927/Vault%20Games/bg_tank_6_4_eg97ti.png",
-    },
-    {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956947/Vault%20Games/loading3_1_1_hcshy2.png",
-    },
-    {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712829/Vault%20Games/z4pyfkxeoolmwzl96m3i.png",
     },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956914/Vault%20Games/bg_fight2_1_jvezdd.png",
     },
+    // {
+    //   url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956949/Vault%20Games/fotobash_tanki1_tqa4ep.png",
+    // },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684578073/Vault%20Games/gameart/03_fcmic7.jpg",
+    },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956927/Vault%20Games/bg_tank_6_4_eg97ti.png",
+    },
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956864/Vault%20Games/concept_games_pw_1_2_pebs2a.png",
     },
     {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956950/Vault%20Games/Shoot_main_menu_xhd7o9.png",
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684578073/Vault%20Games/gameart/01_t58xuo.jpg",
     },
   ];
 
@@ -68,7 +68,7 @@ function Slider() {
   return (
     <div className="w-full h-screen relative group ">
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center">
-        <h2 className="text-4xl md:text-8xl md:text-center font-semibold mb-2 text-white">
+        <h2 className="text-2xl md:text-8xl md:text-center font-semibold mb-2 text-white">
           VAULT
           <span className="text-blue"> Games Studio</span>
         </h2>

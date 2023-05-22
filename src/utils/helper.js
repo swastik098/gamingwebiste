@@ -13,9 +13,9 @@ export const images = [
   },
   {
     original:
-      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712556/Vault%20Games/HighresScreenshot00004_ur5bl4.jpg",
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956950/Vault%20Games/Shoot_main_menu_xhd7o9.png",
     thumbnail:
-      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712556/Vault%20Games/HighresScreenshot00004_ur5bl4.jpg",
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956950/Vault%20Games/Shoot_main_menu_xhd7o9.png",
   },
   {
     original:
@@ -23,12 +23,11 @@ export const images = [
     thumbnail:
       "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712565/Vault%20Games/murali-krishna-highresscreenshot00019_bnlpa3.jpg",
   },
-
   {
     original:
-      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712810/Vault%20Games/wxdtqolxnlfcwvpksbzq.jpg",
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956927/Vault%20Games/bg_tank_6_4_eg97ti.png",
     thumbnail:
-      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712810/Vault%20Games/wxdtqolxnlfcwvpksbzq.jpg",
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956927/Vault%20Games/bg_tank_6_4_eg97ti.png",
   },
   {
     original:
@@ -47,6 +46,36 @@ export const images = [
       "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956845/Vault%20Games/bg_5_meli10.png",
     thumbnail:
       "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956845/Vault%20Games/bg_5_meli10.png",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956904/Vault%20Games/stadium_ahwd4d.png",
+    thumbnail:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956904/Vault%20Games/stadium_ahwd4d.png",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956868/Vault%20Games/city3_q1hbdx.png",
+    thumbnail:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956868/Vault%20Games/city3_q1hbdx.png",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956854/Vault%20Games/bg_fight2_5_u4dsia.png",
+    thumbnail:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956854/Vault%20Games/bg_fight2_5_u4dsia.png",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956860/Vault%20Games/concept_games_location_1_awmjsf.png",
+    thumbnail:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956860/Vault%20Games/concept_games_location_1_awmjsf.png",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956841/Vault%20Games/bg_2_vnqxft.png",
+    thumbnail:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956841/Vault%20Games/bg_2_vnqxft.png",
   },
 ];
 
@@ -153,4 +182,4 @@ export const iosGames = [
   },
 ];
 
-export const numberRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/
+export const numberRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
