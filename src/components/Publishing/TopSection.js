@@ -17,10 +17,10 @@ const SkewedDesign = () => {
           <span className="text-blue font-sans "> PUBLISHING</span>
         </h2>
         <p className="text-lg md:text-3xl  text-white text-center pt-5 ">
-          <span className="text-blue mr-4 p-4 font-semibold font-sans">
+          {/* <span className="text-blue mr-4 p-4 font-semibold font-sans">
             Vault Games Studio
-          </span>
-          turn mobile games into chart-topping hits
+          </span> */}
+          Turn Mobile and PC Games Into Chart-Topping Hits
         </p>
       </div>
       <div className="absolute top-0 right-0 w-1/2 h-full p-12 md:flex flex">
