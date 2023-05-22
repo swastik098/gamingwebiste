@@ -70,7 +70,7 @@ function Slider() {
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center">
         <h2 className="text-2xl md:text-8xl md:text-center font-semibold mb-2 text-white">
           VAULT
-          <span className="text-blue"> Games Studio</span>
+          <span className="text-blue"> GAMES STUDIO</span>
         </h2>
         <p className="text-lg md:text-5xl font-semibold text-white text-center pt-5">
           <span className="text-blue">World</span> Class Gaming Company
