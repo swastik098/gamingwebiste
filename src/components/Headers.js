@@ -1,7 +1,8 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import clientLogo from "../assets/vault-games-final-logo.png";
 
-function Navigation({resultRef}) {
+function Navigation({ resultRef }) {
   const [showMenu, setShowMenu] = useState(false);
 
   //  const myref = useRef(null);
@@ -16,10 +17,10 @@ function Navigation({resultRef}) {
     setShowMenu(false);
   };
 
-  const scrollTo = (e)=>{
+  const scrollTo = (e) => {
     e.preventDefault();
     resultRef.current.scrollIntoView({ behavior: "smooth" });
-  }
+  };
 
   const navStyle = {
     position: "sticky",
@@ -32,12 +33,16 @@ function Navigation({resultRef}) {
   return (
     <nav
       style={navStyle}
-      className="flex font-sans items-center justify-between flex-wrap bg-gray-800 p-8 py-6"
+      className="flex font-sans items-center justify-between flex-wrap bg-gray-800   p-8 py-6"
     >
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-semibold text-xl tracking-tight">
           <NavLink to="/" onClick={closeMenu}>
-            LOGO
+            <img
+              src={clientLogo}
+              alt="vault Gaming Studio"
+              className="h-20 mr-20"
+            />
           </NavLink>
         </span>
       </div>
