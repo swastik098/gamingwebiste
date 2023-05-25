@@ -17,7 +17,7 @@ const Home = forwardRef((props, ref) => {
   const myref = useRef(null);
 
   const handleButton = () => {
-    myref?.current.scrollIntoView();
+    myref?.current.scrollIntoView({behavior:"smooth", block: "start", inline:"start"});
   };
 
   const courses = [
@@ -304,7 +304,9 @@ const Home = forwardRef((props, ref) => {
           <YouTubePlayer />
         </div>
       </div> */}
-      <div className="" ref={myref}>
+      <div ref={myref}></div>
+      <div style={{marginTop:"70px"}}></div>
+      <div className="" >
         <div class="flex flex-wrap justify-between m-5" id="contact-section">
           <ContactPage />
         </div>
