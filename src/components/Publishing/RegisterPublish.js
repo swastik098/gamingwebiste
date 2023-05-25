@@ -4,6 +4,7 @@ import Button from "../Home/Button";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import { numberRegex } from "../../utils/helper";
+
 const RegisterForm = () => {
   // const [studioName, setStudioName] = useState("");
   // const [number, setNumber] = useState("");
@@ -79,7 +80,7 @@ const RegisterForm = () => {
     <form onSubmit={handleSubmit} className="max-w-lg mx-auto pb-5 pt-5">
       <div className="mb-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center text-white">
-          Register Now
+          Register Yourself
         </h1>
         <label
           htmlFor="studioName"

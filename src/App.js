@@ -7,18 +7,18 @@ import Publishing from "./components/Publishing/Publishing";
 import Footer from "./components/Footer";
 import Navigation from "./components/Headers";
 import ContactPage from "./components/Home/ContactPage";
-// import VirtualProduction from "./components/VirtualProduction/VirtualProduction";
+import VirtualTechnology from "./components/VirtualTechnology/VirtualTechnology";
 
 function App() {
   const resultRef = useRef(null);
   return (
     <Router>
-      <Navigation  resultRef={resultRef}/>
+      <Navigation resultRef={resultRef} />
       <Routes>
         <Route path="/" element={<Home ref={resultRef} />} />
         <Route path="/gamedevelopment" element={<GameDevelopment />} />
         <Route path="/gameart" element={<GameArt />} />
-        <Route path="/VirtualProduction" element={<Home />} />
+        <Route path="/virtualtechnology" element={<VirtualTechnology />} />
         <Route path="/publishing" element={<Publishing />} />
         <Route path="/academy" element={<Home />} />
         <Route path="/contact" element={<ContactPage />} />

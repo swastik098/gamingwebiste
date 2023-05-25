@@ -33,18 +33,21 @@ function Navigation({ resultRef }) {
   return (
     <nav
       style={navStyle}
-      className="flex font-sans items-center justify-between flex-wrap bg-gray-800   p-8 py-6"
+      className="flex font-sans items-center justify-between flex-wrap bg-gray-800 p-8 py-6"
     >
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-semibold text-xl tracking-tight">
-          <NavLink to="/" onClick={closeMenu}>
-            <img
-              src={clientLogo}
-              alt="vault Gaming Studio"
-              className="h-20 mr-20"
-            />
-          </NavLink>
-        </span>
+      {" "}
+      <div className=" ">
+        <div className="flex items-center flex-shrink-0 bg-white mr-6">
+          <span className="font-semibold text-xl tracking-tight">
+            <NavLink to="/" onClick={closeMenu}>
+              <img
+                src={clientLogo}
+                alt="vault Gaming Studio"
+                className="h-14 w-16"
+              />
+            </NavLink>
+          </span>
+        </div>
       </div>
       <div className="block lg:hidden">
         <button
@@ -84,9 +87,9 @@ function Navigation({ resultRef }) {
             GAME ART
           </NavLink>
           <NavLink
-            // to="/animation"
+            to="/VirtualTechnology"
             className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue "
-            onClick={scrollTo}
+            onClick={closeMenu}
           >
             VIRTUAL TECHNOLOGY
           </NavLink>
@@ -100,7 +103,7 @@ function Navigation({ resultRef }) {
           <NavLink
             to="/academy"
             className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue "
-            onClick={closeMenu}
+            onClick={scrollTo}
           >
             ACADEMY
           </NavLink>
@@ -112,7 +115,7 @@ function Navigation({ resultRef }) {
             closeMenu();
           }}
           // onClick={handleGetInTouchClick}
-          className="inline-block text-m px-4 py-2 font-semibold tracking-tight leading-none border rounded text-white border-black hover:border-white hover:text-blue hover:bg-gray-800 mt-4 lg:mt-0"
+          className="inline-block text-m px-4 py-2 font-semibold tracking-tight leading-none border rounded text-white border-white hover:border-black hover:text-blue hover:bg-gray-800 mt-4 lg:mt-0"
           // onClick={closeMenu}
         >
           Get In Touch

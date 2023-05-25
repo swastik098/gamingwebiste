@@ -9,25 +9,24 @@ import Tab from "@mui/material/Tab";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-// import Paper from "@mui/material/Paper";
 import { CardActionArea } from "@mui/material";
 import Box from "@mui/material/Box";
 import { images, mobImages, iosGames } from "../../utils/helper";
+// import Paper from "@mui/material/Paper";
+
 const GameDevelopment = () => {
   const [value, setValue] = useState(0);
   const myref = useRef(null);
   const myref2 = useRef(null);
   const myref3 = useRef(null);
 
-  const handleitemOne = () => {
-    myref?.current.scrollIntoView();
-  };
+  // const handleitemOne = () => {
+  //   myref?.current.scrollIntoView();
+  // };
 
-  console.log(mobImages, "mobImages");
-
-  const handleitemTwo = () => {
-    myref2?.current.scrollIntoView();
-  };
+  // const handleitemTwo = () => {
+  //   myref2?.current.scrollIntoView();
+  // };
 
   // const handleitemThree = () => {
   //   myref3?.current.scrollIntoView();
@@ -276,7 +275,7 @@ const GameDevelopment = () => {
           <Typography
             sx={{ textAlign: "center", fontSize: "25px", fontWeight: "bold" }}
           >
-            Like What You See? Discuss Your Ideas Today !
+            Like what you see above? Discuss your ideas today !
           </Typography>{" "}
         </Grid>
         <Grid item sm={2}></Grid>

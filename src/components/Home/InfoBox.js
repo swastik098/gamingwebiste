@@ -8,7 +8,7 @@ const InfoBox = ({ title, text, className }) => {
       </h2>
       <div className={`p-8 rounded-md ${className}`}>
         <p
-          className={`font-sans text-3xl md:text-lg leading-relaxed text-center`}
+          className={`font-sans text-lg md:text-lg leading-relaxed text-center`}
         >
           {text}
         </p>

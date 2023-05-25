@@ -11,21 +11,27 @@ function Slider() {
     {
       url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956914/Vault%20Games/bg_fight2_1_jvezdd.png",
     },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956851/Vault%20Games/Background_1_fqwvlm.png",
+    },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956846/Vault%20Games/bg_4_eceqj8.png",
+    },
+    {
+      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956854/Vault%20Games/bg_fight2_5_u4dsia.png",
+    },
     // {
-    //   url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956949/Vault%20Games/fotobash_tanki1_tqa4ep.png",
+    //   url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684578073/Vault%20Games/gameart/03_fcmic7.jpg",
     // },
-    {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684578073/Vault%20Games/gameart/03_fcmic7.jpg",
-    },
-    {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956927/Vault%20Games/bg_tank_6_4_eg97ti.png",
-    },
-    {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956864/Vault%20Games/concept_games_pw_1_2_pebs2a.png",
-    },
-    {
-      url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684578073/Vault%20Games/gameart/01_t58xuo.jpg",
-    },
+    // {
+    //   url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956927/Vault%20Games/bg_tank_6_4_eg97ti.png",
+    // },
+    // {
+    //   url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956864/Vault%20Games/concept_games_pw_1_2_pebs2a.png",
+    // },
+    // {
+    //   url: "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684578073/Vault%20Games/gameart/01_t58xuo.jpg",
+    // },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -73,7 +79,7 @@ function Slider() {
           <span className="text-blue"> GAMES STUDIO</span>
         </h2>
         <p className="text-lg md:text-5xl font-semibold text-white text-center pt-5">
-          <span className="text-blue">World</span> Class Gaming Company
+          <span className="text-blue">World Class</span> Gaming Company
         </p>
       </div>
       <div

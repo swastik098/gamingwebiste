@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useRef } from "react";
 import Slider from "./slider";
 import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
@@ -14,31 +14,36 @@ import InfoBox from "./InfoBox";
 // import ImageGallery from "./ImageGallery";
 
 const Home = forwardRef((props, ref) => {
+  const myref = useRef(null);
+
+  const handleButton = () => {
+    myref?.current.scrollIntoView();
+  };
+
   const courses = [
     {
-      title: "Unity Course",
+      title: "Unity Design",
     },
     {
-      title: "Unreal Course",
+      title: "Unreal Design",
       thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
     },
     {
-      title: "Game Art Course",
+      title: "Game Art Design",
       thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
     },
     {
-      title: "Game Desgin Course",
+      title: "Game Design",
       thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
     },
     {
-      title: "Virtual Production Course",
+      title: "Virtual Production",
       thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
     },
     {
-      title: "3D Course",
+      title: "3D Art",
       thumbnailUrl: "https://example.com/course2_thumbnail.jpg",
     },
-    // Add more courses here
   ];
 
   const images = [
@@ -89,35 +94,36 @@ const Home = forwardRef((props, ref) => {
       <Slider />
       <HeadingStyle
         className={
-          " subpixel-antialiased text-zinc-800 mt-12 text-5xl text-center font-sans"
+          " subpixel-antialiased text-black mt-12 text-5xl text-center font-sans"
         }
         title={"Vault Games Studio"}
       />
       <div className="flex flex-col md:flex-row justify-between w-3/4 ">
         <Box
-          className=" text-3xl md:text-base leading-relaxed text-center font-sans "
+          className="leading-relaxed text-center font-sans "
           text="Vault Games Studio is a team of extremely passionate Artists, game designer and programmer experts. We create immersive, innovative, and entertaining gaming experiences that bring people together and push the boundaries of what is possible in the gaming industry.We provide bespoke and holistic game developement service right from the ideation stage to project completion."
           boldText="Vault Games Studio"
         />
       </div>
-      <div className="flex flex-col md:flex-row  w-3/4 py-10 justify-center items-center">
+      <div className="flex flex-col md:flex-row  w-2/4 justify-center items-center">
         <img
+          className=" object-contain hover:object-scale-down md:object-scale-down"
           src={
-            "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684578074/Vault%20Games/gameart/06_r4peq6.jpg"
+            "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684991248/Vault%20Games/logo/vault_games_final_logo_f0iqve.jpg"
           }
           alt="logo"
         />
       </div>
-      <Button text={"Get In Touch"} />
+      <Button text={"Get In Touch"} onClick={handleButton} />
       <HeadingStyle
         className={
-          " subpixel-antialiased text-zinc-800 mt-12 text-5xl text-center font-sans"
+          " subpixel-antialiased text-black mt-12 text-5xl text-center font-sans"
         }
         title={"Service We Offer"}
       />
       <div className="flex flex-col justify-:5center md:flex-row w-3/4 ">
         <Box
-          className="font-sans text-xl md:text-base leading-relaxed text-center"
+          className="font-sans leading-relaxed text-center"
           text="We strive to craft games that engage players on a deep level, inspire creativity, and foster a sense of community. We are committed to delivering high-quality products that are accessible to all, while also prioritizing the needs and desires of our most dedicated fans. Through our dedication to excellence, we aim to be a leader in the gaming industry and to help shape the future of interactive entertainment."
         />
       </div>
@@ -144,7 +150,7 @@ const Home = forwardRef((props, ref) => {
           />
         </div>
       </div>
-      <Button text={"Book Dev Demo"} />
+      <Button text={"Book Dev Demo"} onClick={handleButton} />
       <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center">
         <div className="w-full md:w-1/2 md:pl-4 mt-10 justify-center">
           <InfoBox
@@ -162,7 +168,7 @@ const Home = forwardRef((props, ref) => {
           />
         </div>
       </div>
-      <Button on text={"Book Art Demo"} />
+      <Button on text={"Book Art Demo"} onClick={handleButton} />
       <div className="flex md:flex-row justify-between w-4/5 px-4 py-8 items-center flex-col-reverse">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
@@ -180,16 +186,17 @@ const Home = forwardRef((props, ref) => {
           />
         </div>
       </div>
-      <Button text={"Book Animation Demo"} className="mb-10" />
-      <div
-        className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center"
-        ref={ref}
-      >
+      <Button
+        text={"Book Animation Demo"}
+        className="mb-10"
+        onClick={handleButton}
+      />
+      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center">
         <div className="w-full md:w-1/2 md:pl-4 mt-10 justify-center">
           <InfoBox
             title={"Virtual Technology"}
             text={
-              "We create art and visual assets for games. We offer a wide range of services, from concept art and character design to 3D modeling and animation for a variety of platforms, including consoles, PC, and mobile devices."
+              "We create art and visual assets for games. We offer a wide range of services, provides filmmakers and game developers with unprecedented creative control and efficiency. As the technology continues to evolve, you can expect even more groundbreaking experiences in the world of entertainment."
             }
           />
         </div>
@@ -201,9 +208,23 @@ const Home = forwardRef((props, ref) => {
           />
         </div>
       </div>
-      <Button on text={"Book Virtual Demo"} />
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-5xl font-bold text-black mt-8">Game Desgin Courses</h2>
+      <Button on text={"Book Virtual Demo"} onClick={handleButton} />
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" ref={ref}>
+        <HeadingStyle
+          className={
+            " subpixel-antialiased text-black mt-12 text-6xl text-center font-sans"
+          }
+          title={"Vault Academy"}
+        />
+      </div>
+      <div className="flex flex-col md:flex-row ml-4 w-2/4 justify-center items-center">
+        <img
+          className=" object-contain hover:object-scale-down md:object-scale-down"
+          src={
+            "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684991248/Vault%20Games/logo/vault_academy_final_logo_lmzwn5.jpg"
+          }
+          alt="logo"
+        />
       </div>
       <div className="flex flex-wrap justify-center mt-10 font-sans">
         {/* {selectedCourseIndex !== null ? (
@@ -238,10 +259,12 @@ const Home = forwardRef((props, ref) => {
       </div>
       <div class="bg-white py-12 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-5xl font-extrabold text-black mb-5">Our Partners</h2>
-          {/* <p class="mt-4 mb-10 text-xl  text-black">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p> */}
+          <HeadingStyle
+            className={
+              " subpixel-antialiased text-black mt-12 text-6xl text-center font-sans"
+            }
+            title={"Our Partners"}
+          />
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center flex-wrap">
           <img
@@ -281,8 +304,10 @@ const Home = forwardRef((props, ref) => {
           <YouTubePlayer />
         </div>
       </div> */}
-      <div class="flex flex-wrap justify-between m-5" id="contact-section">
-        <ContactPage />
+      <div className="" ref={myref}>
+        <div class="flex flex-wrap justify-between m-5" id="contact-section">
+          <ContactPage />
+        </div>
       </div>
     </div>
   );

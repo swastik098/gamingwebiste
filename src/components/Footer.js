@@ -78,9 +78,7 @@ const Footer = () => {
           </NavLink>
         </div> */}
         <div className="p-4 w-full md:w-1/4">
-          <div className="text-white uppercase mb-6 font-bold">
-            Office in India
-          </div>
+          <div className="text-white uppercase mb-6 font-bold">headquarter</div>
           <div className="my-3 block text-white text-sm font-medium duration-700">
             Vault Games Studio
           </div>
@@ -91,48 +89,45 @@ const Footer = () => {
             Hyderabad 81, India
           </div>
         </div>
-        <div className="p-4 w-full md:w-1/4">
-          <div className="text-white uppercase mb-6 font-bold">
-            Office in Italy
+        <div className="flex flex-1 space-x-6">
+          <div className="p-4 w-full md:w-1/4">
+            <div className="text-white uppercase mb-6 font-bold">Branch</div>
+            <div className="my-3 block text-white text-sm font-medium duration-700">
+              Via Limana 127/6
+            </div>
+            <div className="my-3 block text-white text-sm font-medium duration-700">
+              Modena, Emilia Romagna
+            </div>
+            <div className="my-3 block text-white text-sm font-medium duration-700">
+              Italy 41125
+            </div>
           </div>
-          <div className="my-3 block text-white text-sm font-medium duration-700">
-            Via Limana 127/6
+          <div className="p-4 w-full md:w-1/4">
+            <div className="text-white uppercase mb-6 font-bold">Branch</div>
+            <div className="my-3 block text-white text-sm font-medium duration-700">
+              2 basement
+            </div>
+            <div className="my-3 block text-white text-sm font-medium duration-700">
+              Burlington Gardens Acton Town W36BA
+            </div>
+            <div className="my-3 block text-white text-sm font-medium duration-700">
+              London UK
+            </div>
           </div>
-          <div className="my-3 block text-white text-sm font-medium duration-700">
-            Modena, Emilia Romagna
-          </div>
-          <div className="my-3 block text-white text-sm font-medium duration-700">
-            Italy 41125
-          </div>
-        </div>
-        <div className="p-4 w-full md:w-1/4">
-          <div className="text-white uppercase mb-6 font-bold">
-            Office in UK
-          </div>
-          <div className="my-3 block text-white text-sm font-medium duration-700">
-            2 basement Burlington Gardens
-          </div>
-          <div className="my-3 block text-white text-sm font-medium duration-700">
-            Acton Town W36BA
-          </div>
-          <div className="my-3 block text-white text-sm font-medium duration-700">
-            London United Kingdom
-          </div>
-        </div>
-        <div className="p-4 w-full md:w-1/4">
-          <div className="text-white uppercase mb-6 font-bold">
-            Office in Australia
-          </div>
-          <div className="my-3 block text-white text-sm font-medium duration-700">
-            U 17 362-364
-          </div>
-          <div className="my-3 block text-white text-sm font-medium duration-700">
-            Railway Terrace, Guildford
-          </div>
-          <div className="my-3 block text-white text-sm font-medium duration-700">
-            Australia NSW-2161
+          <div className="p-4 w-full md:w-1/4">
+            <div className="text-white uppercase mb-6 font-bold">Branch</div>
+            <div className="my-3 block text-white text-sm font-medium duration-700">
+              U 17 362-364
+            </div>
+            <div className="my-3 block text-white text-sm font-medium duration-700">
+              Railway Terrace, Guildford
+            </div>
+            <div className="my-3 block text-white text-sm font-medium duration-700">
+              Australia NSW-2161
+            </div>
           </div>
         </div>
+
         <div className="p-4 w-full md:w-1/4">
           <div className="text-white uppercase mb-6 font-bold">Contact</div>
           <div className="flex gap-4 mb-4 lg:mb-0">
