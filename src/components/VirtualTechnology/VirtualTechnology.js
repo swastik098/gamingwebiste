@@ -39,48 +39,39 @@ const VirtualTechnologyComponent = () => {
         <h2 className="text-6xl text-center  text-black font-sans font-bold mb-8">
           Virtual Technology
         </h2>
-        <ul className="list-disc text-black leading-none md:leading-loose space-y-4 space-x-2 md:space-y-4 md:space-x-5 font-medium font-sans">
-          <style>
-            {`
-              .list-disc li::before {
-                font-size: 1.75rem;
-              }
-            `}
-          </style>
-          <li>
-            We at Vault Games studio explore the world of virtual production and
-            its impact on the entertainment industry.
-          </li>
-          <li>
-            We visualize, capture, and create digital assets within a virtual
-            environment, such as 3D models, textures, and animations. This
-            technology enables us to make creative decisions on the spot, saving
-            time and resources compared to traditional post-production methods.
-          </li>
-          <li>
-            We specialize in real-time rendering, which generates high-quality
-            visuals instantly. It allows filmmakers and game developers to see
-            the virtual world in real-time, enabling immediate adjustments and
-            experimentation. We work with real-time rendering engines like
-            Unreal Engine and Unity, which have become industry standards,
-            providing photorealistic graphics and advanced lighting effects.
-          </li>
-          <li>
-            Motion capture technology also plays a vital role in our virtual
-            production workflow. It captures the movements of actors and
-            translates them into digital characters. Through specialized suits
-            equipped with markers or facial recognition systems, performers'
-            actions and expressions can be recorded and applied to digital
-            avatars in real-time. This seamless integration of live-action and
-            digital performances allows for more natural and dynamic character
-            animations.
-          </li>
-          <li>
-            At Vault Games studio, we accelerate the production process by
-            enabling real-time visualization, reducing the need for lengthy
-            post-production work.
-          </li>
-        </ul>
+        <p className="text-center text-black  font-medium font-sans">
+          We at Vault Games studio explore the world of virtual production and
+          its impact on the entertainment industry.
+          <br />
+          <br />
+          We visualize, capture, and create digital assets within a virtual
+          environment, such as 3D models, textures, and animations. This
+          technology enables us to make creative decisions on the spot, saving
+          time and resources compared to traditional post-production methods.
+          <br />
+          <br />
+          We specialize in real-time rendering, which generates high-quality
+          visuals instantly. It allows filmmakers and game developers to see the
+          virtual world in real-time, enabling immediate adjustments and
+          experimentation. We work with real-time rendering engines like Unreal
+          Engine and Unity, which have become industry standards, providing
+          photorealistic graphics and advanced lighting effects.
+          <br />
+          <br />
+          Motion capture technology also plays a vital role in our virtual
+          production workflow. It captures the movements of actors and
+          translates them into digital characters. Through specialized suits
+          equipped with markers or facial recognition systems, performers'
+          actions and expressions can be recorded and applied to digital avatars
+          in real-time. This seamless integration of live-action and digital
+          performances allows for more natural and dynamic character animations.
+          <br />
+          <br />
+          At Vault Games studio, we accelerate the production process by
+          enabling real-time visualization, reducing the need for lengthy
+          post-production work. This results in shorter production schedules and
+          faster turnaround times.
+        </p>
       </div>
     </div>
   );
