@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import Grid from "@mui/material/Grid";
 // import clientLogo from "../assets/vault-games-final-logo.png";
 
 function Navigation({ resultRef }) {
@@ -36,95 +37,108 @@ function Navigation({ resultRef }) {
   };
 
   return (
-    <nav
-      style={navStyle}
-      className="flex font-sans items-center justify-between flex-wrap bg-gray-800 p-8 py-6"
-    >
-      <div className="">
-        <div className="flex items-center flex-shrink-0 bg-base-color mr-6">
-          <div className="flex items-center flex-shrink-0">
-            <NavLink to="/" onClick={closeMenu}>
-              <img
-                src={
-                  "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1685094204/Vault%20Games/logo/vault_games_final_logo_black_BG_01-removebg-preview_pktzcx.jpg"
-                }
-                alt="vault Gaming Studio"
-                className="h-18 w-20"
-              />
-            </NavLink>
+    <>
+      <Grid container spacing={2}>
+        <Grid item xs={2}>
+          {" "}
+          <div className="">
+            <div className="flex items-center flex-shrink-0 bg-base-color mr-6">
+              <div className="flex items-center flex-shrink-0">
+                <NavLink to="/" onClick={closeMenu}>
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1685094204/Vault%20Games/logo/vault_games_final_logo_black_BG_01-removebg-preview_pktzcx.jpg"
+                    }
+                    alt="vault Gaming Studio"
+                    className="h-18 w-20"
+                  />
+                </NavLink>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="block lg:hidden">
-        <button
-          className="flex items-center px-3 py-2 border-2 rounded text-white border-black  hover:text-black hover:border-black"
-          onClick={() => setShowMenu(!showMenu)}
-        >
-          <svg
-            className="fill-current h-5 w-5"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+        </Grid>
+        <Grid item xs={10}>
+          {" "}
+          <nav
+            style={navStyle}
+            className="flex font-sans items-center justify-between flex-wrap bg-gray-800 p-8 py-6"
           >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="#000" />
-          </svg>
-        </button>
-      </div>
-      <div
-        className={`${
-          showMenu ? "block" : "hidden"
-        } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
-      >
-        <div className="text-m text-center space-x-20 lg:flex-grow">
-          <NavLink
-            to="/gamedevelopment"
-            className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
-            onClick={closeMenu}
-          >
-            GAME DEVELOPMENT
-          </NavLink>
-          <NavLink
-            to="/gameart"
-            className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
-            onClick={closeMenu}
-          >
-            GAME ART
-          </NavLink>
-          <NavLink
-            to="/VirtualTechnology"
-            className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
-            onClick={closeMenu}
-          >
-            VIRTUAL TECHNOLOGY
-          </NavLink>
-          <NavLink
-            to="/publishing"
-            className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
-            onClick={closeMenu}
-          >
-            PUBLISHING
-          </NavLink>
-          <NavLink
-            to="/academy"
-            className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
-            onClick={closeMenu}
-          >
-            ACADEMY
-          </NavLink>
-        </div>
+            <div className="block lg:hidden">
+              <button
+                className="flex items-center px-3 py-2 border-2 rounded text-white border-black  hover:text-black hover:border-black"
+                onClick={() => setShowMenu(!showMenu)}
+              >
+                <svg
+                  className="fill-current h-5 w-5"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Menu</title>
+                  <path
+                    d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+                    fill="#000"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              className={`${
+                showMenu ? "block" : "hidden"
+              } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
+            >
+              <div className="text-m text-center space-x-20 lg:flex-grow">
+                <NavLink
+                  to="/gamedevelopment"
+                  className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
+                  onClick={closeMenu}
+                >
+                  GAME DEVELOPMENT
+                </NavLink>
+                <NavLink
+                  to="/gameart"
+                  className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
+                  onClick={closeMenu}
+                >
+                  GAME ART
+                </NavLink>
+                <NavLink
+                  to="/VirtualTechnology"
+                  className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
+                  onClick={closeMenu}
+                >
+                  VIRTUAL TECHNOLOGY
+                </NavLink>
+                <NavLink
+                  to="/publishing"
+                  className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
+                  onClick={closeMenu}
+                >
+                  PUBLISHING
+                </NavLink>
+                <NavLink
+                  to="/academy"
+                  className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
+                  onClick={closeMenu}
+                >
+                  ACADEMY
+                </NavLink>
+              </div>
 
-        <NavLink
-          to={"/contact"}
-          onClick={() => {
-            handleGetInTouchClick();
-            closeMenu();
-          }}
-          className="inline-block text-m px-4 py-2 font-semibold tracking-tight leading-none border rounded text-white border-white hover:border-black hover:text-blue hover:bg-gray-800 mt-4 lg:mt-0"
-        >
-          Get In Touch
-        </NavLink>
-      </div>
-    </nav>
+              <NavLink
+                to={"/contact"}
+                onClick={() => {
+                  handleGetInTouchClick();
+                  closeMenu();
+                }}
+                className="inline-block text-m px-4 py-2 font-semibold tracking-tight leading-none border rounded text-white border-white hover:border-black hover:text-blue hover:bg-gray-800 mt-4 lg:mt-0"
+              >
+                Get In Touch
+              </NavLink>
+            </div>
+          </nav>
+        </Grid>
+      </Grid>
+    </>
   );
 }
 
