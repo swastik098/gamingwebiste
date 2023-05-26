@@ -22,10 +22,10 @@ function Navigation({ resultRef }) {
     setShowMenu(false);
   };
 
-  const scrollTo = (e) => {
-    e.preventDefault();
-    resultRef.current.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollTo = (e) => {
+  //   e.preventDefault();
+  //   resultRef.current.scrollIntoView({ behavior: "smooth" });
+  // };
 
   const navStyle = {
     position: "sticky",
