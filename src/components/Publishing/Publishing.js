@@ -21,7 +21,7 @@ const Publishing = () => {
           Turn Mobile and PC Games Into Chart-Topping Hits
         </p>
       </div>
-      <div className=" flex flex-grow absolute top-0 right-0 w-1/2 h-full p-12 md:flex">
+      <div className=" flex flex-grow absolute top-0 right-0 w-1/2 h-full  md:flex">
         <RegisterForm />
       </div>
     </div>
