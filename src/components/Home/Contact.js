@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import vg from "../assets/vg.png";
 import { toast } from "react-hot-toast";
+// import vg from "../assets/vg.png";
 // import { addDoc, collection } from "firebase/firestore";
 // import { db } from "../firebase";
 

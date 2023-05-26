@@ -2,44 +2,44 @@ import React from "react";
 
 const VirtualTechnologyComponent = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center">
-      <div className="bg-white p-4 md:w-1/2 flex justify-center items-center">
-        <div className="grid grid-cols-2 gap-4">
+    <div className="flex flex-col-reverse md:flex-row justify-center items-center">
+      <div className="bg-white p-4 md:w-1/2 flex flex-col-reverse ">
+        <div className="grid grid-cols-2 gap-5">
           <div className="relative overflow-hidden">
             <img
-              className="w-full h-auto transform transition-transform duration-300 hover:scale-105"
-              src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684578080/Vault%20Games/gameart/lemat_psusw5.png"
+              className="w-full h-auto transform transition-transform duration-300 hover:scale-105 rounded-xl "
+              src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712829/Vault%20Games/z4pyfkxeoolmwzl96m3i.png"
               alt="img"
             />
           </div>
           <div className="relative overflow-hidden">
             <img
-              className="w-full h-auto transform transition-transform duration-300 hover:scale-105"
-              src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684579741/Vault%20Games/gameart/Untitled_009R_r9e5ga.png"
+              className="w-full h-auto transform transition-transform duration-300 hover:scale-105 rounded-xl "
+              src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683960354/Vault%20Games/gameart/HighresScreenshot00001_y9pdzw.jpg"
               alt="img"
             />
           </div>
           <div className="relative overflow-hidden">
             <img
-              className="w-full h-auto transform transition-transform duration-300 hover:scale-105"
-              src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684578091/Vault%20Games/gameart/Untitled_010_zazslp.png"
+              className="w-full h-auto transform transition-transform duration-300 hover:scale-105 rounded-xl "
+              src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956921/Vault%20Games/concept_5_oiysyj.png"
               alt="img"
             />
           </div>
           <div className="relative overflow-hidden">
             <img
-              className="w-full h-auto transform transition-transform duration-300 hover:scale-105"
-              src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684579730/Vault%20Games/gameart/Untitled_008R_iuy9fd.png"
+              className=" w-full h-autotransform transition-transform duration-300 hover:scale-105 rounded-xl "
+              src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956949/Vault%20Games/fotobash_tanki1_tqa4ep.png"
               alt="img"
             />
           </div>
         </div>
       </div>
-      <div className="bg-gray-800 mt-5 p-4 md:w-1/2 rounded-2xl mr-5 md:ml-4">
-        <h2 className="text-6xl text-center  text-white font-sans font-bold mb-8">
+      <div className="px-8 mt-5 p-4 md:w-1/2 md:mr-5 rounded-2xl mr-5 md:ml-4">
+        <h2 className="text-6xl text-center  text-black font-sans font-bold mb-8">
           Virtual Technology
         </h2>
-        <p className="text-center font-sans text-white">
+        <p className="text-center text-black  font-medium font-sans">
           We at Vault Games studio explore the world of virtual production and
           its impact on the entertainment industry.
           <br />
@@ -69,7 +69,8 @@ const VirtualTechnologyComponent = () => {
           <br />
           At Vault Games studio, we accelerate the production process by
           enabling real-time visualization, reducing the need for lengthy
-          post-production work.
+          post-production work. This results in shorter production schedules and
+          faster turnaround times.
         </p>
       </div>
     </div>

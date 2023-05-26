@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import {
   AiFillFacebook,
@@ -6,7 +5,6 @@ import {
   AiFillLinkedin,
   AiFillTwitterSquare,
 } from "react-icons/ai";
-// import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -46,9 +44,8 @@ const Footer = () => {
           >
             Academy
           </NavLink>
-        </div> */}
-
-        {/* <div className="p-4 w-full md:w-1/4">
+        </div>
+        <div className="p-4 w-full md:w-1/4">
           <div className="text-white uppercase mb-6 font-bold">
             Game Design Courses
           </div>
@@ -78,7 +75,9 @@ const Footer = () => {
           </NavLink>
         </div> */}
         <div className="p-4 w-full md:w-1/4">
-          <div className="text-white uppercase mb-6 font-bold">headquarter</div>
+          <div className="text-white text-xl uppercase mb-6 font-bold">
+            headquarter
+          </div>
           <div className="my-3 block text-white text-sm font-medium duration-700">
             Vault Games Studio
           </div>
@@ -89,47 +88,53 @@ const Footer = () => {
             Hyderabad 81, India
           </div>
         </div>
-        <div className="flex flex-1 space-x-6">
-          <div className="p-4 w-full md:w-1/4">
-            <div className="text-white uppercase mb-6 font-bold">Branch</div>
-            <div className="my-3 block text-white text-sm font-medium duration-700">
-              Via Limana 127/6
-            </div>
-            <div className="my-3 block text-white text-sm font-medium duration-700">
-              Modena, Emilia Romagna
-            </div>
-            <div className="my-3 block text-white text-sm font-medium duration-700">
-              Italy 41125
-            </div>
-          </div>
-          <div className="p-4 w-full md:w-1/4">
-            <div className="text-white uppercase mb-6 font-bold">Branch</div>
-            <div className="my-3 block text-white text-sm font-medium duration-700">
-              2 basement
-            </div>
-            <div className="my-3 block text-white text-sm font-medium duration-700">
-              Burlington Gardens Acton Town W36BA
-            </div>
-            <div className="my-3 block text-white text-sm font-medium duration-700">
-              London UK
-            </div>
-          </div>
-          <div className="p-4 w-full md:w-1/4">
-            <div className="text-white uppercase mb-6 font-bold">Branch</div>
-            <div className="my-3 block text-white text-sm font-medium duration-700">
-              U 17 362-364
-            </div>
-            <div className="my-3 block text-white text-sm font-medium duration-700">
-              Railway Terrace, Guildford
-            </div>
-            <div className="my-3 block text-white text-sm font-medium duration-700">
-              Australia NSW-2161
+        <div className="flex flex-1 space-x-4 ">
+          <div className=" mt-4 md:mb-0">
+            <h2 className="text-xl text-bold mb-2 text-center text-white">
+              BRANCHES
+            </h2>
+            <div className="flex space-x-6 mt-3 mr-3">
+              <div>
+                <div className="my-3 block text-white text-sm font-medium duration-700">
+                  Via Limana 127/6
+                </div>
+                <div className="my-3 block text-white text-sm font-medium duration-700">
+                  Modena, Emilia Romagna
+                </div>
+                <div className="my-3 block text-white text-sm font-medium duration-700">
+                  Italy 41125
+                </div>
+              </div>
+              <div>
+                <div className="my-3 block text-white text-sm font-medium duration-700">
+                  2 basement
+                </div>
+                <div className="my-3 block text-white text-sm font-medium duration-700">
+                  Burlington Gardens, Acton Town
+                </div>
+                <div className="my-3 block text-white text-sm font-medium duration-700">
+                  W36BA, London UK
+                </div>
+              </div>
+              <div>
+                <div className="my-3 block text-white text-sm font-medium duration-700">
+                  U 17 362-364
+                </div>
+                <div className="my-3 block text-white text-sm font-medium duration-700">
+                  Railway Terrace, Guildford
+                </div>
+                <div className="my-3 block text-white text-sm font-medium duration-700">
+                  Australia NSW-2161
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="p-4 w-full md:w-1/4">
-          <div className="text-white uppercase mb-6 font-bold">Contact</div>
+        <div className="p-4 w-full md:w-1/4 md:ml-5">
+          <div className="text-white uppercase mb-6 font-bold text-xl">
+            Contact
+          </div>
           <div className="flex gap-4 mb-4 lg:mb-0">
             <a
               className="text-4xl  text-white hover:text-white"
