@@ -17,7 +17,11 @@ const Home = forwardRef((props, ref) => {
   const myref = useRef(null);
 
   const handleButton = () => {
-    myref?.current.scrollIntoView({behavior:"smooth", block: "start", inline:"start"});
+    myref?.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "start",
+    });
   };
 
   const courses = [
@@ -210,12 +214,12 @@ const Home = forwardRef((props, ref) => {
       </div>
       <Button on text={"Book Virtual Demo"} onClick={handleButton} />
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" ref={ref}>
-        <HeadingStyle
+        {/* <HeadingStyle
           className={
             " subpixel-antialiased text-black mt-12 text-6xl text-center font-sans"
           }
           title={"Vault Academy"}
-        />
+        /> */}
       </div>
       <div className="flex flex-col md:flex-row ml-4 w-2/4 justify-center items-center">
         <img
@@ -304,9 +308,15 @@ const Home = forwardRef((props, ref) => {
           <YouTubePlayer />
         </div>
       </div> */}
-      <div ref={myref}></div>
-      <div style={{marginTop:"70px"}}></div>
-      <div className="" >
+      <div ref={myref}>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <HeadingStyle
+            className={
+              " subpixel-antialiased text-black mt-12 text-6xl text-center font-serif"
+            }
+            title={"Get in Touch"}
+          />
+        </div>
         <div class="flex flex-wrap justify-between m-5" id="contact-section">
           <ContactPage />
         </div>

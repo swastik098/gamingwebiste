@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import clientLogo from "../assets/vault-games-final-logo.png";
+// import clientLogo from "../assets/vault-games-final-logo.png";
 
 function Navigation({ resultRef }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -40,18 +40,19 @@ function Navigation({ resultRef }) {
       style={navStyle}
       className="flex font-sans items-center justify-between flex-wrap bg-gray-800 p-8 py-6"
     >
-      {" "}
-      <div className=" ">
+      <div className="">
         <div className="flex items-center flex-shrink-0 bg-base-color mr-6">
-          <span className="font-semibold text-xl tracking-tight">
+          <div className="flex items-center flex-shrink-0">
             <NavLink to="/" onClick={closeMenu}>
               <img
-                src={clientLogo}
+                src={
+                  "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1685094204/Vault%20Games/logo/vault_games_final_logo_black_BG_01-removebg-preview_pktzcx.jpg"
+                }
                 alt="vault Gaming Studio"
-                className="h-14 w-16"
+                className="h-18 w-20"
               />
             </NavLink>
-          </span>
+          </div>
         </div>
       </div>
       <div className="block lg:hidden">
@@ -118,9 +119,7 @@ function Navigation({ resultRef }) {
             handleGetInTouchClick();
             closeMenu();
           }}
-          // onClick={handleGetInTouchClick}
           className="inline-block text-m px-4 py-2 font-semibold tracking-tight leading-none border rounded text-white border-white hover:border-black hover:text-blue hover:bg-gray-800 mt-4 lg:mt-0"
-          // onClick={closeMenu}
         >
           Get In Touch
         </NavLink>
