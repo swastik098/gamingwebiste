@@ -7,6 +7,7 @@ import ImageCard from "./ImageCard";
 import Button from "./Button";
 import InfoBox from "./InfoBox";
 import Academy from "../Academy/Academy";
+import { ScrollContext } from "../../ScrollContext";
 // import Course from "./Course";
 // import YouTubePlayer from "./YouTubePlayer";
 // import Carousel from "./YouTubePlayer";
@@ -15,7 +16,7 @@ import Academy from "../Academy/Academy";
 // import ImageGallery from "./ImageGallery";
 
 const Home = forwardRef((props, ref) => {
-  const { scrollToSection } = useContext(Academy);
+  const { scrollToSection } = useContext(ScrollContext);
   const sectionRef = useRef(null);
   const myref = useRef(null);
 

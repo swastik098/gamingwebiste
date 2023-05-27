@@ -6,12 +6,12 @@ export const ScrollContext = createContext();
 export const ScrollProvider = ({ children }) => {
   const [scrollToSection, setScrollToSection] = useState("");
 
-  const scrollTo = (section) => {
-    setScrollToSection(section);
-  };
+  // const scrollTo = (section) => {
+  //   setScrollToSection(section);
+  // };
 
   return (
-    <ScrollContext.Provider value={{ scrollToSection, scrollTo }}>
+    <ScrollContext.Provider value={{ scrollToSection, setScrollToSection }}>
       {children}
     </ScrollContext.Provider>
   );

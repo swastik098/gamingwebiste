@@ -3,10 +3,10 @@ import React, { useContext } from "react";
 import { ScrollContext } from "../.././ScrollContext";
 
 const Academy = () => {
-  const { scrollTo } = useContext(ScrollContext);
+  const { setScrollToSection } = useContext(ScrollContext);
 
   const handleClick = () => {
-    scrollTo("targetSection");
+    setScrollToSection("targetSection");
   };
 
   return <button onClick={handleClick}></button>;
