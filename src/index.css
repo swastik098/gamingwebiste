@@ -55,9 +55,12 @@ p {
   /* padding: 40px; */
 }
 .gamedev{
-display: flex;
-padding: 30px;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 30px; */
+  flex-wrap: wrap;
+  margin-left: 0px !important;
 }
 .innerClass{
   padding: 35px;

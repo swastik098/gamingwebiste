@@ -175,11 +175,12 @@ const GameDevelopment = () => {
         <Grid
           container
           spacing={2}
-          direction="row"
+          // direction="row"
           alignItems="center"
           justifyContent="center"
           // style={{ minHeight: "100vh" }}
         >
+          <Grid lg={2}></Grid>
           <Grid item lg={8} className="gamedev">
             {mobImages?.map((ele, index) => (
               <div className="card-container" key={index}>
@@ -206,6 +207,7 @@ const GameDevelopment = () => {
             ))}
             {/* <div></div> */}
           </Grid>
+          <Grid lg={2}></Grid>
         </Grid>
       </TabPanel>
 
@@ -214,10 +216,12 @@ const GameDevelopment = () => {
           container
           spacing={0}
           direction="row"
+          display="flex"
           alignItems="center"
           justifyContent="center"
           style={{ minHeight: "100vh" }}
         >
+          <Grid lg={2}></Grid>
           <Grid item lg={8} className="gamedev">
             {iosGames?.map((ele, index) => (
               // <Card sx={{ maxWidth: 500, height: "500px", textAlign: "center" }}>
@@ -254,6 +258,7 @@ const GameDevelopment = () => {
               </div>
             ))}
           </Grid>
+          <Grid lg={2}></Grid>
         </Grid>
       </TabPanel>
 
