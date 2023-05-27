@@ -72,3 +72,22 @@ p {
 .form-error{
   color: red;
 }
+@media only screen and (max-width: 600px) {
+  .grid{
+    background-color: white;
+  }
+  .mobLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end !important;
+  }
+  .headerMenu{
+    color: black !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .mobMenu{
+    display: grid;
+    text-align: start !important;
+  }
+}
