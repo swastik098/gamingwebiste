@@ -1,7 +1,36 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const ContactPage = () => {
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    // Parameters for sending the email
+    const templateParams = {
+      fullName: formData.fullName,
+      email: formData.email,
+      company: formData.company,
+      message: formData.message,
+    };
+
+    // Your Email.js service ID, template ID, and user ID
+    const serviceID = "service_27md7fu";
+    const templateID = "template_w0aqhu8";
+    const userID = "MzNklvzdmK7_OCBDo";
+
+    // Send the email
+    emailjs
+      .send(serviceID, templateID, templateParams, userID)
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        setFormData(initialFormData); // Clear the form
+      })
+      .catch((error) => {
+        console.error("Email failed to send:", error);
+      });
+  };
+
   const initialFormData = {
     fullName: "",
     email: "",
@@ -23,9 +52,13 @@ const ContactPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData); // Send form data to server or display it in the console
-    setFormData(initialFormData);
+    sendEmail(event);
   };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   console.log(formData); // Send form data to server or display it in the console
+  //   setFormData(initialFormData);
+  // };
 
   return (
     <div className="max-w-4xl mx-auto py-8 px-4 bg-gray-800 rounded-lg m-6 font-sans">
