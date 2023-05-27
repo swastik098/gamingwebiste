@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { db } from "../../firebase";
+import { addDoc, collection } from "firebase/firestore";
 
 const ContactPage = () => {
   const sendEmail = (event) => {
@@ -22,9 +24,27 @@ const ContactPage = () => {
     // Send the email
     emailjs
       .send(serviceID, templateID, templateParams, userID)
-      .then((response) => {
+      .then(async (response) => {
         console.log("Email sent successfully!", response.status, response.text);
         setFormData(initialFormData); // Clear the form
+
+        // Store the form data in Firestore
+        try {
+          await addDoc(collection(db, "contacts"), {
+            formData,
+          });
+          setFormData("");
+          console.log(formData);
+        } catch (error) {
+          console.error("Error storing form data in Firestore:", error);
+        }
+
+        // .then(() => {
+        //   console.log("Form data stored in Firestore");
+        // })
+        // .catch((error) => {
+        //   console.error("Error storing form data in Firestore:", error);
+        // });
       })
       .catch((error) => {
         console.error("Email failed to send:", error);
@@ -37,7 +57,7 @@ const ContactPage = () => {
     company: "",
     message: "",
     agreeToTerms: false,
-    receiveUpdates: false,
+    // receiveUpdates: false,
   };
   const [formData, setFormData] = useState(initialFormData);
 
@@ -45,8 +65,7 @@ const ContactPage = () => {
     const { name, value, checked } = event.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]:
-        name === "agreeToTerms" || name === "receiveUpdates" ? checked : value,
+      [name]: name === "agreeToTerms" ? checked : value,
     }));
   };
 

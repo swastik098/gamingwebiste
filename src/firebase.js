@@ -1,16 +1,25 @@
-import firebase from "firebase/app";
-import "firebase/firestore";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  // Add your Firebase configuration details here
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
+  apiKey: "AIzaSyAwO8FKbrtBVxfkyFHDJCIV6_F1E8KEUz0",
+  authDomain: "vault-games-studio-a1f7b.firebaseapp.com",
   projectId: "vault-games-studio-a1f7b",
-  // ...
+  storageBucket: "vault-games-studio-a1f7b.appspot.com",
+  messagingSenderId: "11069131557",
+  appId: "1:11069131557:web:0c85e86998353e180a28cc",
+  measurementId: "G-M6TQGP4320",
 };
 
-firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+export const app = initializeApp(firebaseConfig);
+export const db = getFirestore();
+// const app = initializeApp(firebaseConfig);
+// const db = app.firestore();
 
-const db = firebase.firestore();
+// export default db;
 
-export default db;
+// const analytics = getAnalytics(app);
