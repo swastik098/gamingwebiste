@@ -8,22 +8,26 @@ import Footer from "./components/Footer";
 import Navigation from "./components/Headers";
 import ContactPage from "./components/Home/ContactPage";
 import VirtualTechnology from "./components/VirtualTechnology/VirtualTechnology";
+import Academy from "./components/Academy/Academy";
+import { ScrollProvider } from "./ScrollContext";
 
 function App() {
   const resultRef = useRef(null);
   return (
     <Router>
-      <Navigation resultRef={resultRef} />
-      <Routes>
-        <Route path="/" element={<Home ref={resultRef} />} />
-        <Route path="/gamedevelopment" element={<GameDevelopment />} />
-        <Route path="/gameart" element={<GameArt />} />
-        <Route path="/virtualtechnology" element={<VirtualTechnology />} />
-        <Route path="/publishing" element={<Publishing />} />
-        <Route path="/academy" element={<Home />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-      <Footer />
+      <ScrollProvider>
+        <Navigation resultRef={resultRef} />
+        <Routes>
+          <Route path="/" element={<Home ref={resultRef} />} />
+          <Route path="/gamedevelopment" element={<GameDevelopment />} />
+          <Route path="/gameart" element={<GameArt />} />
+          <Route path="/virtualtechnology" element={<VirtualTechnology />} />
+          <Route path="/publishing" element={<Publishing />} />
+          <Route path="/academy" element={<Academy />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+        <Footer />
+      </ScrollProvider>
     </Router>
   );
 }

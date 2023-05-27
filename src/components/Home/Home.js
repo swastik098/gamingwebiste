@@ -1,4 +1,4 @@
-import React, { forwardRef, useRef } from "react";
+import React, { useContext, useEffect, forwardRef, useRef } from "react";
 import Slider from "./slider";
 import ContactPage from "./ContactPage";
 import HeadingStyle from "./HeadingStyle";
@@ -6,6 +6,7 @@ import Box from "./Box";
 import ImageCard from "./ImageCard";
 import Button from "./Button";
 import InfoBox from "./InfoBox";
+import Academy from "../Academy/Academy";
 // import Course from "./Course";
 // import YouTubePlayer from "./YouTubePlayer";
 // import Carousel from "./YouTubePlayer";
@@ -14,6 +15,8 @@ import InfoBox from "./InfoBox";
 // import ImageGallery from "./ImageGallery";
 
 const Home = forwardRef((props, ref) => {
+  const { scrollToSection } = useContext(Academy);
+  const sectionRef = useRef(null);
   const myref = useRef(null);
 
   const handleButton = () => {
@@ -23,6 +26,11 @@ const Home = forwardRef((props, ref) => {
       inline: "start",
     });
   };
+  useEffect(() => {
+    if (scrollToSection === "targetSection") {
+      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [scrollToSection]);
 
   const courses = [
     {
@@ -140,7 +148,7 @@ const Home = forwardRef((props, ref) => {
       <div className="flex md:flex-row  justify-between w-4/5 px-4 py-8 flex-col-reverse ">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
-            src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958186/Vault%20Games/homePage/59888_bjyjn7.jpg"
+            src="https://res.cloudinary.comcrollContext } from './ScrollContext';/dzoqkbxc6/image/upload/v1683958186/Vault%20Games/homePage/59888_bjyjn7.jpg"
             alt="logo"
             className="brand-logo"
           />
@@ -213,7 +221,10 @@ const Home = forwardRef((props, ref) => {
         </div>
       </div>
       <Button on text={"Book Virtual Demo"} onClick={handleButton} />
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" ref={ref}>
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        ref={sectionRef}
+      >
         {/* <HeadingStyle
           className={
             " subpixel-antialiased text-black mt-12 text-6xl text-center font-sans"
