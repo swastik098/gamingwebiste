@@ -111,7 +111,11 @@ const ContactPage = () => {
             />
             <span className="ml-2 text-white">
               I agree to the{" "}
-              <a href="#" value="" className="underline">
+              <a
+                // href="https://www.termsfeed.com/live/7ec52a2b-6fac-41db-a05d-6571af9d4ef6"
+                download
+                className="underline"
+              >
                 Terms &amp; Conditions
               </a>
             </span>

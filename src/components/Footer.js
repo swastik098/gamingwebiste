@@ -167,12 +167,12 @@ const Footer = () => {
           >
             Email: info@vaultgamesstudio.com
           </a>
-          <a
+          {/* <a
             href="tel:18001234567"
             className="my-3 block text-white hover:text-white text-sm font-medium duration-700"
           >
             Phone: 1-800-123-4567
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="pt-8 flex flex-wrap justify-center">
