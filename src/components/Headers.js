@@ -40,15 +40,12 @@ function Navigation({ resultRef }) {
     <>
       <Grid container spacing={2}>
         <Grid item xs={2}>
-          {" "}
-          <div className="">
+          <div className="flex items-center justify-center mt-1 mb-0">
             <div className="flex items-center flex-shrink-0 bg-base-color mr-6">
               <div className="flex items-center flex-shrink-0">
                 <NavLink to="/" onClick={closeMenu}>
                   <img
-                    src={
-                      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1685094204/Vault%20Games/logo/vault_games_final_logo_black_BG_01-removebg-preview_pktzcx.jpg"
-                    }
+                    src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1685078812/Vault%20Games/logo/vault_games_final_logo_vgleh4.png"
                     alt="vault Gaming Studio"
                     className="h-18 w-20"
                   />
@@ -57,6 +54,7 @@ function Navigation({ resultRef }) {
             </div>
           </div>
         </Grid>
+
         <Grid item xs={10}>
           {" "}
           <nav
@@ -89,35 +87,35 @@ function Navigation({ resultRef }) {
               <div className="text-m text-center space-x-20 lg:flex-grow">
                 <NavLink
                   to="/gamedevelopment"
-                  className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
+                  className=" font-serif font-thin text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
                   onClick={closeMenu}
                 >
                   GAME DEVELOPMENT
                 </NavLink>
                 <NavLink
                   to="/gameart"
-                  className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
+                  className="font-serif font-thin text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
                   onClick={closeMenu}
                 >
                   GAME ART
                 </NavLink>
                 <NavLink
                   to="/VirtualTechnology"
-                  className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
+                  className="font-seriffont-thin text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
                   onClick={closeMenu}
                 >
                   VIRTUAL TECHNOLOGY
                 </NavLink>
                 <NavLink
                   to="/publishing"
-                  className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
+                  className="font-seriffont-thin text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
                   onClick={closeMenu}
                 >
                   PUBLISHING
                 </NavLink>
                 <NavLink
                   to="/academy"
-                  className="font-semibold text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
+                  className=" font-serif font-thin text-m tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue"
                   onClick={closeMenu}
                 >
                   ACADEMY
