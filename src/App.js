@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Navigation from "./components/Headers";
 import ContactPage from "./components/Home/ContactPage";
 import VirtualTechnology from "./components/VirtualTechnology/VirtualTechnology";
+import Academy from "./components/Academy/Academy";
 
 function App() {
   const resultRef = useRef(null);
@@ -20,7 +21,7 @@ function App() {
         <Route path="/gameart" element={<GameArt />} />
         <Route path="/virtualtechnology" element={<VirtualTechnology />} />
         <Route path="/publishing" element={<Publishing />} />
-        <Route path="/academy" element={<Home />} />
+        <Route path="/academy" element={<Academy />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />

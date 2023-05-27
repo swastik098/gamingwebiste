@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Grid from "@mui/material/Grid";
-// import clientLogo from "../assets/vault-games-final-logo.png";
 
 function Navigation({ resultRef }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -10,7 +9,6 @@ function Navigation({ resultRef }) {
     window.scrollTo(0, 0);
   }, [location]);
 
-  //  const myref = useRef(null);
   const handleGetInTouchClick = () => {
     window.scrollTo(0, 0);
     const contactSection = document.getElementById("contact-section");
@@ -22,11 +20,6 @@ function Navigation({ resultRef }) {
   const closeMenu = () => {
     setShowMenu(false);
   };
-
-  // const scrollTo = (e) => {
-  //   e.preventDefault();
-  //   resultRef.current.scrollIntoView({ behavior: "smooth" });
-  // };
 
   const navStyle = {
     position: "sticky",
@@ -54,7 +47,6 @@ function Navigation({ resultRef }) {
             </div>
           </div>
         </Grid>
-
         <Grid item xs={6} sm={9}>
           {" "}
           <nav
