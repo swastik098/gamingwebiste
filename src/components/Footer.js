@@ -155,7 +155,7 @@ const Footer = () => {
             </a>
             <a
               className="text-4xl  text-white hover:text-white"
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/vaishnavi-p-bb1b0998/"
               target="_blank"
               rel="noreferrer"
             >

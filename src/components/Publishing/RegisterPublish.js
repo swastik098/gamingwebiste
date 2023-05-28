@@ -4,15 +4,11 @@ import Button from "../Home/Button";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import { numberRegex } from "../../utils/helper";
+import emailjs from "emailjs-com";
+import { db } from "../../firebase";
+import { addDoc, collection } from "firebase/firestore";
 
 const RegisterForm = () => {
-  // const [studioName, setStudioName] = useState("");
-  // const [number, setNumber] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [location, setLocation] = useState("");
-  // const [website, setWebsite] = useState("");
-  // const [gameName, setGameName] = useState("");
-  // const [c, setPortfolioLink] = useState("");
   const initialValues = {
     studioName: "",
     number: "",
@@ -22,33 +18,44 @@ const RegisterForm = () => {
     gameName: "",
     portfoloio: "",
   };
+  const sendEmail = async (values) => {
+    try {
+      const templateParams = {
+        studioName: values.studioName,
+        number: values.number,
+        email: values.email,
+        location: values.location,
+        website: values.website,
+        gameName: values.gameName,
+        portfolio: values.portfolioLink,
+      };
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   // handle form submission here
-  // };
+      // Replace with your Email.js service ID, template ID, and user ID
+      const serviceID = "service_27md7fu";
+      const templateID = "template_kewkkel";
+      const userID = "MzNklvzdmK7_OCBDo";
 
-  // const validateEmail = (value) => {
-  //   const re = /\S+@\S+\.\S+/;
-  //   return re.test(value);
-  // };
+      await emailjs.send(serviceID, templateID, templateParams, userID);
 
-  // const validateLink = (value) => {
-  //   const re = /^https?:\/\/[\w-]+(\.[\w-]+)+[/#?]?.*$/;
-  //   return re.test(value);
-  // };
+      console.log("Email sent successfully!");
+      try {
+        await addDoc(collection(db, "Registration"), {
+          values,
+        });
+        values("");
+        console.log(values);
 
-  // const isFormValid = () => {
-  //   return (
-  //     studioName !== "" &&
-  //     number !== "" &&
-  //     validateEmail(email) &&
-  //     location !== "" &&
-  //     validateLink(website) &&
-  //     gameName !== "" &&
-  //     validateLink(portfolioLink)
-  //   );
-  // };
+        alert("Email Sent");
+      } catch (error) {
+        console.error("Error storing form data in Firestore:", error);
+      }
+      // Reset the form after successful submission
+      // formik.resetForm();
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+  };
+
   const signUpSchema = Yup.object({
     studioName: Yup.string().min(2).max(25).required("Please enter your name"),
     number: Yup.string()
@@ -71,13 +78,15 @@ const RegisterForm = () => {
       //// By disabling validation onChange and onBlur formik will validate on submit.
       onSubmit: (values, action) => {
         console.log("values", values);
+        sendEmail(values);
+        alert("Email Sent");
         //// to get rid of all the values after submitting the form
         action.resetForm();
       },
     });
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-lg mx-auto pb-5 md:pt-20">
+    <form onSubmit={handleSubmit} className="max-w-lg mx-auto pb-5 pt-5">
       <div className="mb-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center text-white">
           Register Yourself
