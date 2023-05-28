@@ -12,13 +12,13 @@
 }
 
 .caption {
-    position: absolute;
-    top: 516px !important;
-    left: 630px;
-    background-color: #83EAF1;
-    font-size: 60px;
-    color: black;
-    padding: 10px;
+  position: absolute;
+  top: 516px !important;
+  left: 630px;
+  background-color: #83eaf1;
+  font-size: 60px;
+  color: black;
+  padding: 10px;
 }
 body {
   font-family: "PT Sans", Arial, sans-serif;
@@ -45,7 +45,6 @@ p {
   width: 60px;
 }
 
-
 .card {
   width: 200px;
   height: 300px;
@@ -54,7 +53,7 @@ p {
   border-radius: 5px;
   /* padding: 40px; */
 }
-.gamedev{
+.gamedev {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,47 +61,63 @@ p {
   flex-wrap: wrap;
   margin-left: 0px !important;
 }
-.innerClass{
+.innerClass {
   padding: 35px;
 }
-.right{
-   min-height: 100%;
-  background-color: #83EAF1;
+.right {
+  min-height: 100%;
+  background-color: #83eaf1;
 }
-.form-error{
+.form-error {
   color: red;
 }
-.grid{
+.grid {
   position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    /* background-color: #fff; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
-.logo{
+.logo {
   background-color: white;
+}
+.virtual {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+.virtualTop{
+  margin-top: 10px;
+}
+.virtual_content{
+   margin-top: 125px;
+}
+.heading{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
 }
 
 @media only screen and (max-width: 600px) {
-  .grid{
+  .grid {
     background-color: white;
   }
-  .mobLogo{
+  .mobLogo {
     display: flex;
     flex-direction: row;
     justify-content: flex-end !important;
   }
-  .headerMenu{
+  .headerMenu {
     color: black !important;
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
-  .mobMenu{
+  .mobMenu {
     display: grid;
     text-align: right;
   }
-  .headerMenuGet{
+  .headerMenuGet {
     color: black !important;
     /* margin-top: 19px; */
     display: flex;
@@ -111,5 +126,11 @@ p {
     align-items: center;
     /* text-align: right; */
     /* border: 1px solid black; */
+  }
+  .virtual{
+    margin-top: 90px;
+  }
+  .innerClass{
+    padding: 5px;
   }
 }

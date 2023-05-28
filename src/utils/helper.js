@@ -183,3 +183,22 @@ export const iosGames = [
 ];
 
 export const numberRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+
+export const virtualImage = [
+  {
+    image:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712829/Vault%20Games/z4pyfkxeoolmwzl96m3i.png",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683960354/Vault%20Games/gameart/HighresScreenshot00001_y9pdzw.jpg",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956921/Vault%20Games/concept_5_oiysyj.png",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956949/Vault%20Games/fotobash_tanki1_tqa4ep.png",
+  },
+];
