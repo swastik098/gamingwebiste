@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../Home/Button";
 // import video from "../../assets/Academybg.mp4";
 
 const Academy = () => {

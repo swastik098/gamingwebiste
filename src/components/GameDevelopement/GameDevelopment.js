@@ -303,26 +303,26 @@ const GameDevelopment = () => {
         <Grid item sm={2}></Grid>
         <Grid item sm={2}></Grid>
         <Grid item sm={4} sx={{ height: "100px", marginBottom: "20px" }}>
-          <Typography
-            sx={{
-              textAlign: "center",
-              fontSize: "25px",
-              fontWeight: "bold",
-              backgroundColor: "#29333d",
-              color: "white",
-              padding: "25px",
-              borderRadius: "40px",
+          <NavLink
+            to={"/contact"}
+            onClick={() => {
+              handleGetInTouchClick();
             }}
           >
-            <NavLink
-              to={"/contact"}
-              onClick={() => {
-                handleGetInTouchClick();
+            <Typography
+              sx={{
+                textAlign: "center",
+                fontSize: "25px",
+                fontWeight: "bold",
+                backgroundColor: "#29333d",
+                color: "white",
+                padding: "25px",
+                borderRadius: "40px",
               }}
             >
               Talk To Us
-            </NavLink>
-          </Typography>{" "}
+            </Typography>{" "}
+          </NavLink>
         </Grid>
         <Grid item sm={2}></Grid>
         <Grid item sm={2}></Grid>
