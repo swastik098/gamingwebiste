@@ -35,6 +35,7 @@ const ContactPage = () => {
           });
           setFormData("");
           console.log(formData);
+          alert("Email Sent");
         } catch (error) {
           console.error("Error storing form data in Firestore:", error);
         }

@@ -4,6 +4,7 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
   AiFillTwitterSquare,
+  AiFillYoutube,
 } from "react-icons/ai";
 
 const Footer = () => {
@@ -138,27 +139,43 @@ const Footer = () => {
           <div className="flex gap-4 mb-4 lg:mb-0">
             <a
               className="text-4xl  text-white hover:text-white"
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/vaultgamesstudio/"
+              target="_blank"
+              rel="noreferrer"
             >
               <AiFillInstagram />
             </a>
             <a
               className="text-4xl  text-white hover:text-white"
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/profile.php?id=100092854368256"
+              target="_blank"
+              rel="noreferrer"
             >
               <AiFillFacebook />
             </a>
             <a
               className="text-4xl  text-white hover:text-white"
               href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
             >
               <AiFillLinkedin />
             </a>
             <a
               className="text-4xl  text-white hover:text-white"
-              href="https://www.twitter.com"
+              href="https://twitter.com/VaultGamess"
+              target="_blank"
+              rel="noreferrer"
             >
               <AiFillTwitterSquare />
+            </a>
+            <a
+              className="text-4xl  text-white hover:text-white"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillYoutube />
             </a>
           </div>
           <a
