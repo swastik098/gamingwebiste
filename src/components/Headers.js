@@ -31,8 +31,9 @@ function Navigation({ resultRef }) {
 
   return (
     <>
-      <Grid container spacing={2} className="grid">
-        <Grid item xs={6} sm={3} className="logo">
+    <div>
+    <Grid container spacing={2} className="grid">
+        <Grid item xs={4} sm={2} className="logo">
           <div className="flex items-center justify-center mt-1 mb-0 mobLogo">
             <div className="flex items-center flex-shrink-0 bg-base-color mr-6">
               <div className="flex items-center flex-shrink-0">
@@ -47,7 +48,7 @@ function Navigation({ resultRef }) {
             </div>
           </div>
         </Grid>
-        <Grid item xs={6} sm={9}>
+        <Grid item xs={8} sm={10}>
           {" "}
           <nav
             style={navStyle}
@@ -120,7 +121,8 @@ function Navigation({ resultRef }) {
                   handleGetInTouchClick();
                   closeMenu();
                 }}
-                className="inline-block text-m px-4 py-2 font-semibold tracking-tight leading-none border rounded text-white border-white hover:border-black hover:text-blue hover:bg-gray-800 mt-4 lg:mt-0 headerMenu"
+                className="text-m  py-2 font-semibold tracking-tight leading-none  rounded text-white border-white hover:border-black hover:text-blue hover:bg-gray-800
+                 mt-4 lg:mt-0 headerMenuGet"
               >
                 Get In Touch
               </NavLink>
@@ -128,6 +130,8 @@ function Navigation({ resultRef }) {
           </nav>
         </Grid>
       </Grid>
+    </div>
+    
     </>
   );
 }
