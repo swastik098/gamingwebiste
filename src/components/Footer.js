@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillTwitterSquare,
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineLinkedin,
+  AiOutlineTwitter,
   AiFillYoutube,
 } from "react-icons/ai";
 
@@ -143,7 +143,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillInstagram />
+              <AiOutlineInstagram />
             </a>
             <a
               className="text-4xl  text-white hover:text-white"
@@ -151,7 +151,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillFacebook />
+              <AiOutlineFacebook />
             </a>
             <a
               className="text-4xl  text-white hover:text-white"
@@ -159,7 +159,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillLinkedin />
+              <AiOutlineLinkedin />
             </a>
             <a
               className="text-4xl  text-white hover:text-white"
@@ -167,11 +167,11 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillTwitterSquare />
+              <AiOutlineTwitter />
             </a>
             <a
               className="text-4xl  text-white hover:text-white"
-              href="https://www.youtube.com/"
+              href="https://www.youtube.com/channel/UCLF0QNxj-jcUbcSwie88K9w"
               target="_blank"
               rel="noreferrer"
             >
