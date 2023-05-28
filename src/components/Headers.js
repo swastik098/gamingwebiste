@@ -32,7 +32,7 @@ function Navigation({ resultRef }) {
   return (
     <>
     <div>
-    <Grid container spacing={2} className="grid">
+    <Grid container  className="grid">
         <Grid item xs={4} sm={2} className="logo">
           <div className="flex items-center justify-center mt-1 mb-0 mobLogo">
             <div className="flex items-center flex-shrink-0 bg-base-color mr-6">

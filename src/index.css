@@ -72,7 +72,17 @@ p {
 .form-error{
   color: red;
 }
-
+.grid{
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    /* background-color: #fff; */
+}
+.logo{
+  background-color: white;
+}
 
 @media only screen and (max-width: 600px) {
   .grid{
