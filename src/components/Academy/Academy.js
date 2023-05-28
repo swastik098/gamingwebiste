@@ -25,7 +25,7 @@ const Academy = () => {
           imagination.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center md:w-1/2 border-spacing-4 mt-8">
+      <div className="flex flex-wrap justify-center md:w-1/2 border-spacing-4 mt-20">
         <div className="w-full sm:w-1/2 md:w-1/3 p-4">
           <div className="rounded-xl bg-gray-800 p-6 h-full flex flex-col justify-center text-center">
             <h2 className="text-xl font-bold mb-2 text-white font-sans">
