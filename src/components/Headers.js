@@ -29,6 +29,8 @@ function Navigation({ resultRef }) {
     zIndex: 9999,
   };
 
+
+  
   return (
     <>
     <div>
