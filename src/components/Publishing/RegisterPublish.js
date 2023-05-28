@@ -77,7 +77,7 @@ const RegisterForm = () => {
     });
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-lg mx-auto pb-5 pt-5">
+    <form onSubmit={handleSubmit} className="max-w-lg mx-auto pb-5 md:pt-20">
       <div className="mb-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center text-white">
           Register Yourself
