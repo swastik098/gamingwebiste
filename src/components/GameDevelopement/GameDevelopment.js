@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import ImageGallery from "react-image-gallery";
@@ -12,6 +12,7 @@ import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea } from "@mui/material";
 import Box from "@mui/material/Box";
 import { images, mobImages, iosGames } from "../../utils/helper";
+import { NavLink, useLocation } from "react-router-dom";
 // import Paper from "@mui/material/Paper";
 
 const GameDevelopment = () => {
@@ -19,6 +20,19 @@ const GameDevelopment = () => {
   const myref = useRef(null);
   const myref2 = useRef(null);
   const myref3 = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  const handleGetInTouchClick = () => {
+    window.scrollTo(0, 0);
+    const contactSection = document.getElementById("contact-section");
+    if (contactSection && contactSection.scrollIntoView) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   // const handleitemOne = () => {
   //   myref?.current.scrollIntoView();
@@ -300,7 +314,14 @@ const GameDevelopment = () => {
               borderRadius: "40px",
             }}
           >
-            Talk To Us
+            <NavLink
+              to={"/contact"}
+              onClick={() => {
+                handleGetInTouchClick();
+              }}
+            >
+              Talk To Us
+            </NavLink>
           </Typography>{" "}
         </Grid>
         <Grid item sm={2}></Grid>
