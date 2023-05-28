@@ -65,7 +65,7 @@ const RegisterForm = () => {
       .required("Please enter your number"),
     email: Yup.string().email().required("Please enter your email"),
     location: Yup.string().min(6).required("Please enter your location"),
-    website: Yup.string().min(6).required("Please enter your website url"),
+    // website: Yup.string().min(6).required("Please enter your website url"),
     gameName: Yup.string().min(6).required("Please enter your Game Name"),
   });
 
