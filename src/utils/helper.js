@@ -13,12 +13,6 @@ export const images = [
   },
   {
     original:
-      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956950/Vault%20Games/Shoot_main_menu_xhd7o9.png",
-    thumbnail:
-      "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683956950/Vault%20Games/Shoot_main_menu_xhd7o9.png",
-  },
-  {
-    original:
       "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712565/Vault%20Games/murali-krishna-highresscreenshot00019_bnlpa3.jpg",
     thumbnail:
       "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683712565/Vault%20Games/murali-krishna-highresscreenshot00019_bnlpa3.jpg",
