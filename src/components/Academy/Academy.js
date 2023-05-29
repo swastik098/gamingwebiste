@@ -4,7 +4,7 @@ import React from "react";
 
 const Academy = () => {
   return (
-    <div className="flex flex-col md:h-screen md:flex-row justify-between w-full text-center mx-auto px-4 py-8">
+    <div className="flex flex-col md:h-screen md:flex-row justify-between w-full text-center mx-auto px-4 py-8 academy">
       <div className="w-full md:w-1/2 md:pl-4 my-auto">
         {/* Adjusted margin */}
         <div className="flex justify-center items-center mb-8">

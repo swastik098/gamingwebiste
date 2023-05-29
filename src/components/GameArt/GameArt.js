@@ -154,7 +154,7 @@ const GameArt = () => {
     },
   ];
   return (
-    <div className="flex flex-wrap justify-center items-center">
+    <div className="flex flex-wrap justify-center items-center gameArt">
       {CardImages.map((item, i) => (
         <div
           key={i}
