@@ -105,7 +105,7 @@ const RegisterForm = () => {
           // onChange={(event) => setStudioName(event.target.value)}
           onChange={handleChange}
           onBlur={handleBlur}
-          className="w-full h-full border-gray-900 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+          className="w-full h-8  border-gray-900 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           // required
         />
         {touched?.studioName && errors?.studioName ? (
@@ -124,7 +124,7 @@ const RegisterForm = () => {
           onChange={handleChange}
           onBlur={handleBlur}
           // onChange={(event) => setNumber(event.target.value)}
-          className="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+          className="w-full h-8 border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           // required
         />
         {touched?.number && errors?.number ? (
@@ -146,7 +146,7 @@ const RegisterForm = () => {
           onChange={handleChange}
           onBlur={handleBlur}
           // onChange={(event) => setEmail(event.target.value)}
-          className="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+          className="w-full h-8 border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           // required
         />
         {touched?.email && errors?.email ? (
@@ -165,7 +165,7 @@ const RegisterForm = () => {
           onChange={handleChange}
           onBlur={handleBlur}
           // onChange={(event) => setLocation(event.target.value)}
-          className="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+          className="w-full h-8 border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           // required
         />
         {touched?.location && errors?.location ? (
@@ -184,7 +184,7 @@ const RegisterForm = () => {
           onChange={handleChange}
           onBlur={handleBlur}
           // onChange={(event) => setWebsite(event.target.value)}
-          className="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+          className="w-full h-8 border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           // required
         />
         {touched?.location && errors?.location ? (
@@ -203,7 +203,7 @@ const RegisterForm = () => {
           onChange={handleChange}
           onBlur={handleBlur}
           // onChange={(event) => setGameName(event.target.value)}
-          className="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+          className="w-full h-8 border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           // required
         />
         {touched?.location && errors?.location ? (
@@ -225,7 +225,7 @@ const RegisterForm = () => {
           onChange={handleChange}
           onBlur={handleBlur}
           // onChange={(event) => setPortfolioLink(event.target.value)}
-          className="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+          className="w-full h-8 border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           // required
         />
       </div>

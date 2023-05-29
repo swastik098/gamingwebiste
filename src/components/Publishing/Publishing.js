@@ -27,7 +27,7 @@ const Publishing = () => {
           </p>
         </div>
 
-        <div className="flex flex-grow relative md:absolute md:bg-inherit bg-black top-0 right-0 w-full h-full mt-12 p-12 md:flex md:w-1/2">
+        <div className="flex flex-grow relative md:absolute md:bg-inherit bg-black top-0 right-0 w-full h-full mt-24 p-12 md:flex md:w-1/2">
           <RegisterForm />
         </div>
       </div>

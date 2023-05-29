@@ -75,7 +75,7 @@ const Footer = () => {
             Virtual Technology
           </NavLink>
         </div> */}
-        <div className="p-4 w-full md:w-1/4">
+        <div className="p-4 w-full md:w-1/4 footer_hd">
           <div className="text-white text-xl uppercase mb-6 font-bold">
             headquarter
           </div>
@@ -89,10 +89,10 @@ const Footer = () => {
             Hyderabad 81, India
           </div>
         </div>
-        <div className="flex flex-1 space-x-4 ">
-          <div className=" mt-4 md:mb-0">
-            <h2 className="text-xl text-bold mb-2 text-center text-white">
-              BRANCHES
+        <div className="flex flex-1 space-x-4 md:ml-10 footer_md">
+          <div className=" mt-4 md:mb-0 md:text-center">
+            <h2 className="text-xl text-bold mb-2 text-start md:text-center text-white">
+              LOCATIONS
             </h2>
             <div className="flex space-x-6 mt-3 mr-3">
               <div>

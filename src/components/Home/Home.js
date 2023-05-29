@@ -238,7 +238,7 @@ const Home = forwardRef((props, ref) => {
           {courses.map((course, index) => (
             <div
               key={index}
-              className="m-2 p-2 max-hw-xs w-full md:max-w-sm rounded-lg border bg-cyan-500 text-white border-gray-800 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+              className="m-2 p-2 max-hw-xs w-full md:max-w-sm rounded-lg border bg-cyan-500 text-white border-white hover:text-black shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer"
               // onClick={() => handleCourseClick(index)}
             >
               <div className="relative h-0 pb-2/3">
@@ -308,8 +308,8 @@ const Home = forwardRef((props, ref) => {
           <YouTubePlayer />
         </div>
       </div> */}
-      <div ref={myref}>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={myref}>
           <HeadingStyle
             className={
               " subpixel-antialiased text-black mt-12 text-6xl text-center font-serif"

@@ -3,10 +3,11 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+
 .image-gallery-slide .image-gallery-image {
   width: 100%;
   object-fit: cover;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 .developmentDetails_Carousel {
   position: relative;
@@ -61,7 +62,7 @@ p {
   /* padding: 30px; */
   flex-wrap: wrap;
   margin-left: 0px !important;
-  margin-top: 70px !important;
+  margin-top: 140px !important;
 }
 .innerClass {
   padding: 35px;
@@ -101,13 +102,17 @@ p {
     font-size: 40px;
 }
 .contact_us{
-  margin-top: 90px;
+  margin-top: 135px;
 }
 .gameArt{
   margin-top: 130px;
 }
 .publish{
   height: 105vh;
+}
+.footer_hd{
+  width: 260px !important;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -158,5 +163,22 @@ p {
   }
   .academy{
     margin-top: 30px;
+  }
+  .image-gallery-slide .image-gallery-image {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 100px;
+  }
+  .image-gallery-right-nav {
+    right: 0;
+    margin-top: 40px;
+  }
+
+  .image-gallery-left-nav {
+    right: 0;
+    margin-top: 40px;
+  }
+  .footer_md{
+    margin-left: 20px;
   }
 }
