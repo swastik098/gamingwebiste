@@ -7,7 +7,9 @@ const Publishing = () => {
     <div className="">
       <div className="relative">
         <video
-          className="h-screen w-full object-cover"
+          className="
+          
+           w-full object-cover publish"
           src={video}
           autoPlay
           muted
@@ -15,7 +17,7 @@ const Publishing = () => {
         />
       </div>
       <div className="mt-50">
-        <div className="absolute mt-24  inset-0 z-40 flex flex-col justify-center items-center text-center top-0 left-0 mb-72 md:mb-96 md:left-20 w-full md:w-1/2 h-full font-sans">
+        <div className="absolute mt-16  inset-0 z-40 flex flex-col justify-center items-center text-center top-0 left-0 mb-72 md:mb-96 md:left-20 w-full md:w-1/2 h-full font-sans">
           <h2 className="text-2xl md:text-4xl lg:text-8xl md:text-center font-bold mb-2 text-white">
             GAME
             <span className="text-blue font-sans"> PUBLISHING</span>
@@ -25,7 +27,7 @@ const Publishing = () => {
           </p>
         </div>
 
-        <div className="flex flex-grow relative md:absolute md:bg-inherit bg-black top-0 right-0 w-full h-full mt-36 p-12 md:flex md:w-1/2">
+        <div className="flex flex-grow relative md:absolute md:bg-inherit bg-black top-0 right-0 w-full h-full mt-12 p-12 md:flex md:w-1/2">
           <RegisterForm />
         </div>
       </div>
