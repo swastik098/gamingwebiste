@@ -314,7 +314,7 @@ const GameDevelopment = () => {
                 textAlign: "center",
                 fontSize: "25px",
                 fontWeight: "bold",
-                backgroundColor: "#29333d",
+                backgroundColor: "#06b6d4",
                 color: "white",
                 padding: "25px",
                 borderRadius: "40px",

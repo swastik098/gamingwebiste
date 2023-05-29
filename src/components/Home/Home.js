@@ -137,7 +137,7 @@ const Home = forwardRef((props, ref) => {
         ))}
       </div>
 
-      <div className="flex md:flex-row  justify-between w-4/5 px-4 py-8 flex-col-reverse ">
+      <div className="flex md:flex-row justify-between w-4/5 px-4 py-8 items-center flex-col-reverse">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
             src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958186/Vault%20Games/homePage/59888_bjyjn7.jpg"
@@ -145,7 +145,7 @@ const Home = forwardRef((props, ref) => {
             className="brand-logo"
           />
         </div>
-        <div className="w-full md:w-1/2 md:pl-4 mt-20">
+        <div className="w-full md:w-1/2 md:pl-4 mt-10">
           <InfoBox
             title={"Game Development"}
             text={
@@ -238,7 +238,7 @@ const Home = forwardRef((props, ref) => {
           {courses.map((course, index) => (
             <div
               key={index}
-              className="m-2 p-2 max-hw-xs w-full md:max-w-sm rounded-lg border bg-gray-800 text-white border-gray-800 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+              className="m-2 p-2 max-hw-xs w-full md:max-w-sm rounded-lg border bg-cyan-500 text-white border-gray-800 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer"
               // onClick={() => handleCourseClick(index)}
             >
               <div className="relative h-0 pb-2/3">

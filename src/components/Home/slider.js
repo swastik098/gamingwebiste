@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+// import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
 function Slider() {
@@ -36,11 +36,11 @@ function Slider() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
+  // const prevSlide = () => {
+  //   const isFirstSlide = currentIndex === 0;
+  //   const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+  //   setCurrentIndex(newIndex);
+  // };
 
   const nextSlide = () => {
     const isLastSlide = currentIndex === slides.length - 1;
@@ -73,13 +73,13 @@ function Slider() {
 
   return (
     <div className="w-full h-screen relative group ">
-      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center">
+      <div className="absolute inset-0 top-16 z-10 flex flex-col justify-center items-center text-center">
         <h2 className="text-2xl md:text-8xl md:text-center font-semibold mb-2 text-white">
           VAULT
-          <span className="text-blue"> GAMES STUDIO</span>
+          <span className="text-cyan-500"> GAMES STUDIO</span>
         </h2>
         <p className="text-lg md:text-5xl font-semibold text-white text-center pt-5">
-          <span className="text-blue">World Class</span> Gaming Company
+          <span className="text-cyan-500">World Class</span> Gaming Company
         </p>
       </div>
       <div
@@ -91,13 +91,13 @@ function Slider() {
         className="w-full h-full bg-center bg-cover bg-no-repeat duration-500"
       ></div>
       {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      {/* <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
-      </div>
+      </div> */}
       {/* Right Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      {/* <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
-      </div>
+      </div> */}
       <div className="flex top-4 justify-center py-2 bg-midnight text-tahiti">
         {slides.map((slide, slideIndex) => (
           <div

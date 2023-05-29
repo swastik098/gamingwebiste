@@ -232,7 +232,7 @@ const RegisterForm = () => {
       <div className="text-center">
         <button
           type="submit"
-          className={`text-2xl  bg-blue hover:bg-blue-950 text-black font-bold py-3 px-4 rounded-lg`}
+          className={`text-2xl  bg-cyan-500 text-white hover:bg-blue hover:text-black font-bold py-3 px-4 rounded-lg`}
         >
           RegisterNow
         </button>

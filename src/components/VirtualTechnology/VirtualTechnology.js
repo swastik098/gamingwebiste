@@ -32,7 +32,7 @@ const VirtualTechnologyComponent = () => {
           <Grid item sm={6} className="mobGrid">
             <div className="virtual_content">
               <h2 className="heading">Virtual Technology</h2>
-              <p className="" style={{ textAlign: "center" }}>
+              <p className=" ml-5 mr-5" style={{ textAlign: "center" }}>
                 We at Vault Games studio explore the world of virtual production
                 and its impact on the entertainment industry.
                 <br />
