@@ -9,13 +9,14 @@ import Navigation from "./components/Headers";
 import ContactPage from "./components/Home/ContactPage";
 import VirtualTechnology from "./components/VirtualTechnology/VirtualTechnology";
 import Academy from "./components/Academy/Academy";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function App() {
   const resultRef = useRef(null);
   return (
     <Router>
       <Navigation resultRef={resultRef} />
-      <Routes>
+      <Routes className="min-h-screen">
         <Route path="/" element={<Home ref={resultRef} />} />
         <Route path="/gamedevelopment" element={<GameDevelopment />} />
         <Route path="/gameart" element={<GameArt />} />
@@ -23,6 +24,8 @@ function App() {
         <Route path="/publishing" element={<Publishing />} />
         <Route path="/academy" element={<Academy />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        {/* <Route path="/terms-and-conditions" element={<PrivacyPolicy />} /> */}
       </Routes>
       <Footer />
     </Router>

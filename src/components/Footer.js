@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   AiOutlineFacebook,
   AiOutlineInstagram,
@@ -177,6 +178,12 @@ const Footer = () => {
             >
               <AiFillYoutube />
             </a>
+          </div>
+          <div className="container my-3 block text-white hover:text-white text-sm font-medium duration-700">
+            {" "}
+            <Link to="/privacy-policy" className="text-white">
+              Privacy Policy
+            </Link>
           </div>
           <a
             href="mailto:website@vaultgamesstudio.com"
