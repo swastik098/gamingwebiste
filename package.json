@@ -32,8 +32,10 @@
     "start": "react-scripts start",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sitemap": "babel-node ../src/sitemap-generater.js"
   },
+  
   "eslintConfig": {
     "extends": [
       "react-app",

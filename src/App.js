@@ -10,6 +10,7 @@ import ContactPage from "./components/Home/ContactPage";
 import VirtualTechnology from "./components/VirtualTechnology/VirtualTechnology";
 import Academy from "./components/Academy/Academy";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsAndCondtions from "./components/TermsAndCondtions";
 
 function App() {
   const resultRef = useRef(null);
@@ -25,7 +26,7 @@ function App() {
         <Route path="/academy" element={<Academy />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        {/* <Route path="/terms-and-conditions" element={<PrivacyPolicy />} /> */}
+        <Route path="/terms-and-conditions" element={<TermsAndCondtions />} />
       </Routes>
       <Footer />
     </Router>

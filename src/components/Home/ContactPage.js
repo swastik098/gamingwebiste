@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { db } from "../../firebase";
 import { addDoc, collection } from "firebase/firestore";
+import { Link } from "react-router-dom";
 
 const ContactPage = () => {
   const sendEmail = (event) => {
@@ -164,13 +165,9 @@ const ContactPage = () => {
             />
             <span className="ml-2 text-white">
               I agree to the{" "}
-              <a
-                // href="https://www.termsfeed.com/live/7ec52a2b-6fac-41db-a05d-6571af9d4ef6"
-                download
-                className="underline"
-              >
+              <Link to="/terms-and-conditions" download className="underline">
                 Terms &amp; Conditions
-              </a>
+              </Link>
             </span>
           </label>
         </div>
