@@ -13,8 +13,8 @@ const VirtualTechnologyComponent = () => {
           justifyContent="center"
         >
           <Grid item sm={6} className="gamedev">
-            {virtualImage?.map((ele, index) => (
-              <div className="card-container" key={index}>
+            {/* {virtualImage?.map((ele, index) => ( */}
+              <div className="card-container">
                 <Grid
                   item
                   lg={12}
@@ -23,11 +23,13 @@ const VirtualTechnologyComponent = () => {
                   className="innerClass"
                 >
                   <div className="virtual">
-                    <img src={ele?.image} alt="img" />
+                    {/* <img src={ele?.image} alt="img" /> */}
+                    <img src="https://images.unsplash.com/photo-1490971774356-7fac993cc438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="img" />
+
                   </div>
                 </Grid>
               </div>
-            ))}
+            {/* ))} */}
           </Grid>
           <Grid item sm={6} className="mobGrid">
             <div className="virtual_content">
