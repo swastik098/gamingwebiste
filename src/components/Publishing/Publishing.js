@@ -8,7 +8,6 @@ const Publishing = () => {
       <div className="relative">
         <video
           className="
-          
            w-full object-cover publish"
           src={video}
           autoPlay

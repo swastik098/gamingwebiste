@@ -13,7 +13,7 @@ const VirtualTechnologyComponent = () => {
           justifyContent="center"
         >
           <Grid item sm={6} className="gamedev">
-            {virtualImage?.map((ele, index) => (
+            {/* {virtualImage?.map((ele, index) => (
               <div className="card-container" key={index}>
                 <Grid
                   item
@@ -27,11 +27,22 @@ const VirtualTechnologyComponent = () => {
                   </div>
                 </Grid>
               </div>
-            ))}
+            ))} */}
+            <div>
+              <Grid item lg={12} xs={12} direction="row" className="innerClass">
+                <div className="virtual">
+                  <img
+                    src="https://www.horizont.at/news/media/6/Virtual-Production-Studio-Vienna-55776.jpeg"
+                    alt="img"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </div>
+              </Grid>
+            </div>
           </Grid>
           <Grid item sm={6} className="mobGrid">
             <div className="virtual_content">
-              <h2 className="heading">Virtual Technology</h2>
+              <h2 className="heading font-bold">VIRTUAL PRODUCTION</h2>
               <p className=" ml-5 mr-5" style={{ textAlign: "center" }}>
                 We at Vault Games studio explore the world of virtual production
                 and its impact on the entertainment industry.

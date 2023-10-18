@@ -94,38 +94,54 @@ const Home = forwardRef((props, ref) => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center bg-white text-black min-h-screen font-sans">
+    <div className="flex flex-col items-center justify-center min-h-screen font-sans">
       <Slider />
       <HeadingStyle
         className={
-          " subpixel-antialiased text-black mt-12 text-5xl text-center font-sans"
+          " subpixel-antialiased  mt-12 text-5xl text-center font-sans"
         }
-        title={"Vault Games Studio"}
+        title={"Vault Productions"}
       />
       <div className="flex flex-col md:flex-row justify-between w-3/4 ">
         <Box
           className="leading-relaxed text-center font-sans "
-          text="Vault Games Studio is a team of extremely passionate Artists, game designer and programmer experts. We create immersive, innovative, and entertaining gaming experiences that bring people together and push the boundaries of what is possible in the gaming industry.We provide bespoke and holistic game developement service right from the ideation stage to project completion."
-          boldText="Vault Games Studio"
+          text="Vault Productions is at the forefront of transforming the gaming and virtual production landscape in India. Our mission is to deliver immersive experiences that empower individuals, promote inclusivity, and push the boundaries of technology. We have established a dynamic ecosystem that serves as a breeding ground for creativity and innovation, shaping the future of interactive entertainment. We believe that in this realm, imagination has no bounds, and it is our vision to inspire and encourage this limitless creativity."
+          boldText="Vault Productions"
         />
       </div>
-      <div className="flex flex-col md:flex-row  w-2/4 justify-center items-center">
-        <img
+      {/* <div className="flex flex-col md:flex-row  w-2/4 justify-center items-center"> */}
+      {/* <img
           className=" object-contain hover:object-scale-down md:object-scale-down"
           src={
             "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684991248/Vault%20Games/logo/vault_games_final_logo_f0iqve.jpg"
           }
           alt="logo"
-        />
-      </div>
-      <Button text={"Get In Touch"} onClick={handleButton} />
+        /> */}
       <HeadingStyle
         className={
-          " subpixel-antialiased text-black mt-12 text-5xl text-center font-sans"
+          " subpixel-antialiased  mt-12 text-5xl text-center font-sans"
+        }
+        title={"How Are We Different"}
+      />
+      <div className="flex flex-col md:flex-row justify-between w-3/4 ">
+        <Box
+          className="leading-relaxed text-center font-sans "
+          text="Vault Productions represents a passionate synergy of artistic excellence, gaming innovation, and technical prowess, all united in a mission to craft immersive and groundbreaking gaming escapades. Our comprehensive game development services expertly guide projects from conception to completion, with the aim of deeply engaging players, sparking creativity, and nurturing a profound sense of community. Our unwavering commitment is to deliver top-quality, user-friendly products while prioritising the desires of our loyal fanbase."
+        />
+        <Box
+          className="font-sans leading-relaxed text-center"
+          text="Vault Productions has taken a bold step into the world of virtual production. We excel in visualising, capturing, and crafting digital assets within virtual environments, harnessing real-time rendering to swiftly generate stunning visuals. This cutting-edge technology equips filmmakers and game developers with the ability to make immediate creative decisions, ultimately reducing production timelines. Our prowess in motion capture ensures the seamless integration of live-action and digital performances, delivering dynamic character animations. Join us as we embark on an exciting journey of innovation and imagination, shaping the future of interactive entertainment across gaming and virtual production."
+        />
+      </div>
+      {/* </div> */}
+      <Button text={"Get In Touch"} onClick={handleButton} />
+      {/* <HeadingStyle
+        className={
+          " subpixel-antialiased  mt-12 text-5xl text-center font-sans"
         }
         title={"Service We Offer"}
-      />
-      <div className="flex flex-col justify-:5center md:flex-row w-3/4 ">
+      /> */}
+      {/* <div className="flex flex-col justify-:5center md:flex-row w-3/4 ">
         <Box
           className="font-sans leading-relaxed text-center"
           text="We strive to craft games that engage players on a deep level, inspire creativity, and foster a sense of community. We are committed to delivering high-quality products that are accessible to all, while also prioritizing the needs and desires of our most dedicated fans. Through our dedication to excellence, we aim to be a leader in the gaming industry and to help shape the future of interactive entertainment."
@@ -135,9 +151,9 @@ const Home = forwardRef((props, ref) => {
         {images.map((card) => (
           <ImageCard key={card.alt} src={card.url} title={card.tittle} />
         ))}
-      </div>
+      </div> */}
 
-      <div className="flex md:flex-row justify-between w-4/5 px-4 py-8 items-center flex-col-reverse">
+      {/* <div className="flex md:flex-row justify-between w-4/5 px-4 py-8 items-center flex-col-reverse">
         <div className="w-full md:w-1/2 md:pr-4 space-x-6 mx-auto ">
           <img
             src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1683958186/Vault%20Games/homePage/59888_bjyjn7.jpg"
@@ -158,7 +174,7 @@ const Home = forwardRef((props, ref) => {
       <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center">
         <div className="w-full md:w-1/2 md:pl-4 mt-10 justify-center">
           <InfoBox
-            title={"Game Art"}
+            title={"Gaming"}
             text={
               "We create art and visual assets for games. We offer a wide range of services, from concept art and character design to 3D modeling and animation for a variety of platforms, including consoles, PC, and mobile devices."
             }
@@ -189,16 +205,16 @@ const Home = forwardRef((props, ref) => {
             }
           />
         </div>
-      </div>
-      <Button
+      </div> */}
+      {/* <Button
         text={"Book Animation Demo"}
         className="mb-10"
         onClick={handleButton}
-      />
-      <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center">
+      /> */}
+      {/* <div className="flex flex-col md:flex-row justify-between w-4/5 px-4 py-8 mx-auto items-center">
         <div className="w-full md:w-1/2 md:pl-4 mt-10 justify-center">
           <InfoBox
-            title={"Virtual Technology"}
+            title={"Virtual Production"}
             text={
               "We create art and visual assets for games. We offer a wide range of services, provides filmmakers and game developers with unprecedented creative control and efficiency. As the technology continues to evolve, you can expect even more groundbreaking experiences in the world of entertainment."
             }
@@ -211,30 +227,60 @@ const Home = forwardRef((props, ref) => {
             className="brand-logo"
           />
         </div>
-      </div>
-      <Button on text={"Book Virtual Demo"} onClick={handleButton} />
+      </div> */}
+      {/* <Button on text={"Book Virtual Demo"} onClick={handleButton} /> */}
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" ref={ref}>
-        {/* <HeadingStyle
+        <HeadingStyle
           className={
-            " subpixel-antialiased text-black mt-12 text-6xl text-center font-sans"
+            " subpixel-antialiased  mt-12 text-6xl text-center font-sans"
           }
-          title={"Vault Academy"}
-        /> */}
+          title={"Leadership Board"}
+        />
       </div>
       <div className="flex flex-col md:flex-row ml-4 w-2/4 justify-center items-center">
-        <img
+        {/* <img
           className=" object-contain hover:object-scale-down md:object-scale-down"
           src={
             "https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684991248/Vault%20Games/logo/vault_academy_final_logo_lmzwn5.jpg"
           }
           alt="logo"
-        />
+        /> */}
+      </div>
+      <div class="flex justify-center items-center h-screen">
+        <div class="md:flex md:flex-row justify-between w-3/4">
+          <div class="text-center justify-center">
+            <img
+              class="object-contain justify-center hover:object-scale-down md:object-scale-down"
+              src="https://media.licdn.com/dms/image/D5603AQGEXJXItpCV5Q/profile-displayphoto-shrink_800_800/0/1679950230401?e=1702512000&v=beta&t=EV4xMhGUc1tFXO3Nj5TCrF7AVDFXn3RbwOSuAMFIYGU"
+              alt="logo"
+              width="200"
+              height="200"
+            />
+            <Box
+              class="font-sans leading-relaxed text-center"
+              text="Vaishnavi, Founder and CEO, boasts a decade of gaming experience with expertise in monetization, user acquisition, strategic planning, and marketing. With a passion for gaming, she focuses on enhancing user experiences and explores the potential of virtual production."
+            />
+          </div>
+          <div class="text-center justify-center">
+            <img
+              class="object-contain justify-center hover:object-scale-down md:object-scale-down"
+              src="https://res.cloudinary.com/dzoqkbxc6/image/upload/v1684991248/Vault%20Games/logo/vault_academy_final_logo_lmzwn5.jpg"
+              alt="logo"
+              width="200"
+              height="200"
+            />
+            <Box
+              class="font-sans leading-relaxed text-center"
+              text="Aditya, Co-Founder and Director, brings 5+ years of Unreal Engine proficiency to our team. His role involves leading our Virtual Art Department and navigating the evolving virtual production market with unwavering commitment to innovation and attention to detail. Together, they drive Vault Productions' success in gaming and virtual production."
+            />
+          </div>
+        </div>
       </div>
       <div className="flex flex-wrap justify-center mt-10 font-sans">
         {/* {selectedCourseIndex !== null ? (
           <Course videoUrl={courses[selectedCourseIndex].videoUrl} />
         ) : ( */}
-        <>
+        {/* <>
           {courses.map((course, index) => (
             <div
               key={index}
@@ -258,14 +304,14 @@ const Home = forwardRef((props, ref) => {
               </div>
             </div>
           ))}
-        </>
+        </> */}
         {/* )} */}
       </div>
-      <div class="bg-white py-12 text-center">
+      <div class="bg-grey-500 py-12 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <HeadingStyle
             className={
-              " subpixel-antialiased text-black mt-12 text-6xl text-center font-sans"
+              " subpixel-antialiased  mt-12 text-6xl text-center font-sans"
             }
             title={"Our Partners"}
           />
@@ -312,7 +358,7 @@ const Home = forwardRef((props, ref) => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={myref}>
           <HeadingStyle
             className={
-              " subpixel-antialiased text-black mt-12 text-6xl text-center font-serif"
+              " subpixel-antialiased  mt-12 text-6xl text-center font-serif"
             }
             title={"Get in Touch"}
           />

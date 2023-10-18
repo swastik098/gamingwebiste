@@ -90,36 +90,36 @@ function Navigation({ resultRef }) {
                     className=" font-serif font-extralight text-l tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue headerMenu"
                     onClick={closeMenu}
                   >
-                    GAME DEVELOPMENT
+                    HOME
                   </NavLink>
                   <NavLink
                     to="/gameart"
                     className="font-serif font-extralight text-l tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue headerMenu"
                     onClick={closeMenu}
                   >
-                    GAME ART
+                    GAMING
                   </NavLink>
                   <NavLink
                     to="/VirtualTechnology"
                     className="font-serif font-extralight text-l tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue headerMenu"
                     onClick={closeMenu}
                   >
-                    VIRTUAL TECHNOLOGY
+                    VIRTUAL PRODUCTION
                   </NavLink>
                   <NavLink
                     to="/publishing"
                     className="font-serif font-extralight text-l tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue headerMenu"
                     onClick={closeMenu}
                   >
-                    PUBLISHING
+                    BRAND MANAGEMENT
                   </NavLink>
-                  <NavLink
+                  {/* <NavLink
                     to="/academy"
                     className=" font-serif font-extralight text-l tracking-tight flex-shrink-0 text-white mr-4 mt-4 lg:inline-block lg:mt-0 hover:text-blue headerMenu"
                     onClick={closeMenu}
                   >
                     ACADEMY
-                  </NavLink>
+                  </NavLink> */}
                 </div>
 
                 <NavLink

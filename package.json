@@ -35,7 +35,6 @@
     "eject": "react-scripts eject",
     "sitemap": "babel-node ../src/sitemap-generater.js"
   },
-  
   "eslintConfig": {
     "extends": [
       "react-app",
